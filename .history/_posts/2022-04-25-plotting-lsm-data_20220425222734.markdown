@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Visualizing LSM Data"
+date:   2022-04-25 16:30:57 -0400
+categories: data-viz
+---
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
+#=> prints 'Hi, Tom' to STDOUT.
+{% endhighlight %}
+
+Check out the MATLAB/Python [repository][lsm-repo] for more info on how the visualization is done.
+
+Click [here][] to enter the interactive 2-channel model.
+
+Please file all bugs/feature requests at [repo][lsm-repo].
+
+[lsm-repo]: https://github.com/JacobHA/confocal_analysis
+[lsm-htmlfile]: /lsm_interactive.html
