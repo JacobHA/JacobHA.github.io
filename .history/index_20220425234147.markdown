@@ -8,7 +8,7 @@ list_title: Read Our Latest Posts
 title: ''
 --- -->
 
-# Jacob Adamczyk's Personal Website
+# Jacob Adamczyk Personal Website
 
 Welcome to my personal website!
 
