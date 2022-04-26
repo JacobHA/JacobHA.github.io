@@ -17,5 +17,5 @@ The purpose of this website is to post blogs and tutorials on various topics rel
 I further hope to use this website as a resource for explaining my research and Github repositories.
 
 P.S.:
-You can find the source of this project
+You can find the sources of this project
 [here](https://github.com/SimonDosda/gp-blog).

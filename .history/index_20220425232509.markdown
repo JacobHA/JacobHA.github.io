@@ -14,8 +14,8 @@ Welcome to my personal website!
 
 The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
 
-I further hope to use this website as a resource for explaining my research and Github repositories.
+I further hope to use this website as a resource for explaining my research and Github repos.
 
 P.S.:
-You can find the source of this project
+You can find the sources of this project
 [here](https://github.com/SimonDosda/gp-blog).
