@@ -5,6 +5,8 @@ layout: home
 title: Home
 ---
 
+# Jacob Adamczyk's Personal Website
+
 Welcome to my personal website!
 
 The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
