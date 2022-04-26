@@ -5,8 +5,6 @@ source "https://rubygems.org"
 #
 #     bundle exec jekyll serve
 #
-# Better yet, use
-#     bundle exec jekyll doctor -t
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
 # gem "jekyll", "~> 4.2.2"
