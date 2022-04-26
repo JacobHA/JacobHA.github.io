@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "Visualizing LSM Data"
+date:   2022-04-25 16:30:57 -0400
+categories: data-viz
+---
+
+In this post, I will be showing how to visualize the data from the proprietary LSM data format.
+
+
+Check out the MATLAB/Python [repository][lsm-repo] for more info on how the visualization is done.
+
+Click [here][lsm-htmlfile] to enter the interactive 2-channel model. Use the dropdown menu to toggle 
+visibility of the two channels, and alter the minimum thresholds (vmin).
+
+Please file all bugs/feature requests at [repo][lsm-repo].
+
+[lsm-repo]: https://github.com/JacobHA/confocal_analysis
+[lsm-htmlfile]: /_pages/lsm_interactive.html
