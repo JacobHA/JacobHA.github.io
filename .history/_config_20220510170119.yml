@@ -21,11 +21,11 @@
 title: My Blog
 email: jacobhadamczyk@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  A discussion of some topics I find interesting. 
+A discussion of some topics I find interesting. 
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://JacobHA.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  JacobHA
+github_username: JacobHA
 
 # Build settings
 theme: minima

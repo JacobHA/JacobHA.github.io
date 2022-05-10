@@ -8,7 +8,7 @@ title: Home
 Welcome to my personal website!
 <!-- Add an image here -->
 <figure>
-<img src="https://github.com/JacobHA/JacobHA.github.io/assets/201906266_neel_pic.PNG" alt="Trulli" style="width:100%">
+<img src="assets/201906266_neel_pic.PNG" alt="Trulli" style="width:100%">
 <figcaption align = "center"><b>At Neel Institute, tightening up the outer thermal shield for the sionludi - a dilution refrigerator capable of acheiving temperatures near 50mK.</b></figcaption>
 </figure>
 
