@@ -1,0 +1,10 @@
+.container{
+    background-color:black;
+    color:white;
+    width: 250px;
+    height: 100px;
+  }
+
+#padded-text{
+    padding:30px;
+}

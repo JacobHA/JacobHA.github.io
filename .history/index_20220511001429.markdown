@@ -1,0 +1,31 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+layout: home
+title: Home
+---
+
+Welcome to my personal website!
+
+<link rel="stylesheet" type="text/css" href="https://github.com/JacobHA/JacobHA.github.io/css/style.css">
+
+
+<div class="row">
+  <div class="column left" style="background-color:#aaa;">
+    <img align = "left" src="assets/20190626neelpic.PNG" width = 400px>
+  </div>
+  <div class="column right" style="background-color:#bbb;">
+    <p>Me at Neel Institute, tightening up the final heat shield for their ''sionludi'', a dilution refrigerator capable of reaching 50mK.</p>
+  </div>
+</div>
+
+
+<br>
+
+The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
+
+I hope to use this website as a resource for explaining my research and some of my Github repositories.
+<!-- 
+P.S. There are:
+You can find the source of this project
+[here](https://github.com/SimonDosda/gp-blog). -->

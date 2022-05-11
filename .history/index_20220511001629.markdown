@@ -13,24 +13,23 @@ Welcome to my personal website!
 
 /* Create two unequal columns that floats next to each other */
 .column {
-    float: left;
-    padding: 10px;
+  float: left;
+  padding: 10px;
 }
 
 .left {
-    width: 60%; 
-    height
+  width: 70%;
 }
 
 .right {
-    width: 40%;
+  width: 30%;
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 </style>
 
@@ -40,15 +39,25 @@ Welcome to my personal website!
 
   </div>
   <div class="column right" style="background-color:#bbb;">
-    <p>Me at <a href="https://neel.cnrs.fr/en">Neel Institute</a>, tightening up the final heat shield for their <a href="https://en.wikipedia.org/wiki/Dilution_refrigerator">"sionludi"</a>, a dilution refrigerator capable of reaching temperatures down to 50mK! You can learn more about my research experience on the <a href= "https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes">QuNES team</a> at Neel <a href="/neel-research.html">here.</a>
-    </p>
+    <p>Me at Neel Institute, tightening up the final heat shield for their ''sionludi'', a dilution refrigerator capable of reaching 50mK.</p>
   </div>
 </div>
 
 
+<!-- Add an image here
+<img align = "left" src="assets/20190626neelpic.PNG" width = 400px>
+<div id="captext">
+Me at Neel Institute, tightening up the final heat shield for their ''sionludi'', a dilution refrigerator capable of reaching 50mK.
+</div>
+<br clear="left"/> -->
+
+
 <br>
-<div class="row-after">
+
 The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
 
 I hope to use this website as a resource for explaining my research and some of my Github repositories.
-
+<!-- 
+P.S. There are:
+You can find the source of this project
+[here](https://github.com/SimonDosda/gp-blog). -->

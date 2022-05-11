@@ -1,0 +1,8 @@
+.caption{
+    box-sizing: border-box
+    padding:30px;
+  }
+
+#padded-text{
+    padding:30px;
+}

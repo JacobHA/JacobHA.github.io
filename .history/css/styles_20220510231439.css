@@ -1,0 +1,9 @@
+.paddedimage{
+    float: left;
+    width: 120px;
+    margin: 15px 15px 15px 20px;
+    padding: 50px;
+    border: 1px solid black;
+    text-align: center;
+}
+

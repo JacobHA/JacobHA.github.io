@@ -51,4 +51,11 @@ Welcome to my personal website!
 The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
 
 I hope to use this website as a resource for explaining my research and some of my Github repositories.
-
+<!-- 
+P.S. There are:
+You can find the source of this project
+[here](https://github.com/SimonDosda/gp-blog). -->
+[neel-website](https://neel.cnrs.fr/en)
+[dilution-refrigerator-website](https://en.wikipedia.org/wiki/Dilution_refrigerator)
+[neel-research-link](./neel-research.html)
+[qnes-link](https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes)

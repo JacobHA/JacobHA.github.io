@@ -40,8 +40,7 @@ Welcome to my personal website!
 
   </div>
   <div class="column right" style="background-color:#bbb;">
-    <p>Me at <a href="https://neel.cnrs.fr/en">Neel Institute</a>, tightening up the final heat shield for their <a href="https://en.wikipedia.org/wiki/Dilution_refrigerator">"sionludi"</a>, a dilution refrigerator capable of reaching temperatures down to 50mK! You can learn more about my research experience on the <a href= "https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes">QuNES team</a> at Neel <a href="/neel-research.html">here.</a>
-    </p>
+    <p>Me at [Neel Institute](https://neel.cnrs.fr/en), tightening up the final heat shield for their ["sionludi"][dilution-refrigerator-website](https://en.wikipedia.org/wiki/Dilution_refrigerator), a dilution refrigerator capable of reaching 50mK! You can learn more about my research experience on the [QuNES team](https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes) at Neel [here](./neel-research.html)</p>
   </div>
 </div>
 
@@ -51,4 +50,11 @@ Welcome to my personal website!
 The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
 
 I hope to use this website as a resource for explaining my research and some of my Github repositories.
-
+<!-- 
+P.S. There are:
+You can find the source of this project
+[here](https://github.com/SimonDosda/gp-blog). -->
+[neel-website](https://neel.cnrs.fr/en)
+[dilution-refrigerator-website](https://en.wikipedia.org/wiki/Dilution_refrigerator)
+[neel-research-link](./neel-research.html)
+[qnes-link](https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes)
