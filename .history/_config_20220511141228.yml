@@ -32,10 +32,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
-include:
-  - '_pages'
+# include:
+#   - '_pages'
 
-# Sets up a new collection which is not posted as a blog
 collections:
   research_posts:
     output: true
@@ -50,7 +49,7 @@ relative_permalinks: false
 plugins:
   - jekyll-relative-links
   
-# This dictates what goes in the top navbar:
+# This dictates what goes in the top navbar
 header_pages:
 - 'about.markdown'
 - 'index.markdown'

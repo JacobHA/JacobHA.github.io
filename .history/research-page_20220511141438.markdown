@@ -1,0 +1,16 @@
+---
+layout: page
+title: My Research
+permalink: /research/
+---
+## Current Research
+Currently working on Reinforcement Learning (RL), specifically its applications and connections to physics.
+## Past Research
+Click [here][neel-link] to see my research.
+
+
+<!-- [neel-link]: /research-posts/2022/05/11/neel-research.html -->
+<!-- [neel-link]: /_pages/neel-research.html/ -->
+[neel-link]: /neel-research/
+
+<!-- C:\Users\jacob\OneDrive\Desktop\GitHub\JacobHA.github.io\_site\research-posts\2022\05\11\neel-research.html -->

@@ -32,10 +32,9 @@ theme: minima
 plugins:
   - jekyll-feed
 
-include:
-  - '_pages'
+# include:
+#   - '_pages'
 
-# Sets up a new collection which is not posted as a blog
 collections:
   research_posts:
     output: true
