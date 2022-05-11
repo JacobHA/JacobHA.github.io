@@ -4,18 +4,22 @@
 layout: home
 title: Home
 ---
-<link rel="stylesheet" type="text/css" href="https://github.com/JacobHA/JacobHA.github.io/css/style.css">
 
 Welcome to my personal website!
 <!-- Add an image here -->
-<img align = "left" src="assets/20190626neelpic.PNG" width = 400px>
-<div class = "rightcaptiontext">
-<span style = ""> Me at Neel Institute, tightening up the final heat shield for their ''sionludi'', a dilution refrigerator capable of reaching 50mK.
-</span>
-</div>
+<img align = "left" src="assets/20190626neelpic.PNG">
+
+Me at Neel Institute, tightening up the final heat shield for their ''sionludi'', a dilution refrigerator capable of reaching 50mK.
 
 <br clear="left"/>
 
+<!-- <img align="left" src="https://cloud.githubusercontent.com/assets/532272/21507867/3376e9fe-cc4a-11e6-9350-7ec4f680da36.gif">
+
+some text aligned to the right of the image
+
+<br clear="left"/> -->
+
+and some text that is below the image (without an obnoxious number of <br /> tags).
 
 The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
 

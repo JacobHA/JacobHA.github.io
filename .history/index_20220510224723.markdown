@@ -4,15 +4,14 @@
 layout: home
 title: Home
 ---
-<link rel="stylesheet" type="text/css" href="https://github.com/JacobHA/JacobHA.github.io/css/style.css">
+<link rel="stylesheet" type="text/css" href="css/components/style.css">
 
 Welcome to my personal website!
 <!-- Add an image here -->
 <img align = "left" src="assets/20190626neelpic.PNG" width = 400px>
-<div class = "rightcaptiontext">
+
 <span style = ""> Me at Neel Institute, tightening up the final heat shield for their ''sionludi'', a dilution refrigerator capable of reaching 50mK.
 </span>
-</div>
 
 <br clear="left"/>
 
