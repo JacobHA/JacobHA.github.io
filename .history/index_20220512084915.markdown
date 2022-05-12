@@ -38,9 +38,9 @@ Welcome to my personal website!
 
 <div class="row">
   <div class="column left" style="background-color:#aaa;">
-  <a href = "/neel-research/">
+  <a href = "/neel-research/" />
     <img align = "left" src="assets/20190626neelpic.PNG" width = 400px>
-  </a>
+
   </div>
   <div class="column right" style="background-color:#bbb;">
     <p>Me at <a href="https://neel.cnrs.fr/en">Neel Institute</a>, tightening up the final heat shield for their <a href="https://en.wikipedia.org/wiki/Dilution_refrigerator">"sionludi"</a>, a dilution refrigerator capable of reaching temperatures down to 50mK! You can learn more about my research experience on the <a href= "https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes">QuNES team</a> at Neel <a href="/neel-research/">here.</a>
