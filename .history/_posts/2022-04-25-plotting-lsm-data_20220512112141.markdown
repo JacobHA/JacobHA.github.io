@@ -17,10 +17,9 @@ Click [here][lsm-htmlfile] (or on the image below) to enter the interactive 2-ch
 
 <center>
 <a href="/_pages/lsm_interactive.html">
-<img src = "/assets/dapiphall_plot.PNG" width="50%">
+<img src = ">
 </a>
 </center>
-<br>
 
 Please file all bugs/feature requests at [repo][lsm-repo].
 
