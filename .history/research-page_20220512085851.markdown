@@ -10,8 +10,6 @@ I am currently working on Reinforcement Learning (RL), specifically its applicat
 
 ## Past Research
 - ["Cloud Computing"][clouds-link]
--- From fall 2020 to spring 2021 (my last year at CSU) I worked on a computational atmospheric model, used to study cloud formation and resulting weather patterns.
-
 - [SQUIDs in Magnetic Fields][neel-link]
 -- In summer of 2019, I visited the Neel Institute in France to work on superconductivity. 
 
@@ -21,6 +19,5 @@ I am currently working on Reinforcement Learning (RL), specifically its applicat
 <!-- [neel-link]: /research-posts/2022/05/11/neel-research.html -->
 <!-- [neel-link]: /_pages/neel-research.html/ -->
 [neel-link]: /neel-research/
-[microgels-link]: /microgels-research/
+[microgels-link]: /microgels/
 [rahul-website]: http://www.quantum.umb.edu/Kulkarni/Rahul_homepage.html
-[clouds-link]: /clouds-research/
