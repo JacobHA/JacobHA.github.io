@@ -3,9 +3,9 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
----
 <link rel='shortcut icon' type='image/x-icon' href='/favicon.ico' />
 
+---
 Welcome to my personal website!
 <!-- <link rel="stylesheet" type="text/css" href="https://github.com/JacobHA/JacobHA.github.io/css/style.css"> -->
 <style>
