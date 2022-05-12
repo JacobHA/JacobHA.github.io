@@ -12,11 +12,8 @@ I am currently working on Reinforcement Learning (RL), specifically its applicat
 - [SQUIDs in Magnetic Fields][neel-link]
 -- In summer of 2019, I visited the Neel Institute in France to work on superconductivity. 
 
-- [Tunable Microgels][microgels-link]
--- During my time at Cleveland State University (Fall 2017 - Spring 2020), I worked on modeling and analyzing thermoresponsive microgels.
 
 <!-- [neel-link]: /research-posts/2022/05/11/neel-research.html -->
 <!-- [neel-link]: /_pages/neel-research.html/ -->
 [neel-link]: /neel-research/
-[microgels-link]: /microgels/
 [rahul-website]: http://www.quantum.umb.edu/Kulkarni/Rahul_homepage.html

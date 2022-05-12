@@ -4,6 +4,7 @@ title:  "Visualizing LSM Data"
 date:   2022-04-25 16:30:57 -0400
 categories: data-viz
 ---
+<link type="text/css" rel="stylesheet" href="https://JacobHA.github.io/css/styles.css" />
 
 In this (first) post, I will be showing how to visualize the data from the proprietary [Zeiss][zeiss-homepage] LSM (microscopy) data format.
 
@@ -19,11 +20,9 @@ visibility of the two channels, and alter the minimum thresholds (vmin).
 Please file all bugs/feature requests at [repo][lsm-repo].
 
 
-
 <!-- placed preferably before the closing `<body>` tag -->
 <!-- data-taret blank opens a new tab when clicked -->
-<!-- source: https://github.com/remarkablemark/github-corners#readme -->
-<script data-href="https://github.com/JacobHA/confocal_analysis" data-target = "_blank" src="https://unpkg.com/github-corners@0.1.0/dist/embed.min.js"></script>
+<script data-href="https://github.com/JacobHA/JacobHA.github.io/css/style.css" data-target = "_blank" src="https://unpkg.com/github-corners@0.1.0/dist/embed.min.js"></script>
 
 
 [vedo-homepage]: https://github.com/marcomusy/vedo
