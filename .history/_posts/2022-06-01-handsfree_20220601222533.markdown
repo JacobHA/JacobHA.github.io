@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "HandsFree: Manipulating 3D Files by Hand Gestures"
+date:   2022-06-01 22:30:57 -0400
+categories: projects
+---
+
+I have been working (on and off for the past year) on interfacing with 3D objects (files like *.stl, *.obj, etc.) through hand gestures. I realize the name for the project is a bit ironic! The point is to use your hands in "real life" rather than through the mouse to manipulate 3D objects in a more "natural" way.
+
+I think this project was subconciously inspired by a video released some time ago by [SpaceX][spacex-video].
+
+The code in [this repository][ddls-repo] is used to read in the optical data, perform the structure factor calculations, and generate a 3D object (cylinder, oblate spheroid, or prolate spheroid) based on the fitted parameters. Then, the object is visualized in an interactive html file, c.f. [this page][ddls-html], or click on the image below.
+
+<center>
+<a href = "http://htmlpreview.github.io/?https://github.com/JacobHA/DDLS-in-Python/master/prolate_5.143347.html">
+<img src="/assets/prol_img.PNG" width="50%">
+</a>
+</center>
+<br>
+Please file all bugs/feature requests at [this repository][ddls-repo].
+
+<script data-href="https://github.com/JacobHA/DDLS-in-Python" data-target = "_blank" src="https://unpkg.com/github-corners@0.1.0/dist/embed.min.js"></script>
+
+
+[spacex-video]: https://www.youtube.com/watch?v=xNqs_S-zEBY
+[ddls-repo]: https://github.com/JacobHA/DDLS-in-Python
+[ddls-html]: http://htmlpreview.github.io/?https://github.com/JacobHA/DDLS-in-Python/master/prolate_5.143347.html
