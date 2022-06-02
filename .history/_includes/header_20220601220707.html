@@ -1,0 +1,20 @@
+
+{% for page in site.pages %}
+
+<ul>
+    {% assign headers = page.content | split: '<h' %}
+        {% for header in headers %}
+            {% assign _string = header | split: '</h' %}
+            {% capture _hAttrToStrip %}{{ _string[0] | split: '>' | first }}>{% endcapture %}
+            {% assign title = _string[0] | replace: _hAttrToStrip, '' %}
+
+            {% assign _idstring = header | split: 'id="' %}
+            {% assign _idstring = _idstring[1] | split: '"' %}
+            {% assign html_id = _idstring[0] %}
+
+            <li>
+                <a href={{page.url}}#{{html_id}}>{{title}}</a>
+            </li>
+        {% endfor %}
+</ul>
+{% endfor %}

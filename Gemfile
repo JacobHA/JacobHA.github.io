@@ -46,4 +46,4 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem 'jekyll-relative-links'
 
 # Dependabot vulnerabilities:
-gem "nokogiri", ">= 1.13.4"
+gem "nokogiri", ">= 1.13.6"
