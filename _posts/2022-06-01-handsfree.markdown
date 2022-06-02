@@ -5,9 +5,12 @@ date:   2022-06-01 22:30:57 -0400
 categories: projects
 ---
 
-I have been working (on and off for the past year) on interfacing with 3D objects (files like *.stl, *.obj, etc.) through hand gestures. I realize the name for the project is a bit ironic! The purpose is to use your hands in "real life" rather than through the mouse to manipulate 3D objects in a more "natural" way.
+*Work in Progress*
 
-I think this project was unconsciously inspired by a video released some time ago by [SpaceX][spacex-video]. However, their demo involves the use of some extra add-on motion sensors. I want to enable the same interactivity with the bare bones: a simple built-in laptop camera. This makes the problem substantially more difficult, because with just a camera we can only see a 2D representation of the scene (our hands). (This can be slightly bypassed by more advanced pose estimation, and with using infrared sensors, included on some laptops - but I want to keep it as basic as possible so that there are no hardware limitations.)
+
+I have been working (on and off for the past year) on interfacing with 3D objects (files like *.stl, *.obj, etc.) through hand gestures. I realize the name for the project is a bit ironic! The purpose is to use your hands in "real-life" rather than through the mouse and keyboard to manipulate 3D objects in a more "natural" way.
+
+I believe this project was subconsciously inspired by a video released some time ago by [SpaceX][spacex-video]. However, their demo involves the use of some extra add-on motion sensors. I want to enable the same interactivity with the bare bones: a simple built-in laptop camera. This makes the problem more difficult, because with just a camera we can only see a 2D representation of the scene (our hands). (This can be slightly bypassed by more advanced pose estimation and with infrared sensors, which are included on some laptops, but I want to keep it as basic as possible so that there are no hardware limitations. More advanced software for handtracking could be useful, i.e. using the [LeapMotion controller][leap-link]. But this costs about $100 and one purpose of this project is to not require (m)any add-ons!)
 
 There are several simple features:
 - Zooming: think pinch to zoom
@@ -29,3 +32,4 @@ Please file all bugs/feature requests at [this repository][handsfree-repo].
 
 [spacex-video]: https://www.youtube.com/watch?v=xNqs_S-zEBY
 [handsfree-repo]: https://github.com/JacobHA/HandsFree
+[leap-link]: https://www.ultraleap.com/product/leap-motion-controller/
