@@ -4,6 +4,9 @@ title:  "HandsFree: Manipulating 3D Files Via Hand Gestures"
 date:   2022-06-01 22:30:57 -0400
 categories: projects
 ---
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
 *Work in Progress*
 
@@ -14,16 +17,23 @@ I believe this project was subconsciously inspired by a video released some time
 
 There are several simple features:
 - Zooming: think pinch to zoom
-- Rotating: not very intuitive with 2D representation
+- Rotating: not always intuitive due to 2D representation
 - Panning: think of dragging hands across the screen
 
 There should also be other simple poses which allow for:
-- Pausing: so the image is locked in place
+- Pausing: so the image is locked in place beetween functions
 - Resetting: so the image goes back to its original position
 
 
-Currently, I use the thumb and forefinger to define an axis of rotation, and the distance between fingers defines the rotation rate. 
+Currently, I use the forefinger to "drag" and rotate the object in the direction of motion, about the center of mass (assuming uniform density). This gives the impression of applying a torque on the object to rotate it. In the future, I could instead explicitly calculate the resulting rotations (from $$\tau = I \alpha$$), but for now the current solution suffices.
+
 I highly request suggestions on alternate ways of defining rotation (which are intuitive to use)!
+
+Check out a simple demo here:
+![Alt Text](/assets/HandsFree-demo.gif)
+As you can see, we have the capability of controlling a 3D object in a "hands-free" way (free of keyboard/mouse, that is). As you can also see, there are still some issues. For instance, the pausing function (close hand) does not work great, and panning is a bit noisy. There are many parameters in the handtracking.py file that can be fine-tuned to help with some of these issues (params like: hand tracking minimum confidence levels, sigmoid smoothing params, and many others).
+
+BTW - I am also working on a GUI interface for the same project (see qt_app.py in [the repo][handsfree-repo]). Hopefully this can eventually be turned into a standalone executable file. If I were more comfortable with PyQt and C++, I would build (and maybe will re-build) the project there.
 
 Please file all bugs/feature requests at [this repository][handsfree-repo].
 
