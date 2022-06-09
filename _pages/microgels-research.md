@@ -19,7 +19,7 @@ Under the supervision of Dr. Miron Kaufman, I undertook a study of the statistic
 
 ## The Results:
 - CSU and Kent State poster sessions [1][csu-poster], as a part of the soft-matter REU cohort.
-- Presented several posters: 2019 APS March Meeting ([2][kiril-poster], [3][miron-poster]).
+- Presented several other posters, including: 2019 APS March Meeting ([2][kiril-poster], [3][miron-poster]).
 - Published paper in [Macromolecules (2020)][paper-link].
 - The mystery of the different crosslinking density regimes is still being [investigated][sam-paper]!
 
