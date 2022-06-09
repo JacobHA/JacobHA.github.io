@@ -24,7 +24,7 @@ There are several simple features:
 - Panning: think of dragging hands across the screen
 
 There should (I have now implemented these!) also be other simple poses which allow for:
-- Pausing: so the image is locked in place beetween functions
+- Pausing: so the image is locked in place between functions
 - Resetting: so the image goes back to its original position
 
 
