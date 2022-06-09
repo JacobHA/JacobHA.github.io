@@ -8,14 +8,8 @@ categories: projects
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.js" integrity="sha384-9Nhn55MVVN0/4OFx7EE5kpFBPsEMZxKTCnA+4fqDmg12eCTqGi6+BB2LjY8brQxJ" crossorigin="anonymous"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
 
-<head>
-  <!-- add the button style & script -->
-  <link rel="stylesheet" href="jacobha.github.io/css/applause-button.scss" />
-  <script src="jacobha.github.io/applause-button.js" type="text/javascript"></script>
-</head>
-<!-- In the <head> of your HTML page. -->
-<!-- <script src="https://unpkg.com/clap-button-com/dist/main.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/clap-button-com/dist/styles.css" /> -->
+<script src="https://unpkg.com/clap-button-com/dist/main.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/clap-button-com/dist/styles.css" />
 
 *Work in Progress*
 
@@ -44,8 +38,7 @@ As you can see, we have the capability of controlling a 3D object in a "hands-fr
 
 
 <body>
-  <!-- add the button! -->
-  <applause-button style="width: 58px; height: 58px;"/>
+  <button class="clap-button"></button>
 </body>
 
 BTW - I am also working on a GUI interface for the same project (see qt_app.py in [the repo][handsfree-repo]). Hopefully this can eventually be turned into a standalone executable file. If I were more comfortable with PyQt and C++, I would build (and maybe will re-build) the project there.
