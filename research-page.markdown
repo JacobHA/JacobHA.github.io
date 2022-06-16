@@ -7,9 +7,9 @@ permalink: /research/
 Since joining UMass Boston in Fall 2020, I have been working with Dr. Rahul Kulkarni ([website][rahul-website]). Under his guidance, I have learned about Markov Decision Processes (MDPs), large deviations theory (LDT), and reinforcement learning (RL).
 
 I am currently working on Reinforcement Learning (RL), specifically its applications and connections to physics.
-I have studied several forms of RL (standard vs. maximum entropy; average reward vs. discounted) in my research and my current goal is to understand how RL can be made more efficient in practice.
+I have studied different forms of RL (standard vs. maximum entropy; average reward vs. discounted) in my research and my current goal is to understand how RL can generally be made more efficient in practice. For a recent (March 2022) talk at the APS March Meeting take a look [at this video][yt-link].
 
-This includes:
+My research includes:
 - Using prior knowledge of primitive behaviors to quickly learn more complex behaviors
     - Humans learn many disjoint tasks, but are able to combine them at will. For instance, we can extend our empty hand; and we also can grasp a ball. With minimal effort, we combine these skills by handing that ball to someone.
 - Making agents which are able to adapt to new contexts (new dynamics, new rewards)
@@ -35,3 +35,4 @@ This includes:
 [microgels-link]: /microgels-research/
 [rahul-website]: http://www.quantum.umb.edu/Kulkarni/Rahul_homepage.html
 [clouds-link]: /clouds-research/
+[yt-link]: https://www.youtube.com/watch?v=qWjA7VOOxE4&t=311s
