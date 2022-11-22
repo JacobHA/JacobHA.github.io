@@ -55,6 +55,7 @@ header_pages:
 - 'index.markdown'
 - 'research-page.markdown'
 - 'about.markdown'
+- 'talks.markdown'
 
 
 # Exclude from processing.
