@@ -11,7 +11,9 @@ On this page, I'll list some recent (2022+) talks with some relevant materials (
 
 - Applied Physics PhD Oral Qualifying Exam: [slides][slides-link]
 
-- Graduate Physics Students Club: 
+- Graduate Physics Students Club: (based on similar ideas presented in ["The Mathematical Mechanic"][amzn-link] by Mark Levi)
+<!-- Insert an image from assets -->
+![Flyer for talk][flyer-link]
 
 <!-- ## 2023
 - APS March Meeting 2023: [Youtube Link][yt-link] -->
@@ -19,3 +21,5 @@ On this page, I'll list some recent (2022+) talks with some relevant materials (
 
 [yt-link]: https://www.youtube.com/watch?v=qWjA7VOOxE4&t=311s
 [slides-link]: /assets/pdf/qualifying-exam-slides.pdf
+[flyer-link]: /assets/grad_student_club_flyer.jpg
+[amzn-link]: https://www.amazon.com/Mathematical-Mechanic-Physical-Reasoning-Problems/dp/0691154562
