@@ -54,7 +54,7 @@ Welcome to my personal website!
 The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
 
 I hope to use this website as a resource for explaining my research and some of my Github repositories.
-
+</div>
 <h2>Recent Announcements</h2>
 
 - Nov. 20, 2022: Our group's first peer-reviewed paper on entropy-regularized reinforcement learning entitled "Utilizing Prior Solutions for Reward Shaping and Composition in Entropy-Regularized Reinforcement Learning" was accepted at AAAI-2023 ([LinkedIn][linkedin-link]).
