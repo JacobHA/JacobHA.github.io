@@ -63,4 +63,4 @@ I hope to use this website as a resource for explaining my research and some of 
 
 [linkedin-link]: https://www.linkedin.com/posts/jacob-adamczyk-182b8a1a4_composable-deep-reinforcement-learning-for-activity-7000170354451054592-B5X0?utm_source=share&utm_medium=member_desktop
 
-[slides-link]: /assets/pdf/qualifying-exam-slides.pdf
+[slides-link]: /assets/qualifying-exam-slides.pdf

@@ -13,6 +13,8 @@ On this page, I'll list some recent (2022+) talks with some relevant materials (
 
 - Graduate Physics Students Club: (based on similar ideas presented in ["The Mathematical Mechanic"][amzn-link] by Mark Levi)
 <!-- Insert an image from assets but make it 50% smaller -->
+<!-- Add some empty space -->
+<br>
 <img src="{{ site.baseurl }}/assets/grad_student_club_flyer.jpg" width="50%" height="50%">
 
 <!-- ## 2023
