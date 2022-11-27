@@ -18,6 +18,7 @@ On this page, I'll list some recent (2022+) talks with some relevant materials (
 <!-- Center the image -->
 <div style="text-align:center">
   <img src="{{ site.baseurl }}/assets/grad_student_club_flyer.jpg" width="50%" height="50%">
+</div>
 <!-- ## 2023
 - APS March Meeting 2023: [Youtube Link][yt-link] -->
 
