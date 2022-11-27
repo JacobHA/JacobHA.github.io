@@ -4,7 +4,7 @@ title: My Talks
 permalink: /talks/
 ---
 
-On this page, I'll list some recent (2022+) talks with some relevant materials (slides or video). Chronologically,
+On this page, I'll list some recent (2022+) talks with some relevant materials (slides or video).
 
 ## 2022
 - APS March Meeting 2022: [Youtube Link][yt-link]
@@ -22,6 +22,6 @@ On this page, I'll list some recent (2022+) talks with some relevant materials (
 
 
 [yt-link]: https://www.youtube.com/watch?v=qWjA7VOOxE4&t=311s
-[slides-link]: /assets/pdf/qualifying-exam-slides.pdf
+[slides-link]: /assets/qualifying-exam-slides.pdf
 [flyer-link]: /assets/grad_student_club_flyer.jpg
 [amzn-link]: https://www.amazon.com/Mathematical-Mechanic-Physical-Reasoning-Problems/dp/0691154562
