@@ -55,3 +55,12 @@ The purpose of this website is to post blogs and tutorials on various topics rel
 
 I hope to use this website as a resource for explaining my research and some of my Github repositories.
 
+<h2>Recent Announcements</h2>
+
+- Nov. 20, 2022: Our group's first peer-reviewed paper on entropy-regularized reinforcement learning entitled "Utilizing Prior Solutions for Reward Shaping and Composition in Entropy-Regularized Reinforcement Learning" was accepted at AAAI-2023 ([LinkedIn][linkedin-link]).
+
+- Oct. 17, 2022: I gave a [talk][slides-link] for my PhD qualifying exam. I passed and was thus promoted to PhD candidacy.
+
+[linkedin-link]: https://www.linkedin.com/posts/jacob-adamczyk-182b8a1a4_composable-deep-reinforcement-learning-for-activity-7000170354451054592-B5X0?utm_source=share&utm_medium=member_desktop
+
+[slides-link]: /assets/pdf/qualifying-exam-slides.pdf
