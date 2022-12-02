@@ -51,11 +51,13 @@ Welcome to my personal website!
 
 <br>
 <div class="row-after">
-The purpose of this website is to post blogs and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
+The purpose of this website is to post updates, blogs, and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
 
 I hope to use this website as a resource for explaining my research and some of my Github repositories.
 </div>
 <h2>Recent Announcements</h2>
+
+- Dec. 2, 2022: I have been awarded a College of Science and Mathematics (CSM) Dean's Doctoral Research Fellowship for Spring 2023. This fellowship will support my research in the [statistical mechanics approach to reinforcement learning][arxiv-paper]. I am very grateful to the CSM for this award, and I look forward to continuing my research in the coming year.
 
 - Nov. 20, 2022: Our group's first peer-reviewed paper on entropy-regularized reinforcement learning entitled "Utilizing Prior Solutions for Reward Shaping and Composition in Entropy-Regularized Reinforcement Learning" was accepted at AAAI-2023 ([LinkedIn][linkedin-link]).
 
@@ -64,3 +66,5 @@ I hope to use this website as a resource for explaining my research and some of 
 [linkedin-link]: https://www.linkedin.com/posts/jacob-adamczyk-182b8a1a4_composable-deep-reinforcement-learning-for-activity-7000170354451054592-B5X0?utm_source=share&utm_medium=member_desktop
 
 [slides-link]: /assets/qualifying-exam-slides.pdf
+
+[arxiv-paper]: https://arxiv.org/abs/2106.03931
