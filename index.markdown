@@ -71,4 +71,4 @@ I hope to use this website as a resource for explaining my research and some of 
 
 [new-arxiv-paper]: https://arxiv.org/abs/2212.01174
 
-[research-post]: /_pages/rewardshaping-research
+[research-post]: /rewardshaping-research
