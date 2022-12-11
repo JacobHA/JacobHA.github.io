@@ -18,6 +18,7 @@ My research includes:
 - Devising new algorithms based on insights from non-equilibrium statistical mechanics
     - Markov chains, a fundamental ingredient of reinforcement learning, are a frequently used tool in statistical mechanics. Our group is studying ways of combining statistical mechanics with the reinforcement learning problem to create novel algorithms: which we hope will reduce the sample and time complexity of current algorithms.
 
+See my approach to these problems in our [AAAI paper][rewardshaping-research].
 
 ## Past Research
 - ["Cloud Computing"][clouds-link]
@@ -36,3 +37,4 @@ My research includes:
 [rahul-website]: http://www.quantum.umb.edu/Kulkarni/Rahul_homepage.html
 [clouds-link]: /clouds-research/
 [yt-link]: https://www.youtube.com/watch?v=qWjA7VOOxE4&t=311s
+[rewardshaping-research]: /rewardshaping-research/
