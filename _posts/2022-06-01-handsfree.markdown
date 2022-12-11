@@ -14,7 +14,7 @@ categories: projects
 *Work in Progress*
 
 
-I have been working (on and off for the past year) on interfacing with 3D objects (files like *.stl, *.obj, etc.) through hand gestures. I realize the name for the project is a bit ironic! The purpose is to use your hands in "real-life" rather than through the mouse and keyboard to manipulate 3D objects in a more "natural" way.
+I have been working (on and off for the past year+) on interfacing with 3D objects (files like *.stl, *.obj, etc.) through hand gestures. I realize the name for the project is a bit of a misnomer! The purpose is to use your hands in "real-life" rather than through the mouse and keyboard to manipulate 3D objects in a more "natural" way.
 
 I believe this project was subconsciously inspired by a video released some time ago by [SpaceX][spacex-video]. However, their demo involves the use of some extra add-on motion sensors. I want to enable the same interactivity with the bare bones: a simple built-in laptop camera. This makes the problem more difficult, because with just a camera we can only see a 2D representation of the scene (our hands). (This can be slightly bypassed by more advanced pose estimation and with infrared sensors, which are included on some laptops, but I want to keep it as basic as possible so that there are no hardware limitations. More advanced software for handtracking could be useful, i.e. using the [LeapMotion controller][leap-link]. But this costs about $100 and one purpose of this project is to not require (m)any add-ons!)
 
@@ -23,12 +23,12 @@ There are several simple features:
 - Rotating: not always intuitive due to 2D representation
 - Panning: think of dragging hands across the screen
 
-There should (I have now implemented these!) also be other simple poses which allow for:
+There should (update: I have now implemented these!) also be other simple poses which allow for:
 - Pausing: so the image is locked in place between functions
 - Resetting: so the image goes back to its original position
 
 
-Currently, I use one's forefinger to "drag" and rotate the object in the direction of motion, about the center of mass (assuming uniform density). This gives the impression of applying a torque on the object to rotate it. In the future, I could instead explicitly calculate the resulting rotations (from $$\tau = I \alpha$$), but for now the current solution suffices.
+Currently, one's forefinger is used to "drag" and rotate the object in the direction of motion, about the center of mass (assuming uniform density). This gives the impression of applying a torque on the object to rotate it. In the future, I could instead explicitly calculate the resulting rotations (from $$\tau = I \alpha$$), but for now the current solution suffices.
 
 I highly request suggestions on alternate ways of defining rotation (which are intuitive to use)!
 
