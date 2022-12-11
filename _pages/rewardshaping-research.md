@@ -8,7 +8,7 @@ exclude: true
 
 tl;dr:
 
-[Reward shaping][ng-shaping] holds in [entropy-regularized (a.k.a. MaxEnt) RL][maxent-misnomer]. Any* two RL tasks can be related by an auxiliary "corrective" task. Solving a composite task (a new reward function which is a function of previous tasks' rewards) can be done by applying that function to the optimal value functions ($f(Q_1, Q_2, \dots)$) and then learning to "close the gap" by learning the corrective task's value function.
+[Reward shaping][ng-shaping] holds in [entropy-regularized (a.k.a. MaxEnt) RL][maxent-misnomer]. Any* two RL tasks can be related by an auxiliary "corrective" task. Solving a composite task (a new reward function which is a function of previous tasks' rewards) can be done by applying that function to the optimal value functions ($$f(Q_1, Q_2, \dots)$$) and then learning to "close the gap" by learning the corrective task's value function.
 
 *The two tasks must be in the same state and action space, with the same discount factor.
 
@@ -16,7 +16,7 @@ tl;dr:
 
 [Classical "reward shaping"][ng-shaping] is a technique for modifying an RL agent's reward function to improve its training time while keeping the optimal policy unchanged. We've found that the standard formulation of reward shaping carries over to the entropy-regularized (a.k.a MaxEnt) RL setting.
 
-After applying a composition function $f$ to a set of subtasks' rewards ($\widetilde{r}(s,a)=f(r_1(s,a), r_2(s,a), \dots)$), one may wonder if the corresponding optimal value function $\widetilde{Q}(s,a)$ can be found by applying $f$ to the optimal value functions of the subtasks ($\widetilde{Q}(s,a)=f(Q_1(s,a), Q_2(s,a), \dots)$). This is not generally the case (but see [this][geraud-paper], [this][niekerk-paper], and [this][todorov-paper] for examples where it is the case, with proper assumptions). Nevertheless, we can still find the optimal value function of the composite task by learning the optimal value function of a related "corrective task" (which we denote $K$.) This corrective value function generalizes the $C^\infty$ term introduced in [this paper][hunt-paper] to *any* transformation function (rather than just convex combinations) of rewards.
+After applying a composition function $$f$$ to a set of subtasks' rewards ($$\widetilde{r}(s,a)=f(r_1(s,a), r_2(s,a), \dots)$$), one may wonder if the corresponding optimal value function $$\widetilde{Q}(s,a)$$ can be found by applying $$f$$ to the optimal value functions of the subtasks ($$\widetilde{Q}(s,a)=f(Q_1(s,a), Q_2(s,a), \dots)$$). This is not generally the case (but see [this][geraud-paper], [this][niekerk-paper], and [this][todorov-paper] for examples where it is the case, with proper assumptions). Nevertheless, we can still find the optimal value function of the composite task by learning the optimal value function of a related "corrective task" (which we denote $$K$$.) This corrective value function generalizes the $$C^\infty$$ term introduced in [this paper][hunt-paper] to *any* transformation function (rather than just convex combinations) of rewards.
 
 ## The Results
 
@@ -26,6 +26,10 @@ After applying a composition function $f$ to a set of subtasks' rewards ($\widet
 ## The Details
 
 ## Future Work
+
+Some generalizations and future work that I am interested in:
+- Extend the results to the case where the corrective task is not in the same state and action space as the composite task.
+- Extend the results to the case where tasks have different discount factors (as $$\gamma$$ is typically taken to be a hyperparameter during training).
 
 [maxent-misnomer]: maxent-misnomer.md
 [ng-shaping]: https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-shaping-ICML1999.pdf
