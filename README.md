@@ -9,3 +9,4 @@ Run "bundle exec jekyll serve" to see changes update live on localhost:4000.
 - Add post on Perron roots and bounds
 - Clean up the pyscript post
 - Add a post on the "mathematical mechanic" book
+- Add a post on the UMB template for beamer
