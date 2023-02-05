@@ -24,7 +24,7 @@ After applying a composition function $$f$$ to a set of subtasks' rewards ($$\wi
 ## The Results
 
 - Published a conference paper in the Technical Track of [AAAI (2023)][paper-link].
-
+- See a brief presentation on [YouTube][yt-link].
 
 ## The Details
 🏗️ (Under construction)
@@ -35,6 +35,7 @@ Some generalizations and future work that I am interested in:
 - Extend the results to the case where the corrective task is not in the same state and action space as the composite task.
 - Extend the results to the case where tasks have different discount factors (as $$\gamma$$ is typically taken to be a hyperparameter during training).
 
+[yt-link]: https://www.youtube.com/watch?v=BwdHQFDzc8c
 [maxent-misnomer]: maxent-misnomer.md
 [ng-shaping]: https://people.eecs.berkeley.edu/~pabbeel/cs287-fa09/readings/NgHaradaRussell-shaping-ICML1999.pdf
 [paper-link]: https://arxiv.org/abs/2212.01174
