@@ -10,3 +10,4 @@ Run "bundle exec jekyll serve" to see changes update live on localhost:4000.
 - Clean up the pyscript post
 - Add a post on the "mathematical mechanic" book
 - Add a post on the UMB template for beamer
+- Add a Publications tab (use jekyll academic ?)
