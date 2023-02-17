@@ -13,3 +13,4 @@ Run "bundle exec jekyll serve" to see changes update live on localhost:4000.
 - [ ] Add a Publications tab (use jekyll academic ?)
 - [ ] Add my math senior project
 - [ ] Add AAAI post
+- [ ] Add recommended blogs (https://rltheory.github.io/)
