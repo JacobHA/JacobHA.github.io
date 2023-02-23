@@ -23,7 +23,8 @@ After applying a composition function $$f$$ to a set of subtasks' rewards ($$\wi
 
 ## The Results
 
-- Published a conference paper in the Technical Track of [AAAI (2023)][paper-link].
+- Accepted paper in the Technical Track of [AAAI (2023)][paper-link].
+- [Attended AAAI-2023][aaai-2023] with a student scholarship to present the paper.
 - See a brief presentation on [YouTube][yt-link].
 
 ## The Details
@@ -43,3 +44,4 @@ Some generalizations and future work that I am interested in:
 [niekerk-paper]: http://proceedings.mlr.press/v97/van-niekerk19a/van-niekerk19a.pdf
 [hunt-paper]: https://arxiv.org/abs/1812.02216
 [todorov-paper]: https://homes.cs.washington.edu/~todorov/courses/amath579/reading/Compositionality.pdf
+[aaai-2023]: /_pages/aaai-2023.md
