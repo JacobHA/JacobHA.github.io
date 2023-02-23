@@ -12,6 +12,6 @@ Run "bundle exec jekyll serve" to see changes update live on localhost:4000.
 - [ ] Add a post on the UMB template for beamer
 - [ ] Add a Publications tab (use jekyll academic ?)
 - [ ] Add my math senior project
-- [ ] Add AAAI post
+- [x] Add AAAI post
 - [ ] Add recommended blogs (https://rltheory.github.io/)
 - [ ] add a post on self-similar MOIs
