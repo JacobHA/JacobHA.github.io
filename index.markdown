@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
+exclude: true
 ---
 <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
 
@@ -57,6 +58,8 @@ I hope to use this website as a resource for explaining my research and some of 
 </div>
 <h2>Recent Announcements</h2>
 
+- Mar. 5, 2023: I attended the 2023 APS March Meeting in Las Vegas, NV. I presented a talk on my research in the statistical mechanics approach to reinforcement learning. ([A more detailed post is pending][aps-post].)
+
 - Feb. 13, 2023: I had a great time presenting at my first AI conference (AAAI-2023) in Washington, D.C. I met many great people and learned a lot about what the broader community is interested in. ([Here is a more detailed post][aaai-post].)
 
 - Dec. 2, 2022: I have been awarded a College of Science and Mathematics (CSM) Dean's Doctoral Research Fellowship for Spring 2023. This fellowship will support my research in the [statistical mechanics approach to reinforcement learning][arxiv-paper]. I am very grateful to the CSM for this award, and I look forward to continuing my research in the coming year.
@@ -76,3 +79,5 @@ I hope to use this website as a resource for explaining my research and some of 
 [research-post]: /rewardshaping-research
 
 [aaai-post]: /aaai-2023
+
+[aps-post]: /aps-2023
