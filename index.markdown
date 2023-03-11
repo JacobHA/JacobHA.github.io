@@ -4,8 +4,9 @@
 layout: home
 title: Home
 exclude: true
----
 <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
+
+---
 
 Welcome to my personal website!
 <!-- <link rel="stylesheet" type="text/css" href="https://github.com/JacobHA/JacobHA.github.io/css/style.css"> -->
