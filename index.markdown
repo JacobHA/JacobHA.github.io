@@ -3,8 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
-<link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
 ---
+<link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
 
 <!-- # DO NOT MOVE THE ABOVE LINE - ITS PLACEMENT (as well as non-exclusion of this file) IS NECESSARY FOR THE FAVICON TO WORK -->
 
