@@ -21,7 +21,7 @@
 title: J. H. Adamczyk
 email: jacob.adamczyk001@umb.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  A discussion of some topics I find interesting. 
+  Personal website for Jacob Adamczyk, PhD student in the Department of Physics at the University of Massachusetts Boston.
 # baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://JacobHA.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
