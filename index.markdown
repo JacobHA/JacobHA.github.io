@@ -6,7 +6,7 @@ title: Home
 <link rel='shortcut icon' type='image/x-icon' href='assets/favicon.ico' />
 ---
 
-# DO NOT MOVE THE ABOVE LINE - ITS PLACEMENT (as well as non-exclusion of this file) IS NECESSARY FOR THE FAVICON TO WORK
+<!-- # DO NOT MOVE THE ABOVE LINE - ITS PLACEMENT (as well as non-exclusion of this file) IS NECESSARY FOR THE FAVICON TO WORK -->
 
 Welcome to my personal website!
 <!-- <link rel="stylesheet" type="text/css" href="https://github.com/JacobHA/JacobHA.github.io/css/style.css"> -->
