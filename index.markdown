@@ -60,7 +60,7 @@ I hope to use this website as a resource for explaining my research and some of 
 </div>
 <h2>Recent Announcements</h2>
 
-- Mar. 13, 2023: We have added two new papers to the arXiv: [Bounding the Optimal Value Function in Compositional Reinforcement Learning][https://arxiv.org/abs/2303.02557] and [Compositionality and Bounds for Optimal Value Functions in Reinforcement Learning][https://arxiv.org/abs/2302.09676] exploring the use of bounds on the Q-function in deep reinforcement learning. ([A more detailed post is pending][pending-post].)
+- Mar. 13, 2023: We have added two new papers to the arXiv: [Bounding the Optimal Value Function in Compositional Reinforcement Learning](https://arxiv.org/abs/2303.02557) and [Compositionality and Bounds for Optimal Value Functions in Reinforcement Learning](https://arxiv.org/abs/2302.09676) exploring the use of bounds on the Q-function in deep reinforcement learning. ([A more detailed post is pending][pending-post].)
 
 - Mar. 5, 2023: I attended the 2023 APS March Meeting in Las Vegas, NV. I presented a talk on my research in the statistical mechanics approach to reinforcement learning. ([A more detailed post is pending][aps-post].)
 
