@@ -27,7 +27,7 @@ gem "github-pages", "~> 225", group: :jekyll_plugins
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
 platforms :mingw, :x64_mingw, :mswin, :jruby do
-  gem "tzinfo", "~> 1.2"
+  gem "tzinfo", ">= 1.2.10"
   gem "tzinfo-data"
 end
 
@@ -47,6 +47,5 @@ gem 'jekyll-relative-links'
 
 # Dependabot vulnerabilities:
 gem "nokogiri", ">= 1.13.9"
-gem "tzinfo", ">= 1.2.10"
 gem "activesupport", ">= 6.1.7.3"
 gem "commonmarker", ">= 0.23.7"
