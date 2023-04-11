@@ -17,7 +17,7 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 # Find the most recent version here, https://pages.github.com/versions/
-gem "github-pages", "~> 225", group: :jekyll_plugins
+gem "github-pages", "~> 228", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do
