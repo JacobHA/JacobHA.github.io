@@ -72,7 +72,7 @@ I hope to use this website as a resource for explaining my research and some of 
 
 - Dec. 2, 2022: I have been awarded a College of Science and Mathematics (CSM) Dean's Doctoral Research Fellowship for Spring 2023. This fellowship will support my research in the [statistical mechanics approach to reinforcement learning][arxiv-paper]. I am very grateful to the CSM for this award, and I look forward to continuing my research in the coming year.
 
-- Nov. 20, 2022: Our group's first peer-reviewed paper on entropy-regularized reinforcement learning entitled ["Utilizing Prior Solutions for Reward Shaping and Composition in Entropy-Regularized Reinforcement Learning"][research-post] was accepted at AAAI-2023 ([LinkedIn][linkedin-link]). Here is the [ArXiv version][new-arxiv-paper].
+- Nov. 20, 2022: Our group's first paper on entropy-regularized reinforcement learning titled ["Utilizing Prior Solutions for Reward Shaping and Composition in Entropy-Regularized Reinforcement Learning"][research-post] was accepted at AAAI-2023 ([LinkedIn][linkedin-link]). Here is the [ArXiv version][new-arxiv-paper].
 
 - Oct. 17, 2022: I gave a [talk][slides-link] for my PhD qualifying exam. I passed and was thus promoted to PhD candidacy.
 
