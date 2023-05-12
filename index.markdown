@@ -60,6 +60,12 @@ I hope to use this website as a resource for explaining my research and some of 
 </div>
 <h2>Recent Announcements</h2>
 
+- May 12, 2023: I presented my work at the [7th Annual CSM Student Success Showcase](https://www.umb.edu/news_events_media/events/seventh_annual_csm_student_success_showcase).
+
+- May 11, 2023: I presented my work and future research goals for reinforcement learning at the "Physics Department Retreat" at UMass Boston.
+
+- May 8, 2023: Our papers (1) ["Bounding the Optimal Value Function in Compositional Reinforcement Learning"](https://arxiv.org/abs/2303.02557) and (2) "Bayesian Inference Approach for Entropy Regularized Reinforcement Learning with Stochastic Dynamics" have both been accepted in UAI 2023.
+
 - Mar. 30 - Apr. 27, 2023: I taught a 5 week mini-course titled "Deep Learning and Physics" for all students and faculty at UMass Boston. I am planning to offer a similar, extended course in the future. ([See the flyer here][minicourse-flyer].)
 
 - Apr. 1, 2023: Our paper entitled "Entropy regularized reinforcement learning using large deviation theory" was accepted for publication in [Physical Review Research][prr-link]. ([A more detailed post is pending][pending-post].)
