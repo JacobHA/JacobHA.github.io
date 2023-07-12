@@ -46,7 +46,7 @@ Welcome to my personal website!
   </a>
   </div>
   <div class="column right" style="background-color:#bbb;">
-    <p>Me at <a href="https://neel.cnrs.fr/en">Néel Institute</a>, tightening up the final heat shield for their <a href="https://en.wikipedia.org/wiki/Dilution_refrigerator">"sionludi"</a>, a dilution refrigerator capable of reaching temperatures down to 50mK! You can learn more about my research experience on the <a href= "https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes">QuNES team</a> at Néel <a href="/neel-research/">here.</a>
+    <p>At <a href="https://neel.cnrs.fr/en">Néel Institute</a>, tightening up the final heat shield for their <a href="https://en.wikipedia.org/wiki/Dilution_refrigerator">"sionludi"</a>, a dilution refrigerator capable of reaching temperatures down to 50mK! You can learn more about my research experience on the <a href= "https://neel.cnrs.fr/en/equipes-poles-et-services/nano-electronique-quantique-et-spectroscopie-qunes">QuNES team</a> at Néel <a href="/neel-research/">here.</a>
     </p>
   </div>
 </div>
@@ -54,9 +54,16 @@ Welcome to my personal website!
 
 <br>
 <div class="row-after">
-The purpose of this website is to post updates, blogs, and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting.
+<!-- The purpose of this website is to post updates, blogs, and tutorials on various topics related to physics, mathematics, and machine learning - as well as other topics that I find interesting. -->
 
-I hope to use this website as a resource for explaining my research and some of my Github repositories.
+My current focus on RL research is in transfer learning, summarized in the following schematic.
+
+<!-- Insert the transfer_schematic.png, scaled down and center it -->
+<p align="center">
+<img align = "center" src="assets/transfer_schematic.png" width = 400px>
+</p>
+
+<!-- I hope to use this website as a resource for explaining my research and some of my Github repositories. -->
 </div>
 <h2>Recent Announcements</h2>
 
@@ -101,3 +108,5 @@ I hope to use this website as a resource for explaining my research and some of 
 [minicourse-flyer]: /assets/minicourse-flyer.pdf
 
 [csm-poster-link]: /assets/CSM%20JHA%202023_video.pptx
+
+[research-page]: research
