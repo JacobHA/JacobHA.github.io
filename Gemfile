@@ -47,5 +47,5 @@ gem 'jekyll-relative-links'
 
 # Dependabot vulnerabilities:
 gem "nokogiri", ">= 1.13.9"
-gem "activesupport", ">= 6.1.7.3"
-gem "commonmarker", ">= 0.23.7"
+gem "activesupport", ">= 7.0.7.1"
+gem "commonmarker", ">= 0.23.10"
