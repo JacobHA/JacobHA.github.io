@@ -71,7 +71,9 @@ My current focus on RL research is in transfer learning, summarized in the follo
 
 - Jan. 22, 2024: I've started a deep learning class, free for anyone to attend (pizza and drinks included!), with minimal prerequisites. See [here][linkedin-class] and [here][deep-repo] for more details. I'm excited to share my enthusiasm about the deep learning (and particularly deep RL) revolution. 
 
-- Sept. 6, 2023: We updated the arXiv with a newer version of our work on double-sided bounds for the value function in reinforcement learning: (link pending...)
+- Dec. 18, 2023: Tharon Holdsworth and I presented a project for Akira Sone's quantum control course, where we study properties of the sech pulse and its use in quantum control. We will be releasing results on arXiv shortly, and code can be found [here][sech-repo]. 
+
+- Sept. 6, 2023: We updated the arXiv with a newer version of our work on double-sided bounds for the value function in reinforcement learning: [arxiv link][arxiv-bounds]
 
 - Aug. 7-18, 2023: I attended the IAIFI [Summer School](https://iaifi.org/phd-summer-school.html) and [Summer Workshop](https://iaifi.org/summer-workshop.html). I had an amazing time! I met and learned from many brilliant people working at the intersection of fundamental physics and AI - in both theoretical and experimental settings. 
 
@@ -132,3 +134,7 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [deep-repo]: https://github.com/jacobha/deep-learning
 
 [aps24-link]: https://meetings.aps.org/Meeting/MAR24/Session/S28.2
+
+[sech-repo]: https://github.com/jacobha/sech_pulse
+
+[arxiv-bounds]: https://arxiv.org/abs/2302.09676
