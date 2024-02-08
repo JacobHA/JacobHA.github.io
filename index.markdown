@@ -67,6 +67,10 @@ My current focus on RL research is in transfer learning, summarized in the follo
 </div>
 <h2>Recent Announcements</h2>
 
+- Mar. 4-8, 2024: I'll be attending the annual [APS March Meeting][aps24-link] to share our work on deep average-reward RL algorithms developed from our work in [PRR][prr-link].
+
+- Jan. 22, 2024: I've started a deep learning class, free for anyone to attend (pizza and drinks included!), with minimal prerequisites. See [here][linkedin-class] and [here][deep-repo] for more details. I'm excited to share my enthusiasm about the deep learning (and particularly deep RL) revolution. 
+
 - Sept. 6, 2023: We updated the arXiv with a newer version of our work on double-sided bounds for the value function in reinforcement learning: (link pending...)
 
 - Aug. 7-18, 2023: I attended the IAIFI [Summer School](https://iaifi.org/phd-summer-school.html) and [Summer Workshop](https://iaifi.org/summer-workshop.html). I had an amazing time! I met and learned from many brilliant people working at the intersection of fundamental physics and AI - in both theoretical and experimental settings. 
@@ -122,3 +126,9 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [csm-poster-link]: /assets/CSM%20JHA%202023_video.pptx
 
 [research-page]: research
+
+[linkedin-class]: https://www.linkedin.com/posts/jacob-adamczyk-182b8a1a4_im-excited-to-announce-advertise-that-activity-7153832919436836865-G5Cd?utm_source=share&utm_medium=member_desktop
+
+[deep-repo]: https://github.com/jacobha/deep-learning
+
+[aps24-link]: https://meetings.aps.org/Meeting/MAR24/Session/S28.2
