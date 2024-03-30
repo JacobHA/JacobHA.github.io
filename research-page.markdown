@@ -4,7 +4,7 @@ title: My Research
 permalink: /research/
 ---
 ## Current Research
-Since joining UMass Boston in fall 2020, I have been working under the supervision of Dr. Rahul Kulkarni ([website][rahul-website]). With his guidance, I have learned about Markov Decision Processes (MDPs), large deviations theory (LDT), and reinforcement learning (RL). I have also been guided by Dr. Stas Tiomkin ([website][stas-website]) from San Jose State University. I have also worked alongside (recent PhD graduate from UMass Boston!) Dr. Argenis Arriojas ([github][argenis-git]) and Master's student Volodymyr Makarenko ([github][vlad-git]).
+Since joining UMass Boston in fall 2020, I have been working under the supervision of Dr. Rahul Kulkarni ([website][rahul-website]). With his guidance, I have learned about Markov Decision Processes (MDPs), large deviations theory (LDT), and reinforcement learning (RL). I have also been guided by Dr. Stas Tiomkin ([website][stas-website]) from San Jose State University. I have also worked alongside (recent PhD graduate from UMass Boston!) Dr. Argenis Arriojas ([GitHub profile][argenis-git]) and Master's student Volodymyr Makarenko ([GitHub profile][vlad-git]).
 
 I am currently working on Reinforcement Learning (RL), specifically its applications and connections to physics.
 I have studied different forms of RL (standard vs. maximum entropy; average reward vs. discounted) in my research and my current goal is to understand how RL can generally be made more efficient with insights from physics. For a recent (March 2022) talk at the APS March Meeting take a look [at this video][yt-link].
@@ -50,3 +50,4 @@ I've worked on very different problems too (such as [discrete-time Schrodinger B
 [uai-vlad]: https://proceedings.mlr.press/v216/adamczyk23a.html
 [uai-arg]: https://proceedings.mlr.press/v216/arriojas23a.html
 [sb-page]: /schrodinger-bridges/
+[vlad-git]: https://github.com/BobMak
