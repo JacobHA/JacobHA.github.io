@@ -67,7 +67,7 @@ My current focus on RL research is in transfer learning, summarized in the follo
 </div>
 <h2>Recent Announcements</h2>
 
-- Mar. 4-8, 2024: I'll be attending the annual [APS March Meeting][aps24-link] to share our work on deep average-reward RL algorithms developed from our work in [PRR][prr-link].
+- Mar. 4-8, 2024: I'll be attending the annual [APS March Meeting][aps24-link] to share our work on deep average-reward RL algorithms developed from our work in [PRR][prr-link]. You can find the slides for that talk [here][aps24-slides].
 
 - Jan. 22, 2024: I've started a deep learning class, free for anyone to attend (pizza and drinks included!), with minimal prerequisites. See [here][linkedin-class] and [here][deep-repo] for more details. I'm excited to share my enthusiasm about the deep learning (and particularly deep RL) revolution. 
 
@@ -140,3 +140,6 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [sech-repo]: https://github.com/jacobha/sech_pulse
 
 [arxiv-bounds]: https://arxiv.org/abs/2302.09676
+
+[aps24-slides]: /assets/APS24.pdf
+```
