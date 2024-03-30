@@ -77,7 +77,7 @@ My current focus on RL research is in transfer learning, summarized in the follo
 
 - Aug. 7-18, 2023: I attended the IAIFI [Summer School](https://iaifi.org/phd-summer-school.html) and [Summer Workshop](https://iaifi.org/summer-workshop.html). I had an amazing time! I met and learned from many brilliant people working at the intersection of fundamental physics and AI - in both theoretical and experimental settings. 
 
-- July 31 - Aug. 4, 2023: I presented our work on compositionality in reinforcement learning at the [2023 Conference on Uncertainty in Artificial Intelligence (UAI)][uai-ja-link]. My co-author, Argenis Arriojas, received a Poster Spotlight award for our other work: ["Bayesian Inference Approach for Entropy Regularized Reinforcement Learning with Stochastic Dynamics"][uai-aa-link].
+- July 31 - Aug. 4, 2023: I presented our work on compositionality in reinforcement learning at the [2023 Conference on Uncertainty in Artificial Intelligence (UAI)][uai-ja-link] ([poster][ja-uai-poster]). My co-author, Argenis Arriojas, received a Poster Spotlight award for our other work: ["Bayesian Inference Approach for Entropy Regularized Reinforcement Learning with Stochastic Dynamics"][uai-aa-link].
 
 - July 25, 2023: I have been awarded the College of Science and Mathematics (CSM) Dean's Doctoral Research Fellowship for Fall 2023. This fellowship will continue to support my research at the interface of physics and reinforcement learning (thank you to CSM!).
 
@@ -142,4 +142,5 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [arxiv-bounds]: https://arxiv.org/abs/2302.09676
 
 [aps24-slides]: /assets/APS24.pdf
-```
+
+[ja-uai-poster]: /assets/536_adamczyk.pdf
