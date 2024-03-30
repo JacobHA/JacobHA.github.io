@@ -75,7 +75,7 @@ My current focus on RL research is in transfer learning, summarized in the follo
 
 - July 25, 2023: I have been awarded the College of Science and Mathematics (CSM) Dean's Doctoral Research Fellowship for Fall 2023. This fellowship will continue to support my research at the interface of physics and reinforcement learning (thank you to CSM!).
 
-- May 12, 2023: I presented my work at the [7th Annual CSM Student Success Showcase](https://www.umb.edu/news_events_media/events/seventh_annual_csm_student_success_showcase). See my poster [here][csm-poster-link].
+- May 12, 2023: I presented my work at the [7th Annual CSM Student Success Showcase](https://www.umb.edu/news_events_media/events/seventh_annual_csm_student_success_showcase). See my poster [here][csm-poster-link] (pdf [here][csm-pdf-poster]).
 
 - May 11, 2023: I presented my work and future research goals for reinforcement learning at the "Physics Department Retreat" at UMass Boston.
 
@@ -120,5 +120,7 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [minicourse-flyer]: /assets/minicourse-flyer.pdf
 
 [csm-poster-link]: /assets/CSM%20JHA%202023_video.pptx
+
+[csm-pdf-poster]: /assets/CSMJHA2023.pdf
 
 [research-page]: research
