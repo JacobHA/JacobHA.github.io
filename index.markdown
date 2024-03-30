@@ -69,6 +69,8 @@ My current focus on RL research is in transfer learning, summarized in the follo
 
 - Mar. 4-8, 2024: I'll be attending the annual [APS March Meeting][aps24-link] to share our work on deep average-reward RL algorithms developed from our work in [PRR][prr-link]. You can find the slides for that talk [here][aps24-slides].
 
+- Mar. 1, 2024: I was awarded the [GDS IMPACT Award][gds-link] for my work at the intersection of physics and reinforcement learning.]
+
 - Jan. 22, 2024: I've started a deep learning class, free for anyone to attend (pizza and drinks included!), with minimal prerequisites. See [here][linkedin-class] and [here][deep-repo] for more details. I'm excited to share my enthusiasm about the deep learning (and particularly deep RL) revolution. 
 
 - Dec. 18, 2023: Tharon Holdsworth and I presented a project for Akira Sone's quantum control course, where we study properties of the sech pulse and its use in quantum control. We will be releasing results on arXiv shortly, and code can be found [here][sech-repo]. 
@@ -144,3 +146,5 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [aps24-slides]: /assets/APS24.pdf
 
 [ja-uai-poster]: /assets/536_adamczyk.pdf
+
+[gds-link]: https://engage.aps.org/gds/honors/prizes-awards/impact-award
