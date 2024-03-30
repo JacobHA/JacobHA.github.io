@@ -23,6 +23,8 @@ My research focuses on the following ideas:
 
 See my approach to these problems in our papers [AAAI-23 paper][rewardshaping-research], [PRR paper][prr], [UAI-23 paper1][uai-vlad], [UAI-23 paper2][uai-arg]. You can watch my [talk on YouTube][aaai-yt-link] prepared for the AAAI-23 meeting in Washington, D.C.
 
+I've worked on very different problems too (such as [discrete-time Schrodinger Bridges][sb-page], custom laser pulses for quantum control/sensing, the G'/G method for nonlinear PDEs, and statistics of self-similar structures) with as-yet unpublished results. Stay tuned (or reach out for collaboration!) if you're interested in such projects.
+
 ## Past Research
 - ["Cloud Computing"][clouds-link]
 -- From fall 2019 to spring 2020 (my last year at CSU) I worked on a computational atmospheric model, used to study cloud formation and resulting weather patterns.
@@ -47,3 +49,4 @@ See my approach to these problems in our papers [AAAI-23 paper][rewardshaping-re
 [prr]: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023085
 [uai-vlad]: https://proceedings.mlr.press/v216/adamczyk23a.html
 [uai-arg]: https://proceedings.mlr.press/v216/arriojas23a.html
+[sb-page]: /schrodinger-bridges/
