@@ -6,7 +6,13 @@ permalink: /talks/
 
 On this page, I'll list some recent (2022+) and upcoming talks with some relevant materials (slides or video).
 
+## 2024:
+- The course I am teaching ("Deep Learning: Theory and Applications") has an associated github repo with code and my notes: [repo link][deep-learning]
+
+
 ## 2023
+- UAI-2023: [Pending...]
+
 - AAAI-2023: [Youtube Link][yt-link-aaai]
 
 - APS March Meeting 2023: [Pending...]
@@ -35,3 +41,4 @@ On this page, I'll list some recent (2022+) and upcoming talks with some relevan
 [flyer-link]: /assets/grad_student_club_flyer.jpg
 [amzn-link]: https://www.amazon.com/Mathematical-Mechanic-Physical-Reasoning-Problems/dp/0691154562
 [yt-link-aaai]: https://www.youtube.com/watch?v=BwdHQFDzc8c
+[deep-learning]: https://github.com/jacobha/deep-learning
