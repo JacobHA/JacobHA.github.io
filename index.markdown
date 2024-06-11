@@ -67,11 +67,23 @@ My current focus on RL research is in transfer learning, summarized in the follo
 </div>
 <h2>Recent Announcements</h2>
 
-- Mar. 4-8, 2024: I'll be attending the annual [APS March Meeting][aps24-link] to share our work on deep average-reward RL algorithms developed from our work in [PRR][prr-link]. You can find the slides for that talk [here][aps24-slides].
+- Aug. 9-12, 2024: I will be presenting our work at RLC 2024 in Amherst, MA.
 
-- Mar. 1, 2024: I was awarded the [GDS IMPACT Award][gds-link] for my work at the intersection of physics and reinforcement learning.]
+- Aug. 5-16, 2024: I have been accepted to attend the IAIFI Summer School and Summer Workshop.
 
-- Jan. 22, 2024: I've started a deep learning class, free for anyone to attend (pizza and drinks included!), with minimal prerequisites. See [here][linkedin-class] and [here][deep-repo] for more details. I'm excited to share my enthusiasm about the deep learning (and particularly deep RL) revolution. 
+- June, 11 2024: I am a reviewer for NeurIPS 2024 -- this is my first time as a conference reviewer!
+
+- May 10, 2024: Our paper has been accepted for publication at the (inaugural) Reinforcement Learning Conference!
+
+- May 3, 2024: I was nominated and inducted with lifetime membership to CSU's chapter of Sigma Pi Sigma.
+
+- May 2, 2024: I was awarded the Beacon Graduate Student Leadership Award. Thank you to all of those who nominated me!
+
+- Mar. 4-8, 2024: I attended the annual [APS March Meeting][aps24-link] to share our work on deep average-reward RL algorithms developed from our work in [PRR][prr-link]. You can find the slides for that talk [here][aps24-slides].
+
+- Mar. 1, 2024: I was awarded the [GDS IMPACT Award][gds-link] for my work at the intersection of physics and reinforcement learning.
+
+- Jan. 22, 2024 - May 6, 2024: I've started a deep learning class, free for anyone to attend (pizza and drinks included!), with minimal prerequisites. See [here][linkedin-class] and [here][deep-repo] for more details. I'm excited to share my enthusiasm about the deep learning (and particularly deep RL) revolution. 
 
 - Dec. 18, 2023: Tharon Holdsworth and I presented a project for Akira Sone's quantum control course, where we study properties of the sech pulse and its use in quantum control. We will be releasing results on arXiv shortly, and code can be found [here][sech-repo]. 
 
