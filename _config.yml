@@ -56,7 +56,7 @@ header_pages:
 - 'research-page.markdown'
 - 'about.markdown'
 - 'talks.markdown'
-
+- 'gallery.markdown'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
