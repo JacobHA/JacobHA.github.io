@@ -9,7 +9,7 @@ title: Home
 
 <!-- # DO NOT MOVE THE ABOVE LINE - ITS PLACEMENT (as well as non-exclusion of this file) IS NECESSARY FOR THE FAVICON TO WORK -->
 
-Welcome to my personal website!
+Welcome to my personal website! You can find my resume [here][resume-link].
 <!-- <link rel="stylesheet" type="text/css" href="https://github.com/JacobHA/JacobHA.github.io/css/style.css"> -->
 <style>
 * {
@@ -160,3 +160,5 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [ja-uai-poster]: /assets/536_adamczyk.pdf
 
 [gds-link]: https://engage.aps.org/gds/honors/prizes-awards/impact-award
+
+[resume-link]: /assets/Jacob_Adamczyk_résumé.pdf
