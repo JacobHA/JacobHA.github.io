@@ -63,21 +63,28 @@ My current focus on RL research is in transfer learning, summarized in the follo
 <img align = "center" src="assets/transfer_schematic.png" width = 400px>
 </p>
 
+
 <!-- I hope to use this website as a resource for explaining my research and some of my Github repositories. -->
 </div>
 <h2>Recent Announcements</h2>
 
-- Aug. 9-12, 2024: I will be presenting our work at RLC 2024 in Amherst, MA.
+- Nov. 3-10, 2024: I will be presenting our work at MLQT ("Machine Learning for Quantum Technologies") in Erlangen, Germany! ([poster][mlqt-poster])
 
-- Aug. 5-16, 2024: I have been accepted to attend the IAIFI Summer School and Summer Workshop.
+- Oct. 25, 2024: Reviewing papers for ICLR and AISTATS... 📄✍️
+
+- Oct. 9, 2024: The work with Josiah based on our meeting at IAIFI has been accepted as a [workshop paper][neurips-paper] in ML4PS @ NeurIPS 2024! 
+
+- Aug. 9-12, 2024: I presented our [work][rlc-paper] at RLC 2024 in Amherst, MA. The invited talks were amazing! I learned a lot about the current state of the art in reinforcement learning and met many great people. ([slides][rlc-slides], [poster][rlc-poster])
+
+- Aug. 5-16, 2024: I have been accepted to attend the IAIFI Summer School and Summer Workshop. I worked on a project with Josiah Kratz based on reinforcement learning in biological control. ([slides][iaifi-slides])
 
 - June, 11 2024: I am a reviewer for NeurIPS 2024 -- this is my first time as a conference reviewer!
 
-- May 10, 2024: Our paper has been accepted for publication at the (inaugural) Reinforcement Learning Conference!
+- May 10, 2024: [Our paper][rlc-paper] has been accepted for publication at the (inaugural) Reinforcement Learning Conference!
 
 - May 3, 2024: I was nominated and inducted with lifetime membership to CSU's chapter of Sigma Pi Sigma.
 
-- May 2, 2024: I was awarded the Beacon Graduate Student Leadership Award. Thank you to all of those who nominated me!
+- May 2, 2024: I was awarded the [Beacon Graduate Student Leadership Award][award-pic]. Thank you to all of those who nominated me!
 
 - Mar. 4-8, 2024: I attended the annual [APS March Meeting][aps24-link] to share our work on deep average-reward RL algorithms developed from our work in [PRR][prr-link]. You can find the slides for that talk [here][aps24-slides].
 
@@ -162,3 +169,17 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [gds-link]: https://engage.aps.org/gds/honors/prizes-awards/impact-award
 
 [resume-link]: /assets/Jacob_Adamczyk_résumé.pdf
+
+[neurips-paper]: https://arxiv.org/abs/2410.08439
+
+[rlc-paper]: https://rlj.cs.umass.edu/2024/papers/Paper345.html
+
+[iaifi-slides]: /assets/IAIFI24_Hackathon.pdf
+
+[rlc-slides]: /assets/rlc-talk.pdf
+
+[rlc-poster]: /assets/rlc-poster.pdf
+
+[award-pic]: /assets/gallery/award-umb2.jpg
+
+[mlqt-poster]: /assets/mlqt-file.pdf
