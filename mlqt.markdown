@@ -20,13 +20,15 @@ If you'd like to see more details related to this work, feel free to check out o
 
 
 
-Please reach out using the email provided below :)
-
-For convenience, the poster is here for later viewing:
+<!-- For convenience, the poster is here for later viewing:
 <p align="center">
-<img align = "center" src="../assets/mlqt-poster-4.png" >
+<img align = "center" src="../assets/mlqt-file.pdf" >
+</p> -->
+<p align="center">
+<embed src="../assets/mlqt-file.pdf" width="700" height="400" 
+ type="application/pdf">
 </p>
-
+Please reach out using the email provided below :)
 
 
 
