@@ -14,7 +14,7 @@ const gravity = 9.8; // Gravity constant
 const massCart = 1.0; // Mass of the cart
 const massPole = 0.1; // Mass of the pole
 const totalMass = massCart + massPole; // Total mass
-const poleLength = 10.0; // Half-length of the pole
+const poleLength = 40.0; // Half-length of the pole
 const tau = 0.02; // Time step (seconds)
 const poleMassLength = massPole * poleLength;
 
@@ -25,7 +25,7 @@ let displayedScore = 0;
 let cartX = canvas.width / 2 - cartWidth / 2;
 let cartSpeed = 0;
 // Choose a random number in the range -0.05 to 0.05 for initial angle:
-let poleAngle = (Math.random() * 0.1 - 0.05)/2;
+let poleAngle = (Math.random() * 0.1 - 0.05)/5;
 let poleAngularVelocity = 0;
 let currentAction = 0; // 0 for left, 1 for right
 
@@ -64,7 +64,7 @@ function updatePhysics() {
     const xAcc = temp - (poleMassLength * thetaAcc * costheta) / totalMass;
 
     // Update state variables
-    cartX += tau * cartSpeed * 4;
+    cartX += tau * cartSpeed * 6;
     cartSpeed += tau * xAcc;
     poleAngle += tau * poleAngularVelocity;
     poleAngularVelocity += tau * thetaAcc;
@@ -80,7 +80,7 @@ function updatePhysics() {
 function resetGame() {
     cartX = canvas.width / 2 - cartWidth / 2; // Reset in center
     cartSpeed = 0;
-    poleAngle = (Math.random() * 0.1 - 0.05)/2;
+    poleAngle = (Math.random() * 0.1 - 0.05)/5;
     poleAngularVelocity = 0;
     score = 0;
 }
@@ -96,7 +96,7 @@ function drawGame() {
 
     // Draw high score in right corner:
     ctx.fillText(`High Score: ${highScore}`, canvas.width - 250, 40);
-    
+
 
     // Draw cart
     ctx.fillStyle = '#000';
@@ -116,6 +116,15 @@ function drawGame() {
     ctx.moveTo(poleX, poleY);
     ctx.lineTo(poleEndX, poleEndY);
     ctx.stroke();
+
+    // Draw the ground:
+    ctx.strokeStyle = '#000';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, canvas.height - 30);
+    ctx.lineTo(canvas.width, canvas.height - 30);
+    ctx.stroke();
+
 }
 
 // Game loop
