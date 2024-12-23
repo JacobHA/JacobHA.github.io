@@ -68,11 +68,19 @@ My current focus on RL research is in transfer learning, summarized in the follo
 </div>
 <h2>Recent Announcements</h2>
 
-- Nov. 3-10, 2024: I will be presenting our work at MLQT ("Machine Learning for Quantum Technologies") in Erlangen, Germany! ([poster][mlqt-poster])
+- Dec. 21, 2024: 5 papers accepted to AAAI-2025 and workshops! "Bootstrapped Reward Shaping", "EVAL: EigenVector-based Average-reward Learning", "Average Reward Reinforcement Learning with Entropy-Regularization", "Inferring Transition Dynamics from Value Functions", "CASH: Cache Alignment with Specificied Horizons". arXiv links coming soon!
+
+- Dec. 18, 2024: I will be a reviewer for ICML 2025 📄✍️
+
+- Dec. 9-15, 2024: With Josiah Kratz, I presented our work at [NeurIPS 2024][neurips-paper] in Vancouver, Canada! ([poster][neurips-poster]) 
+
+- Nov. 3-10, 2024: I presented our work on average-reward RL at MLQT ("Machine Learning for Quantum Technologies") in Erlangen, Germany! ([poster][mlqt-poster]) I was able to meet some leaders in the field of Quantum + ML, and saw a lot of exciting new ideas.
+
+- Oct. 30, 2024: I was accepted for an internship at Sony AI for the summer of 2025! I will be working on deep RL with average-reward objectives for video games. Very excited!
 
 - Oct. 25, 2024: Reviewing papers for ICLR and AISTATS... 📄✍️
 
-- Oct. 9, 2024: The work with Josiah based on our meeting at IAIFI has been accepted as a [workshop paper][neurips-paper] in ML4PS @ NeurIPS 2024! 
+- Oct. 9, 2024: The work with Josiah based on our meeting at IAIFI has been accepted as a [workshop paper][neurips-paper] in ML4PS @ NeurIPS 2024! "Reinforcement Learning for Optimal Control of Adaptive Cell Populations".
 
 - Aug. 9-12, 2024: I presented our [work][rlc-paper] at RLC 2024 in Amherst, MA. The invited talks were amazing! I learned a lot about the current state of the art in reinforcement learning and met many great people. ([slides][rlc-slides], [poster][rlc-poster])
 
@@ -171,6 +179,8 @@ My current focus on RL research is in transfer learning, summarized in the follo
 [resume-link]: /assets/Jacob_Adamczyk_résumé.pdf
 
 [neurips-paper]: https://arxiv.org/abs/2410.08439
+
+[neurips-poster]: assets/ml4ps-poster-export.pdf
 
 [rlc-paper]: https://rlj.cs.umass.edu/2024/papers/Paper345.html
 
