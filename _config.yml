@@ -52,9 +52,9 @@ plugins:
   
 # This dictates what goes in the top navbar:
 header_pages:
-- 'index.markdown'
-- 'research-page.markdown'
+# - 'index.markdown'
 - 'about.markdown'
+- 'research-page.markdown'
 - 'talks.markdown'
 - 'gallery.markdown'
 
