@@ -227,7 +227,7 @@ and compositionality or transfer learning:
         <div class="dot"></div>
       </div>
       <div class="content" data-date="Dec. 9-15, 2024">
-        <p>With Josiah Kratz, I presented our work at <a href="#">NeurIPS 2024</a> in Vancouver, Canada! (<a href="#">poster</a>)</p>
+        <p>With Josiah Kratz, I presented our work at <a href="#">NeurIPS 2024</a> in Vancouver, Canada! (<a href="assets/ml4ps-poster-export.pdf">poster</a>)</p>
       </div>
     </li>
     <li>
@@ -412,6 +412,15 @@ and compositionality or transfer learning:
   <div class="timeline-item">
     <div class="dot"></div>
   </div>
+  <div class="content" data-date="May 10, 2023">
+    <p>Our paper titled "Entropy regularized reinforcement learning using large deviation theory" was accepted for publication in <a href="https://journals.aps.org/prresearch/accepted/81076Yf5R561237418ac5b2093a5adf6f2ed1000c">Physical Review Research</a>. (<a href="pending-post">A more detailed post is pending</a>.)</p>
+  </div>
+</li>
+
+<li>
+  <div class="timeline-item">
+    <div class="dot"></div>
+  </div>
   <div class="content" data-date="May 8, 2023">
     <p>Our papers (1) <a href="https://arxiv.org/abs/2303.02557">"Bounding the Optimal Value Function in Compositional Reinforcement Learning"</a> and (2) "Bayesian Inference Approach for Entropy Regularized Reinforcement Learning with Stochastic Dynamics" have both been accepted in UAI 2023.</p>
   </div>
@@ -423,15 +432,6 @@ and compositionality or transfer learning:
   </div>
   <div class="content" data-date="Mar. 30 - Apr. 27, 2023">
     <p>I taught a 5 week mini-course titled "Deep Learning and Physics" for all students and faculty at UMass Boston. I am planning to offer a similar, extended course in the future. <a href="assets/minicourse-flyer.pdf">See the flyer here</a></p>
-  </div>
-</li>
-
-<li>
-  <div class="timeline-item">
-    <div class="dot"></div>
-  </div>
-  <div class="content" data-date="Apr. 1, 2023">
-    <p>Our paper titled "Entropy regularized reinforcement learning using large deviation theory" was accepted for publication in <a href="https://journals.aps.org/prresearch/accepted/81076Yf5R561237418ac5b2093a5adf6f2ed1000c">Physical Review Research</a>. (<a href="pending-post">A more detailed post is pending</a>.)</p>
   </div>
 </li>
 
