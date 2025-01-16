@@ -73,7 +73,7 @@ and compositionality or transfer learning:
 
 
 </div>
-<h2>Recent Announcements</h2>
+<!-- <h2>Recent Announcements</h2> -->
 <!-- 
 - Dec. 21, 2024: 5 papers accepted to AAAI-2025 and workshops! "Bootstrapped Reward Shaping", "EVAL: EigenVector-based Average-reward Learning", "Average Reward Reinforcement Learning with Entropy-Regularization", "Inferring Transition Dynamics from Value Functions", "CASH: Cache Alignment with Specificied Horizons". arXiv links coming soon!
 
@@ -201,319 +201,290 @@ and compositionality or transfer learning:
 
 [mlqt-poster]: /assets/mlqt-file.pdf
 <div class="timeline">
+    <br>
+
   <h2>Recent Announcements</h2>
+  <br>
   <ul class="timeline-list">
     <li>
       <div class="timeline-item">
-        <span class="date">Dec. 21, 2024</span>
         <div class="dot"></div>
       </div>
-      <div class="content">
-        <p>5 papers accepted to AAAI-2025 and workshops! "Bootstrapped Reward Shaping", "EVAL: EigenVector-based Average-reward Learning", "Average Reward Reinforcement Learning with Entropy-Regularization", "Inferring Transition Dynamics from Value Functions", "CASH: Cache Alignment with Specified Horizons". ArXiv links coming soon!</p>
+      <div class="content"  data-date="Dec. 21, 2024">
+        <p>5 papers accepted to AAAI-2025 and workshops! <a href="https://arxiv.org/abs/2501.00989" target="_blank">"Bootstrapped Reward Shaping"</a>, "EVAL: EigenVector-based Average-reward Learning", "Average Reward Reinforcement Learning with Entropy-Regularization", "Inferring Transition Dynamics from Value Functions", "CASH: Cache Alignment with Specified Horizons". More arXiv links coming soon!</p>
       </div>
     </li>
     <li>
       <div class="timeline-item">
-        <span class="date">Dec. 18, 2024</span>
         <div class="dot"></div>
       </div>
-      <div class="content">
+      <div class="content" data-date="Dec. 18, 2024">
         <p>I will be a reviewer for ICML 2025 📄✍️</p>
       </div>
     </li>
     <li>
       <div class="timeline-item">
-        <span class="date">Dec. 9-15, 2024</span>
         <div class="dot"></div>
       </div>
-      <div class="content">
+      <div class="content" data-date="Dec. 9-15, 2024">
         <p>With Josiah Kratz, I presented our work at <a href="#">NeurIPS 2024</a> in Vancouver, Canada! (<a href="#">poster</a>)</p>
       </div>
     </li>
     <li>
   <div class="timeline-item">
-    <span class="date">Nov. 3-10, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Nov. 3-10, 2024">
     <p>I presented our work on average-reward RL at <strong>MLQT</strong> ("Machine Learning for Quantum Technologies") in Erlangen, Germany! (<a href="/assets/mlqt-file.pdf" target="_blank">poster</a>) I was able to meet some leaders in the field of Quantum + ML, and saw a lot of exciting new ideas.</p>
   </div>
 </li>
 <li>
   <div class="timeline-item">
-    <span class="date">Oct. 30, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Oct. 30, 2024">
     <p>I was accepted for an internship at Sony AI for the summer of 2025! I will be working on deep RL with average-reward objectives for video games. Very excited!</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Oct. 25, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Oct. 25, 2024">
     <p>Reviewing papers for ICLR and AISTATS... 📄✍️</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Oct. 9, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Oct. 9, 2024">
     <p>The work with Josiah based on our meeting at IAIFI has been accepted as a <a href="https://arxiv.org/abs/2410.08439">workshop paper</a> in ML4PS @ NeurIPS 2024! "Reinforcement Learning for Optimal Control of Adaptive Cell Populations".</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Aug. 9-12, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Aug. 9-12, 2024">
     <p>I presented our <a href="https://rlj.cs.umass.edu/2024/papers/Paper345.html">work</a> at RLC 2024 in Amherst, MA. The invited talks were amazing! I learned a lot about the current state of the art in reinforcement learning and met many great people. (<a href="assets/rlc-talk.pdf">slides</a>, <a href="assets/rlc-poster.pdf">poster</a>)</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Aug. 5-16, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Aug. 5-16, 2024">
     <p>I have been accepted to attend the IAIFI Summer School and Summer Workshop. I worked on a project with Josiah Kratz based on reinforcement learning in biological control. (<a href="assets/IAIFI24_Hackathon.pdf">slides</a>)</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">June, 11 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="June, 11 2024">
     <p>I am a reviewer for NeurIPS 2024 -- this is my first time as a conference reviewer! 📄✍️</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">May 10, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="May 10, 2024">
     <p><a href="https://rlj.cs.umass.edu/2024/papers/Paper345.html">Our paper</a> has been accepted for publication at the (inaugural) Reinforcement Learning Conference!</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">May 3, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="May 3, 2024">
     <p>I was nominated and inducted with lifetime membership to CSU's chapter of Sigma Pi Sigma.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">May 2, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="May 2, 2024">
     <p>I was awarded the <a href="assets/gallery/award-umb2.jpg">Beacon Graduate Student Leadership Award</a>. Thank you to all of those who nominated me!</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Mar. 4-8, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Mar. 4-8, 2024">
     <p>I attended the annual <a href="https://meetings.aps.org/Meeting/MAR24/Session/S28.2">APS March Meeting</a> to share our work on deep average-reward RL algorithms developed from our work in <a href="https://journals.aps.org/prresearch/accepted/81076Yf5R561237418ac5b2093a5adf6f2ed1000c">PRR</a>. You can find the slides for that talk <a href="assets/APS24.pdf">here</a>.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Mar. 1, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Mar. 1, 2024">
     <p>I was awarded the <a href="https://engage.aps.org/gds/honors/prizes-awards/impact-award">GDS IMPACT Award</a> for my work at the intersection of physics and reinforcement learning.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Jan. 22, 2024 - May 6, 2024</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Jan. 22, 2024 - May 6, 2024">
     <p>I've started a deep learning class, free for anyone to attend (pizza and drinks included!), with minimal prerequisites. See <a href="https://www.linkedin.com/posts/jacobhadamczyk_im-excited-to-announce-advertise-that-activity-7153832919436836865-FNhy?utm_source=share&utm_medium=member_desktop">here</a> and <a href="https://github.com/jacobha/deep-learning">here</a> for more details. I'm excited to share my enthusiasm about the deep learning (and particularly deep RL) revolution.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Dec. 18, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Dec. 18, 2023">
     <p>Tharon Holdsworth and I presented a project for Akira Sone's quantum control course, where we study properties of the sech pulse and its use in quantum control. We will be releasing results on arXiv shortly, and code can be found <a href="https://github.com/jacobha/sech_pulse">here</a>.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Sept. 6, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Sept. 6, 2023">
     <p>We updated the arXiv with a newer version of our work on double-sided bounds for the value function in reinforcement learning: <a href="https://arxiv.org/abs/2302.09676">arxiv link</a>.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Aug. 7-18, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Aug. 7-18, 2023">
     <p>I attended the IAIFI <a href="https://iaifi.org/phd-summer-school.html">Summer School</a> and <a href="https://iaifi.org/summer-workshop.html">Summer Workshop</a>. I had an amazing time! I met and learned from many brilliant people working at the intersection of fundamental physics and AI - in both theoretical and experimental settings.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">July 31 - Aug. 4, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="July 31 - Aug. 4, 2023">
     <p>I presented our work on compositionality in reinforcement learning at the <a href="https://proceedings.mlr.press/v216/adamczyk23a.html">2023 Conference on Uncertainty in Artificial Intelligence (UAI)</a> (<a href="assets/536_adamczyk.pdf">poster</a>). My co-author, Argenis Arriojas, received a Poster Spotlight award for our other work: <a href="https://proceedings.mlr.press/v216/arriojas23a.html">"Bayesian Inference Approach for Entropy Regularized Reinforcement Learning with Stochastic Dynamics"</a>.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">July 25, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="July 25, 2023">
     <p>I have been awarded the College of Science and Mathematics (CSM) Dean's Doctoral Research Fellowship for Fall 2023. This fellowship will continue to support my research at the interface of physics and reinforcement learning. Thank you to CSM!</p>
   </div>
 </li>
 <li>
   <div class="timeline-item">
-    <span class="date">May 12, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="May 12, 2023">
     <p>I presented my work at the <a href="https://www.umb.edu/news_events_media/events/seventh_annual_csm_student_success_showcase">7th Annual CSM Student Success Showcase</a>. See my poster <a href="assets/csm-poster-link.pdf">here</a> (pdf <a href="assets/csm-pdf-poster.pdf">here</a>).</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">May 11, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="May 11, 2023">
     <p>I presented my work and future research goals for reinforcement learning at the "Physics Department Retreat" at UMass Boston.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">May 8, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="May 8, 2023">
     <p>Our papers (1) <a href="https://arxiv.org/abs/2303.02557">"Bounding the Optimal Value Function in Compositional Reinforcement Learning"</a> and (2) "Bayesian Inference Approach for Entropy Regularized Reinforcement Learning with Stochastic Dynamics" have both been accepted in UAI 2023.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Mar. 30 - Apr. 27, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Mar. 30 - Apr. 27, 2023">
     <p>I taught a 5 week mini-course titled "Deep Learning and Physics" for all students and faculty at UMass Boston. I am planning to offer a similar, extended course in the future. <a href="assets/minicourse-flyer.pdf">See the flyer here</a></p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Apr. 1, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Apr. 1, 2023">
     <p>Our paper titled "Entropy regularized reinforcement learning using large deviation theory" was accepted for publication in <a href="https://journals.aps.org/prresearch/accepted/81076Yf5R561237418ac5b2093a5adf6f2ed1000c">Physical Review Research</a>. (<a href="pending-post">A more detailed post is pending</a>.)</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Mar. 13, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Mar. 13, 2023">
     <p>We have added two new papers to the arXiv: <a href="https://arxiv.org/abs/2303.02557">Bounding the Optimal Value Function in Compositional Reinforcement Learning</a> and <a href="https://arxiv.org/abs/2302.09676">Compositionality and Bounds for Optimal Value Functions in Reinforcement Learning</a> exploring the use of bounds on the Q-function in deep reinforcement learning. (<a href="pending-post">A more detailed post is pending</a>.)</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Mar. 5, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Mar. 5, 2023">
     <p>I attended the 2023 APS March Meeting in Las Vegas, NV. I presented a talk on my research in the statistical mechanics approach to reinforcement learning. (<a href="pending-post">A more detailed post is pending</a>.)</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Feb. 13, 2023</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Feb. 13, 2023">
     <p>I had a great time presenting at my first AI conference (AAAI-2023) in Washington, D.C. I met many great people and learned a lot about what the broader community is interested in. (<a href="/aaai-2023">Here is a more detailed post</a>.)</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Dec. 2, 2022</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Dec. 2, 2022">
     <p>I have been awarded a College of Science and Mathematics (CSM) Dean's Doctoral Research Fellowship for Spring 2023. This fellowship will support my research in the <a href="https://arxiv.org/abs/2106.03931">statistical mechanics approach to reinforcement learning</a>. I am very grateful to the CSM for this award, and I look forward to continuing my research in the coming year.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Nov. 20, 2022</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Nov. 20, 2022">
     <p>Our group's first paper on entropy-regularized reinforcement learning titled <a href="https://arxiv.org/abs/2212.01174">"Utilizing Prior Solutions for Reward Shaping and Composition in Entropy-Regularized Reinforcement Learning"</a> was accepted at AAAI-2023.</p>
   </div>
 </li>
 
 <li>
   <div class="timeline-item">
-    <span class="date">Oct. 17, 2022</span>
     <div class="dot"></div>
   </div>
-  <div class="content">
+  <div class="content" data-date="Oct. 17, 2022">
     <p>I gave a talk for my PhD qualifying exam. I passed and was thus promoted to PhD candidacy. <a href="/assets/qualifying-exam-slides.pdf">Here are the slides</a>.
     </p>
   </div>
@@ -522,24 +493,25 @@ and compositionality or transfer learning:
 </li>
   <br>
   <br>
+
+  
 <style>
 /* General Timeline Styling */
 .timeline {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   font-family: Arial, sans-serif;
 }
 
 .timeline h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .timeline-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
 }
 
 .timeline-list li {
@@ -552,88 +524,72 @@ and compositionality or transfer learning:
 .timeline-list li::after {
   content: "";
   position: absolute;
-  left: -50px; /* Keeps the line outside the content box */
-  top: 20px;
+  left: -10px;
+  top: 0;
   width: 2px;
-  height: calc(100% + 20px);
+  height: calc(100% + 30px);
   background-color: #aaa;
   z-index: 1;
 }
 
-/* Set a maximum height for the vertical line */
-.timeline-item .dot::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  width: 2px;
-  background-color: #333; /* Adjust color as needed */
-  height: 100%; /* Ensure the height doesn't extend too far */
-  transform: translateX(-50%);
-}
-
-/* Adjust the last timeline item's line */
-.timeline-item:last-child .dot::before {
-  height: 30px;  /* Adjust this to make the line end at the last item */
-  /* visibility: hidden; Or use 'display: none' if you prefer */
-  display: none;
-}
-
-/* Optional: Adjust the vertical line placement for all items */
-.timeline-item {
-  position: relative;
-  margin-bottom: 2px; /* Adjust space between items */
-}
-
-
-.date {
-  flex-shrink: 0;
-  position: absolute;
-  width: 160px; /* Moves the date further to the left */
-  text-align: right;
-  font-weight: bold;
-  font-size: 0.9rem;
-  left: -250px; /* Moves the date further to the left */
-  margin-right: 10px;
-  color: #555;
-}
-
 .dot {
-  width: 12px;
-  height: 12px;
-  left: -55px; /* Moves the dot further to the left */
-  background-color:rgb(20, 31, 246);
-  border-radius: 50%; /* Make sure the dot is circular */
-  /* Add a grey border to match the line */
+  width: 15px;
+  height: 15px;
+  background-color: rgb(33, 44, 254);
+  border-radius: 50%; /* Makes the dot circular */
   border: 2px solid #aaa;
-  margin-top: 8px;
+  margin-top: 14.5px;
   position: relative;
+  left: -16.5px; /* Aligns the dot with the timeline */
+  top: 0%;
   z-index: 2;
-  margin-right: 20px;
-  box-sizing: border-box; /* Ensures padding and border don't affect size */
 }
+
+
+/* General Timeline Styling */
 .content {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 10px 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  flex-grow: 1; /* Ensures that the content box grows to take available space */
-  width: 250px; /* Optional: Set a minimum width for uniformity */
-  box-sizing: border-box; /* Ensures padding and border are included in width calculation */
-  margin-left: -50px; /* Moves the content box further to the left */
-  margin-bottom: 10px; /* Adds bottom margin */
-  margin-top: 0px; /* Adds top margin */
-  position: relative; /* Ensures the content box can be adjusted more easily */
+  border-radius: 4px;
+  padding: 15px 15px 0px 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+  width: 100%;
+  box-sizing: border-box;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  margin-top: 0px;
+  position: relative;
+  overflow: hidden; /* Prevents content overflow */
+}
+/* Add hover effect to grow box and reveal date at the bottom */
+.content {
+  position: relative;
+  transition: all 0.5s ease; /* Smooth transition for scaling and box height */
+}
+
+.content:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.02);
+  padding-bottom: 20px; /* Adds space for the date */
+}
+
+.content::after {
+  content: attr(data-date); /* Display the date */
+  /* make it italics */
+  font-style: italic;
+  position: absolute;
+  bottom: 10px; /* Position the date at the bottom */
+  right: 10px; /* Align the date to the right */
+  font-size: 0.8rem;
+  color: #555;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease; /* Smooth fade-in */
+}
+
+.content:hover::after {
+  opacity: 1; /* Show the date on hover */
 }
 
 
-.content a {
-  color: #0078d7;
-  text-decoration: none;
-}
-
-.content a:hover {
-  text-decoration: underline;
-}
 </style>
