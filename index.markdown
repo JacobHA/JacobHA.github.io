@@ -206,8 +206,6 @@ and compositionality or transfer learning:
   <h2>Recent Announcements</h2>
   <br>
   <ul class="timeline-list">
-
-  <li>
       <div class="timeline-item">
         <div class="dot"></div>
       </div>
@@ -231,6 +229,16 @@ and compositionality or transfer learning:
         <p>Our <a href="https://arxiv.org/abs/2410.08439" target="_blank">paper</a> was accepted at ICLR 2025! Very excited to travel to Singapore and present this work with Josiah, let me know if you'll be there!</p>
       </div>
     </li>
+      <li>
+      <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="Jan. 4, 2024">
+        <p>I am a finalist for the Student Speaker Award, awarded by the American Physical Society (APS) Group of Statistical and Nonlinear Physics (GSNP)
+        for the "best contributed talk at the March meeting by a graduate student in the area of Statistical and Nonlinear Physics." 
+      </div>
+    </li>
+  <li>
     <li>
       <div class="timeline-item">
         <div class="dot"></div>
