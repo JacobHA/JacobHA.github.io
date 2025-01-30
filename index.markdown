@@ -206,6 +206,31 @@ and compositionality or transfer learning:
   <h2>Recent Announcements</h2>
   <br>
   <ul class="timeline-list">
+
+  <li>
+      <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="Feb. 11, 2024">
+        <p>I was invited to give a <a href="https://cohere.com/events/cohere-for-ai-Jacob-Adamczyk-2025" target="_blank">talk</a> at Cohere 4 AI -- tune in to hear more about our reward shaping research!</p>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="Jan. 30, 2024">
+        <p>The American Physical Society (APS) Group of Data Science (GDS) has awarded me the IMPACT award, given for "noteworthy progress in their academic careers at the intersection of Physics and Data Science". I am grateful to GDS for recognizing and supporting my work! They have played a pivotal role in helping me attend conferences during my PhD.</p>
+      </div>
+    </li>
+    <li>
+      <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="Jan. 22, 2024">
+        <p>Our <a href="https://arxiv.org/abs/2410.08439" target="_blank">paper</a> was accepted at ICLR 2025! Very excited to travel to Singapore and present this work with Josiah, let me know if you'll be there!</p>
+      </div>
+    </li>
     <li>
       <div class="timeline-item">
         <div class="dot"></div>
