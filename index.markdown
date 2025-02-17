@@ -210,7 +210,7 @@ and compositionality or transfer learning:
         <div class="dot"></div>
       </div>
       <div class="content" data-date="Feb. 11, 2025">
-        <p>I was invited to give a <a href="https://cohere.com/events/cohere-for-ai-Jacob-Adamczyk-2025" target="_blank">talk</a> at Cohere 4 AI -- tune in to hear more about our reward shaping research!</p>
+        <p>I was invited to give a <a href="https://cohere.com/events/cohere-for-ai-Jacob-Adamczyk-2025" target="_blank">talk</a> at Cohere 4 AI -- tune in to hear more about our reward shaping research! Here's the <a href="https://youtu.be/70kVz9G2Z-o?si=B_nFGnr4212GcSNv">YouTube Link</a>.</p>
       </div>
     </li>
     <li>
@@ -244,7 +244,7 @@ and compositionality or transfer learning:
         <div class="dot"></div>
       </div>
       <div class="content"  data-date="Dec. 21, 2024">
-        <p>5 papers accepted to AAAI-2025 and workshops! <a href="https://arxiv.org/abs/2501.00989" target="_blank">"Bootstrapped Reward Shaping"</a>, "EVAL: EigenVector-based Average-reward Learning", "Average Reward Reinforcement Learning with Entropy-Regularization", "Inferring Transition Dynamics from Value Functions", "CASH: Cache Alignment with Specified Horizons". More arXiv links coming soon!</p>
+        <p>5 papers accepted to AAAI-2025 and workshops! <a href="https://arxiv.org/abs/2501.00989" target="_blank">"Bootstrapped Reward Shaping"</a>, <a href="https://arxiv.org/pdf/2501.09770" target="_blank">"EVAL: EigenVector-based Average-reward Learning"</a>, <a href="https://arxiv.org/pdf/2501.09080" target="_blank">"Average Reward Reinforcement Learning with Entropy-Regularization"</a>, <a href="https://arxiv.org/pdf/2501.09081" target="_blank">"Inferring Transition Dynamics from Value Functions"</a>, and "CASH: Cache Alignment with Specified Horizons".</p>
       </div>
     </li>
     <li>
