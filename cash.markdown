@@ -25,7 +25,7 @@ The paper PDF is [here](assets/AAAI_GenPlan.pdf).
 <img align = "center" src="../assets/mlqt-file.pdf" >
 </p> -->
 <p align="center">
-<embed src="../assets/cash-file.pdf" width="700" height="400" 
+<embed src="../assets/AAAI_GenPlan.pdf" width="700" height="400" 
  type="application/pdf">
 </p>
 Please reach out using the email provided below :)
