@@ -16,7 +16,7 @@ Thanks for scanning the QR code!
 
 
 
-The paper PDF is [here](assets/cash.pdf).
+The paper PDF is [here](assets/AAAI_GenPlan.pdf).
 
 
 
