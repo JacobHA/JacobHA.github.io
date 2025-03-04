@@ -11,8 +11,7 @@ permalink: /cash-2025/
 
 ## Cache Alignment with Specified Horizons (CASH)
 
-
-Thanks for scanning the QR code! 
+Thanks for scanning the QR code! Feel free to stop by the poster, I'd love to chat!
 
 
 
@@ -25,7 +24,7 @@ The paper PDF is [here](assets/AAAI_GenPlan.pdf).
 <img align = "center" src="../assets/mlqt-file.pdf" >
 </p> -->
 <p align="center">
-<embed src="../assets/AAAI_GenPlan.pdf" width="700" height="400" 
+<embed src="/assets/AAAI_GenPlan.pdf" width="700" height="400" 
  type="application/pdf">
 </p>
 Please reach out using the email provided below :)
