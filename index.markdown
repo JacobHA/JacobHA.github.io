@@ -205,6 +205,47 @@ and compositionality or transfer learning:
   <h2>Recent Announcements</h2>
   <br>
   <ul class="timeline-list">
+  <!-- <li>
+  <div class="timeline-item">
+    <div class="dot"></div>
+  </div>
+  <div class="content" data-date="Oct. 25, 2024">
+    <p>Reviewing papers for NeurIPS... 📄✍️</p>
+  </div>
+  </li> -->
+  <li>
+      <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="May. 13, 2025">
+        <p>Our paper, "Saturation of the Cramér-Rao Bound for the Atomic Resonance Frequency with Phased Array of Hyperbolic Secant Pulses" is now available on <a href="https://arxiv.org/abs/2505.08192" target=>"_blank">arXiv</a>! In this work, with Tharon Holdsworth and Professor Girish S. Agarwal, we exploited properties of sech pulses to develop a pulse sequence capable of saturating the Cramér-Rao bound. This allows for the most precise measurements of atomic resonance frequencies.</p>
+        </p>
+      </div>
+    </li>
+  <li>
+    <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="May 9, 2025">
+        <p>Our paper, "Average-reward Soft Actor-Critic" has been accepted at the second annual Reinforcement Leraning Conference! (details coming soon...)</p>
+      </div>
+    </li>
+      <li>
+      <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="April 23-May 2, 2025">
+        <p>Traveled to ICLR (Singapore) and Inria (Lille, FR) to present our work on RL for drug dosing and deep average-reward RL algorithms, respectively.</p>
+      </div>
+    </li>
+      <li>
+      <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="April 11, 2025">
+        <p>I was invited to give a guest lecture at UMass Boston's new AI4ALL class. I gave an introduction to RL including discussions of exploration-exploitation, reward hacking, and policy improvement. The students developed custom environments related to real-world problems of their interest, and deployed RL algorithms to understand how agents learn and act. I had a great time teaching and the students did a tremendous job! I think such courses are important for increasing diversity in the field while giving students more tools for their future careers. </p>
+      </div>
+    </li>
   <li>
       <div class="timeline-item">
         <div class="dot"></div>

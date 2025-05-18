@@ -4,13 +4,16 @@ title: About
 permalink: /about/
 ---
 
-I have always been interested in the sciences and mathematics. My self-teaching journey began as a fun challenge in middle school when I learned some introductory physics, algebra, geometry, trigonometry, and calculus. I then attended high school and college concurrently. After obtaining my A.S. at Lorain County Community College, I studied at Cleveland State University where I began my academic research career and earned an honors B.S. in Physics and B.S. in Mathematics in spring of 2020.
+I'm broadly interested in the intersection of physics and machine learning—a powerful combination for modeling complex systems, understanding learning, and advancing algorithms. In particular, I focus on the connections between reinforcement learning (RL) and statistical mechanics. What once seemed like a simple application of statistical mechanics to RL has now blossomed into a rich field of research, with many open questions and exciting connections to other fields -- now I am deep down the rabbit hole 🕳️🐇 and having fun exploring the rich field of reinforcement learning.
 
-In fall 2020, I began my graduate studies at the University of Massachusetts Boston, where I have served as a Teaching Assistant for undergraduate physics labs and introductory physics discussions. I am now a full-time Research Assistant supervised by Professor Rahul V. Kulkarni. As of fall 2022 I am now a PhD candidate in the Department of Physics at UMass Boston. I am also a member of the [Institute for Artificial Intelligence and Fundamental Interactions (IAIFI)](https://iaifi.org/). I have an internship with Sony AI in the summer of 2025, where I will work on average reward deep RL for video games. You can find my CV [here](/assets/Jacob_Adamczyk_résumé.pdf).
+## Short Bio:
+In high school, I dual-enrolled at Lorain County Community College, graduating with an A.S. before transferring to Cleveland State University, where I started academic research and completed my honors B.S. degrees in Physics and Mathematics.
 
-Today, I have many wide-ranging interests including [reinforcement learning][research-page], [statistical physics][aps-poster], [thermodynamics][poly-page], gene expression networks, [superconductivity][neel-page], [polymer physics][poly-page], graph theory, and applications of group theory to machine learning, physics and chemistry.
+In fall 2020, I began my graduate studies at the University of Massachusetts Boston, where I have served as a Teaching Assistant for undergraduate physics labs and introductory physics discussions. I am now a full-time Research Assistant supervised by Professor Rahul V. Kulkarni. As of fall 2022, I am a PhD candidate in the Department of Physics at UMass Boston. I am also a member of the [Institute for Artificial Intelligence and Fundamental Interactions (IAIFI)](https://iaifi.org/). I am also an intern at Sony AI, where I work on average-reward deep RL algorithms, with applications to video games. You can find my CV [here](/assets/Jacob_Adamczyk_résumé.pdf).
 
-My current research efforts are focused on the connection between reinforcement learning and physics. You can read more about my past and current research [here][research-page].
+Today, I have many wide-ranging interests including [reinforcement learning][research-page], [statistical physics][aps-poster], [thermodynamics][poly-page], gene expression networks, [superconductivity][neel-page], [polymer physics][poly-page], graph theory, and applications of mathematics to machine learning and physics.
+
+My current research efforts are focused on the connection between reinforcement learning and statistical mechanics. You can read more about my past and current research [here][research-page].
 
 [research-page]: /research/
 [neel-page]: /neel-research/
