@@ -219,7 +219,6 @@ and compositionality or transfer learning:
       </div>
       <div class="content" data-date="May. 13, 2025">
         <p>Our paper, "Saturation of the Cramér-Rao Bound for the Atomic Resonance Frequency with Phased Array of Hyperbolic Secant Pulses" is now available on <a href="https://arxiv.org/abs/2505.08192" target="_blank">arXiv</a>! In this work, with Tharon Holdsworth and Professor Girish S. Agarwal, we exploited properties of sech pulses to develop a pulse sequence capable of saturating the Cramér-Rao bound. This allows for the most precise measurements of atomic resonance frequencies.</p>
-        </p>
       </div>
     </li>
   <li>
