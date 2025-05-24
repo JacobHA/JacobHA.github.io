@@ -1,0 +1,321 @@
+nodes:
+  - id: paper0
+    title: "Effect of synthesis temperature on size, structure, and volume phase transition of polysaccharide microgels"
+    authors: Krista G. Freeman, Jacob Adamczyk, Kiril A. Streletzky
+    image: /assets/icons/freeman20.png
+    link: https://pubs.acs.org/doi/abs/10.1021/acs.macromol.0c01605
+    tldr: We experimentally show that the properties of (biocompatible) microgels can be tuned by changing the synthesis temperature.
+    venue: ACS Macromolecules
+    bibtex: |
+      @article{freeman2020effect,
+        title={Effect of synthesis temperature on size, structure, and volume phase transition of polysaccharide microgels},
+        author={Freeman, Krista G and Adamczyk, Jacob and Streletzky, Kiril A},
+        journal={Macromolecules},
+        volume={53},
+        number={21},
+        pages={9244--9253},
+        year={2020},
+        publisher={ACS Publications}
+      }
+
+  - id: paper1
+    title: Utilizing Prior Solutions for Reward Shaping and Composition in Entropy-Regularized Reinforcement Learning
+    authors: Jacob Adamczyk, Argenis Arriojas, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/aaai23.png
+    tldr: Inductive biases can be injected into MaxEnt RL algorithms (and in a compositional way); this can be equivalently viewed as reward shaping or bootstrapping/perturbation.
+    link: https://arxiv.org/abs/2212.01174
+    venue: AAAI
+    bibtex: |
+      @inproceedings{adamczyk2023utilizing,
+        title={Utilizing prior solutions for reward shaping and composition in entropy-regularized reinforcement learning},
+        author={Adamczyk, Jacob and Arriojas, Argenis and Tiomkin, Stas and Kulkarni, Rahul V},
+        booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+        volume={37},
+        number={6},
+        pages={6658--6665},
+        year={2023}
+      }
+
+
+  - id: paper2
+    title: Entropy regularized reinforcement learning using large deviation theory
+    authors: Argenis Arriojas, Jacob Adamczyk, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/prr.png
+    tldr: An analytical framework for MaxEnt average-reward RL shows that the optimal value function, reward-rate, and steady-state distribution are encoded in the dominant eigenspace of a "tilted matrix".
+    link: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023085
+    venue: PhysRev
+    bibtex: |
+      @article{arriojas2023entropy,
+        title={Entropy regularized reinforcement learning using large deviation theory},
+        author={Arriojas, Argenis and Adamczyk, Jacob and Tiomkin, Stas and Kulkarni, Rahul V},
+        journal={Physical Review Research},
+        volume={5},
+        number={2},
+        pages={023085},
+        year={2023},
+        publisher={APS}
+      }
+
+  - id: paper3
+    title: Bayesian inference approach for entropy regularized reinforcement learning with stochastic dynamics
+    authors: Argenis Arriojas, Jacob Adamczyk, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/uaiarg.png
+    tldr: Constructs an iterative approach for solving the optimistic-agent problem in MaxEnt average-reward RL.
+    link: https://proceedings.mlr.press/v216/arriojas23a
+    venue: UAI
+    bibtex: |
+      @inproceedings{arriojas2023bayesian,
+        title={Bayesian inference approach for entropy regularized reinforcement learning with stochastic dynamics},
+        author={Arriojas, Argenis and Adamczyk, Jacob and Tiomkin, Stas and Kulkarni, Rahul V},
+        booktitle={Uncertainty in Artificial Intelligence},
+        pages={99--109},
+        year={2023},
+        organization={PMLR}
+      }
+
+      
+
+  - id: paper4
+    title: Bounding the optimal value function in compositional reinforcement learning
+    authors: Jacob Adamczyk, Volodymyr Makarenko, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/uaiad.png
+    tldr: The optimal value function can be bounded in terms of subtask value functions when a new task's reward is a function of the subtasks'. 
+    link: https://proceedings.mlr.press/v216/adamczyk23a
+    venue: UAI
+    bibtex: |
+      @inproceedings{adamczyk2023bounding,
+        title={Bounding the optimal value function in compositional reinforcement learning},
+        author={Adamczyk, Jacob and Makarenko, Volodymyr and Arriojas, Argenis and Tiomkin, Stas and Kulkarni, Rahul V},
+        booktitle={Uncertainty in Artificial Intelligence},
+        pages={22--32},
+        year={2023},
+        organization={PMLR}
+      }
+
+
+  - id: paper5
+    title: Boosting Soft Q-Learning by Bounding
+    authors: Jacob Adamczyk, Volodymyr Makarenko, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/rlc24.png
+    tldr: A new algorithm for soft Q-learning that improves training speed by increasingly tighter bounds on the optimal value function.
+    link: https://rlj.cs.umass.edu/2024/papers/Paper345.html
+    venue: RLC
+    bibtex: |
+      @article{adamczyk2024boosting,
+        title={Boosting Soft Q-Learning by Bounding},
+        author={Adamczyk, Jacob and Makarenko, Volodymyr and Tiomkin, Stas and Kulkarni, Rahul V},
+        journal={Reinforcement Learning Journal},
+        volume={5},
+        pages={2373--2399},
+        year={2024}
+      } 
+
+  - id: paper6
+    title: Reinforcement Learning for Optimal Control of Adaptive Cell Populations
+    authors: Josiah C. Kratz, Jacob Adamczyk
+    image: /assets/icons/ml4ps.png
+    link: https://ml4physicalsciences.github.io/2024/files/NeurIPS_ML4PS_2024_143.pdf
+    tldr: A proof-of-concept for drug dosing with RL in an adaptive cell growth model.
+    venue: NeurIPS
+    bibtex: |
+      @article{kratzreinforcement,
+        title={Reinforcement Learning for Optimal Control of Adaptive Cell Populations},
+        author={Kratz, Josiah C and Adamczyk, Jacob},
+        journal={Machine Learning for Physical Sciences Workshop at Neural Information Processing Systems},
+        year={2024},
+        url={https://ml4physicalsciences.github.io/2024/files/NeurIPS_ML4PS_2024_143.pdf}
+      }
+
+
+  - id: paper7
+    title: Reinforcement Learning for Control of Non-Markovian Cellular Population Dynamics
+    authors: Josiah C. Kratz, Jacob Adamczyk
+    image: /assets/icons/iclr.png
+    tldr: RL can learn drug dosing strategies with clinically-accessible information in a new model with memory-based cell growth.
+    link: https://arxiv.org/abs/2410.08439
+    venue: ICLR
+    bibtex: |
+      @article{kratz2024reinforcement,
+        title={Reinforcement Learning for Control of Non-Markovian Cellular Population Dynamics},
+        author={Kratz, Josiah C and Adamczyk, Jacob},
+        journal={arXiv preprint arXiv:2410.08439},
+        year={2024}
+      }
+
+
+  - id: paper8
+    title: New proofs for a bound on the spectral radius of the Hadamard geometric mean
+    authors: Jacob Adamczyk
+    image: /assets/icons/gjm.png
+    tldr: Inspired by inductive proofs in RL research, new proofs are given for a classical bound in Perron-Frobenius theory.
+    link: https://gradmath.org/wp-content/uploads/2024/12/GJM2024-Adamczyk.pdf
+    venue: Graduate Journal of Mathematics
+    bibtex: |
+      @article{adamczyk2024new,
+        title={New proofs for a bound on the spectral radius of the Hadamard geometric mean},
+        author={Adamczyk, Jacob},
+        journal={Graduate Journal of Mathematics},
+        volume={9},
+        number={2},
+        pages={10--14},
+        year={2024}
+      }
+
+  - id: paper9
+    title: Average-Reward Reinforcement Learning with Entropy Regularization
+    authors: Jacob Adamczyk, Volodymyr Makarenko, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/asql.png
+    tldr: Extends ideas from SAC and SQL to the average-reward criterion.
+    link: https://prl-theworkshop.github.io/prl2025-aaai/papers/26.pdf
+    venue: AAAI
+    bibtex: |
+      @article{adamczyk2025average,
+        title={Average-Reward Reinforcement Learning with Entropy Regularization},
+        author={Adamczyk, Jacob and Makarenko, Volodymyr and Tiomkin, Stas and Kulkarni, Rahul V},
+        journal={The Eighth Workshop on ``Bridging the Gap Between AI Planning and Reinforcement Learning'' at the Association for the Advancement of Artificial Intelligence},
+        year={2025}
+      }
+
+  - id: paper10
+    title: Inferring Transition Dynamics from Value Functions
+    authors: Jacob Adamczyk
+    image: /assets/icons/inferring.png
+    tldr: A new algorithm and analysis for extracting transition dynamics from value functions.
+    link: https://aair-lab.github.io/genplan25/papers/36.pdf
+    venue: AAAI
+    bibtex: |
+      @article{adamczyk2025inferring,
+        title={Inferring Transition Dynamics from Value Functions},
+        author={Adamczyk, Jacob},
+        journal={The Eighth Workshop on ``Generalization in Planning'' at the Association for the Advancement of Artificial Intelligence},
+        year={2025}
+      }
+
+  - id: paper11
+    title: "EVAL: EigenVector-based Average-reward Learning"
+    authors: Jacob Adamczyk, Volodymyr Makarenko, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/eval.png
+    tldr: A new algorithm for average-reward RL; maps the problem to a linear space and solves for an eigenvector to learn the value function.
+    link: https://aair-lab.github.io/genplan25/papers/29.pdf
+    venue: AAAI
+    bibtex: |
+      @article{adamczyk2025eval,
+        title={{EVAL}: {E}igen{V}ector-based {A}verage-reward {L}earning},
+        author={Adamczyk, Jacob and Makarenko, Volodymyr and Tiomkin, Stas and Kulkarni, Rahul V},
+        journal={The Eighth Workshop on ``Generalization in Planning'' at the Association for the Advancement of Artificial Intelligence},
+        year={2025}
+      }
+
+  - id: paper12
+    title: Bootstrapped Reward Shaping
+    authors: Jacob Adamczyk, Volodymyr Makarenko, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/bsrs.png
+    tldr: Use the current estimate of the value function to iteratively shape the reward function.
+    link: https://arxiv.org/abs/2501.00989
+    venue: AAAI
+    bibtex: |
+      @inproceedings{adamczykbootstrapped,
+        title={Bootstrapped Reward Shaping},
+        author={Adamczyk, Jacob and Makarenko, Volodymyr and Tiomkin, Stas and Kulkarni, Rahul V},
+        booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+        volume={39},
+        number={15},
+        pages={15302--15310},
+        year={2025}
+      }
+
+  - id: paper13
+    title: "CASH: Cache Alignment with Specified Horizons"
+    authors: Jacob Adamczyk, Josiah C. Kratz
+    image: /assets/icons/cash.png
+    tldr: Reuse cached policies to align with the current estimate of the value function for better value estimation.
+    link: https://aair-lab.github.io/genplan25/papers/46.pdf
+    venue: AAAI
+    bibtex: |
+      @article{adamczyk2025cash,
+        title={{CASH}: {C}ache {A}lignment with {S}pecified {H}orizons},
+        author={Adamczyk, Jacob and Kratz, Josiah C.},
+        journal={The Eighth Workshop on ``Generalization in Planning'' at the Association for the Advancement of Artificial Intelligence},
+        year={2025}
+      }
+
+  - id: paper14
+    title: Saturation of the Cramér-Rao Bound for the Atomic Resonance Frequency with Phased Array of Hyperbolic Secant Pulses
+    authors: Tharon Holdsworth, Jacob Adamczyk, Girish S. Agarwal
+    image: /assets/icons/sech.png
+    tldr: A new pulse sequence for estimating the atomic resonance frequency with high precision.
+    link: https://arxiv.org/abs/2505.08192
+    venue: arXiv
+    bibtex: |
+      @article{holdsworth2025saturation,
+        title={Saturation of the Cram$\backslash$'er-Rao Bound for the Atomic Resonance Frequency with Phased Array of Hyperbolic Secant Pulses},
+        author={Holdsworth, Tharon and Adamczyk, Jacob and Agarwal, Girish S},
+        journal={arXiv preprint arXiv:2505.08192},
+        year={2025}
+      }
+
+  - id: paper15
+    title: Average-Reward Soft Actor-Critic
+    authors: Jacob Adamczyk, Volodymyr Makarenko, Stas Tiomkin, Rahul V. Kulkarni
+    image: /assets/icons/asac.png
+    tldr: An extension of the Soft Actor-Critic algorithm to the average-reward setting, showing strong performance compared to other methods.
+    link: https://openreview.net/pdf?id=ywygpSXlHG
+    venue: RLC
+    bibtex: |
+      @article{adamczyk2025asac,
+        title={Average-Reward Soft Actor-Critic},
+        author={Adamczyk, Jacob and Makarenko, Volodymyr and Tiomkin, Stas and Kulkarni, Rahul V},
+        journal={(To appear in) Reinforcement Learning Journal},
+        volume={X},
+        pages={X},
+        year={2025}
+      } 
+
+links:
+  # - source: paper1
+  #   target: paper2
+  #   description: Builds on theory from Paper One
+
+  # - source: paper2
+  #   target: paper3
+  #   description: Uses application from Paper Two
+
+  - source: paper6
+    target: paper7
+    description: Extended our earlier workshop paper, giving evidence for bang-bang necessity and further robustness results.
+
+  - source: paper4
+    target: paper8
+    description: Uses similar inductive proof techniques in the compositional (geometric mean of matrices) setting.
+  
+  - source: paper2
+    target: paper8
+    description: Inspired by the same "tilted matrix" construction and its average-reward interpretation.
+
+  - source: paper4
+    target: paper5
+    description: We realize any value function (even sub-optimal, random noise) can be used to generate bounds.
+
+  - source: paper1
+    target: paper5
+    description: The base task can be given by any value function (even sub-optimal, random noise).
+
+  - source: paper9
+    target: paper15
+    description: Extended from earlier workshop paper, worked out kinks, stabilized ASAC algorithm, added baselines and more experiments.
+
+  - source: paper2
+    target: paper11
+    description: Extends eigenvector learning to deep RL, also solving the un-regularized problem (zero temperature).
+
+  - source: paper2
+    target: paper3
+    description: Within the tilted matrix framework, naive optimization with stochastic dynamics assumes the agent can control dynamics; this is usually not true in practice and this paper addresses this (and the more general constrained dynamics) problem.
+
+  - source: paper1
+    target: paper12
+    description: By treating the current estimate of Q* as a "base task", one can derive an adaptive shaping algorithm.
+
+  - source: paper2
+    target: paper15
+    description: Inspired by the average reward results, we attacked the problem head-on by generalizing SAC.

@@ -200,6 +200,12 @@ and compositionality or transfer learning:
 [award-pic]: /assets/gallery/award-umb2.jpg
 
 [mlqt-poster]: /assets/mlqt-file.pdf
+
+<!-- # center this: -->
+<p align="center">
+<a href="/research/" target="_blank">Check out this visualization of my research papers and their connections!</a>
+</p>
+
 <div class="timeline">
   <br>
   <h2>Recent Announcements</h2>

@@ -3,6 +3,30 @@ layout: page
 title: Research
 permalink: /research/
 ---
+
+(Hover over a node for a preview, and click it to see more details. Hover over an edge to show connections between papers.)
+
+<div id="graph-container">
+  <svg id="graph"></svg>
+</div>
+
+<div id="node-tooltip" class="tooltip"></div>
+<div id="link-tooltip" class="tooltip"></div>
+
+
+<script>
+  window.researchGraphData = {
+    nodes: {{ site.data.research-papers.nodes | jsonify }},
+    links: {{ site.data.research-papers.links | jsonify }}
+  };
+</script>
+
+<link rel="stylesheet" href="{{ '/assets/css/research-graph.css' | relative_url }}">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="{{ '/assets/js/research-graph.js' | relative_url }}"></script>
+
+<!--     
+
 ## Current Research
 Since joining UMass Boston in fall 2020, I have been working under the supervision of Dr. Rahul Kulkarni ([website][rahul-website]). With his guidance, I have learned about Markov Decision Processes (MDPs), large deviations theory (LDT), and reinforcement learning (RL). I have also been guided by Dr. Stas Tiomkin ([website][stas-website]) from San Jose State University. I have also worked alongside (recent PhD graduate from UMass Boston!) Dr. Argenis Arriojas ([GitHub profile][argenis-git]) and Master's student Volodymyr Makarenko ([GitHub profile][vlad-git]).
 
@@ -37,7 +61,7 @@ I've worked on very different problems too (such as [discrete-time Schrodinger B
 
 <!-- [neel-link]: /research-posts/2022/05/11/neel-research.html -->
 <!-- [neel-link]: /_pages/neel-research.html/ -->
-[neel-link]: /neel-research/
+<!-- [neel-link]: /neel-research/
 [microgels-link]: /microgels-research/
 [rahul-website]: http://www.quantum.umb.edu/Kulkarni/Rahul_homepage.html
 [stas-website]: https://cmpe.sjsu.edu/profile/stas-tiomkin
@@ -50,4 +74,4 @@ I've worked on very different problems too (such as [discrete-time Schrodinger B
 [uai-vlad]: https://proceedings.mlr.press/v216/adamczyk23a.html
 [uai-arg]: https://proceedings.mlr.press/v216/arriojas23a.html
 [sb-page]: /schrodinger-bridges/
-[vlad-git]: https://github.com/BobMak
+[vlad-git]: https://github.com/BobMak -->
