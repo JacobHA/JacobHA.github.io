@@ -271,6 +271,36 @@ nodes:
         year={2025}
       } 
 
+  - id: paper16
+    title: "EVE: EigenVector-based Exploration"
+    authors: Jacob Adamczyk, Rahul V. Kulkarni
+    image: /assets/icons/entropy_comparison.png
+    tldr: Pending...
+    link: Under review
+    venue: Under review
+    bibtex: |
+      @article{adamczyk2025eve,
+        title={{EVE}: {E}igen{V}ector-based {E}xploration},
+        author={Adamczyk, Jacob and Kulkarni, Rahul V},
+        journal={Under review},
+        year={2025}
+      }
+
+  - id: paper17
+    title: Exploration Behavior of Untrained Policies
+    authors: Jacob Adamczyk
+    image: /assets/icons/ballistic.png
+    tldr: Pending...
+    link: Under review
+    venue: Under review
+    bibtex: |
+      @article{adamczyk2025eve,
+        title={Exploration Behavior of Untrained Policies},
+        author={Adamczyk, Jacob},
+        journal={Under review},
+        year={2025}
+      }
+
 links:
   # - source: paper1
   #   target: paper2
