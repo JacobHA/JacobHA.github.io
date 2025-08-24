@@ -7,14 +7,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Venue color map with low alpha for stroke
   const venueColors = {
-    "NeurIPS": "rgba(176, 27, 176, 0.9)",   // purple
-    "arXiv": "rgba(255, 0, 0, 0.9)",       // red
+    "NeurIPS": "rgba(64, 201, 141, 0.9)",   // purple
+    "ICML": "rgba(239, 75, 108, 0.9)",      // teal
+    "ICLR": "rgba(7, 111, 7, 0.9)",        // green
     "AAAI": "rgba(0, 0, 255, 0.9)",        // blue
-    "ICLR": "rgba(0, 128, 0, 0.9)",        // green
     "UAI": "rgba(255, 165, 0, 0.9)",        // orange
-    "PhysRev": "rgba(56, 42, 133, 0.9)",      // burgundy
     "RLC": "rgba(32, 219, 252, 0.9)",     // blue
-    "Other": "rgba(0, 0, 0, 0.32)",      // black
+    "PhysRev": "rgba(56, 42, 133, 0.9)",      // burgundy
+    "Other": "rgba(0, 0, 0, 0.8)",      // black
+    "arXiv": "rgba(187, 26, 26, 0.9)",       // red
   };
 
 
@@ -48,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     .append("path")
     .attr("d", "M1,-4L9,0L1,4")  // Slimmer, pointer-like shape: |>
-    .attr("fill", "rgba(215, 206, 171, 0.95)") // Adjusted for better visibility
+    .attr("fill", "rgba(185, 185, 185, 0.95)") // Adjusted for better visibility
 
 function edgeRepulsionForce(strength = 30, minDistance = 50) {
   return function () {
@@ -117,7 +118,7 @@ function edgeRepulsionForce(strength = 30, minDistance = 50) {
 
 
   const link = svg.append("g")
-    .attr("stroke", "rgba(215, 206, 171, 0.4)")
+    .attr("stroke", "rgba(199, 199, 199, 0.4)")
     .attr("stroke-width", 6)
     .selectAll("line")
     .data(links)
@@ -144,7 +145,7 @@ function edgeRepulsionForce(strength = 30, minDistance = 50) {
     .data(nodes)
     .join("circle")
     .attr("r", 20)
-    .attr("fill", "rgba(215, 206, 171, 1.0)")
+    .attr("fill", "rgba(199, 199, 199, 0.9)")
     .attr("stroke-width", 6)  // make stroke visible but subtle
     .attr("stroke", d => venueColors[d.venue] || "transparent")
     .style("cursor", "pointer")
@@ -153,7 +154,7 @@ function edgeRepulsionForce(strength = 30, minDistance = 50) {
 
             .attr("r", 25)
             .attr("stroke", venueColors[d.venue] || "transparent")            
-            .attr("fill", venueColors[d.venue] || "rgba(215, 206, 171, 1.0)");
+            .attr("fill", venueColors[d.venue] || "rgba(250, 250, 250, 1.0)");
 
     })
 
@@ -162,7 +163,7 @@ function edgeRepulsionForce(strength = 30, minDistance = 50) {
             .attr("r", 20)
             .attr("stroke-width", 6)
             .attr("stroke", venueColors[d.venue] || "transparent")
-            .attr("fill", "rgba(215, 206, 171, 1.0)");
+            .attr("fill", "rgba(250, 250, 250, 1.0)");
   })
 .on("mouseenter", (event, d) => {
   d3.select("#node-tooltip")
@@ -298,6 +299,9 @@ sidePanel.appendChild(closeBtn);
 
 // Show panel on node click
 node.on("click", (event, d) => {
+// while clicked, make the node filled with its venue color
+  d3.select(event.currentTarget)
+    .attr("fill", venueColors[d.venue] || "rgba(250, 250, 250, 1.0)");
 sidePanel.innerHTML = `
   <div style="position:absolute;top:10px;right:15px;cursor:pointer;font-size:24px;font-weight:bold" onclick="this.parentElement.style.right='-400px'">×</div>
   <h2 style="margin-top: 40px">${d.title}</h2>

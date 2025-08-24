@@ -219,6 +219,38 @@ and compositionality or transfer learning:
     <p>Reviewing papers for NeurIPS... 📄✍️</p>
   </div>
   </li> -->
+    <li>
+  <div class="timeline-item">
+      <div class="dot"></div>
+      </div>
+      <div class="content" data-date="Sept. 15-20 2025">
+        <p>I will be in Tubingen, Germany to present our paper, "Average-Reward Soft Actor-Critic" at EWRL!</p>
+      </div>
+    </li>
+    <li>
+  <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="Aug. 12-16 2025">
+        <p>I will be at the IAIFI Summer Workshop at Harvard to present our work on average-reward RL.</p>
+      </div>
+    </li>
+  <li>
+  <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="Aug. 5-9 2025">
+        <p>I will be in Edmonton to present our paper, "Average-Reward Soft Actor-Critic" for the second Reinforcement Learning Conference!</p>
+      </div>
+    </li>
+  <li>
+    <div class="timeline-item">
+        <div class="dot"></div>
+      </div>
+      <div class="content" data-date="July. 13-19, 2025">
+        <p>I will be in Vancouver for ICML 2025 to present a recent paper "Exploration Behavior of Untrained Policies" at the high-dimensional learning dynamics (HiLD) workshop.</p>
+      </div>
+    </li>
   <li>
       <div class="timeline-item">
         <div class="dot"></div>

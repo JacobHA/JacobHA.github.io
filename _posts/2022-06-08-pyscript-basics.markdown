@@ -1,86 +1,62 @@
 ---
 layout: post
-title: "PyScript: Using Python in the browser"
+title: "PyScript: Using Python in the Browser"
 permalink: /pyscript-basics/
-# categories: research_posts
-# exclude: true
 ---
 
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-<py-env>
-    - numpy
-    - matplotlib
-</py-env>
+<!-- Latest PyScript CDN links -->
+<link
+  rel="stylesheet"
+  href="https://pyscript.net/releases/2025.8.1/core.css"
+/>
+<script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
 
+<py-config>
+packages = ["numpy", "matplotlib"]
+</py-config>
 
-In this post I'll give a few basic examples of using PyScript to use Python in the browser. Feel free to look at [this specific markdown file][this-post] to see the exact code.
+## Hello, World!
+(You may need to wait a few seconds for PyScript to load for results to appear. Tested on Firefox and Chrome.)
 
-After including the pyscript links in the html (markdown) header:
+After including the following in your HTML file:
+```html
+<link
+  rel="stylesheet"
+  href="https://pyscript.net/releases/2025.8.1/core.css"
+/>
+<script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
 ```
-<link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
-<script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-```
+You can now run Python in the browser, and display results directly on the page. For example:
 
-
-Now, the simple piece of code below will be rendered in the browser:
-```
+```html
 <py-script>
 print("Hello, world!")
 </py-script>
 ```
-can be used to generate the following:
-<div>
+
 <py-script>
-print("Hello, world!")
-</py-script>
-</div>
-
-Quite amazingly, we can also import useful modules (also included in the header), such as matplotlib and numpy.
-By wrapping this code in `<py-script>` tags, we can render a plot.
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-x_axis = np.linspace(0,1,100)
-def f(x):
-    return x**2
-y_axis = f(x_axis)
-plt.plot(x_axis, y_axis)
-plt.show()
-
-fig1, ax1 = plt.subplots()
-ax1.plot(x_axis, y_axis)
-ax1.set_title("Plot 1")
-ax1.set_xlabel("x")
-ax1.set_ylabel("y=x^2")
-
-fig1
-```
-
-<!-- Now the code itself -->
-<py-script>
-import matplotlib.pyplot as plt
-import numpy as np
-x_axis = np.linspace(0,1,100)
-def f(x):
-    return x**2
-y_axis = f(x_axis)
-plt.plot(x_axis, y_axis)
-plt.show()
-
-fig1, ax1 = plt.subplots()
-ax1.plot(x_axis, y_axis)
-ax1.set_title("Plot 1")
-ax1.set_xlabel("x")
-ax1.set_ylabel("y=x^2")
-
-fig1
+from pyscript import display
+display("Hello, world!")
 </py-script>
 
+<py-script>
+import numpy as np
+import matplotlib.pyplot as plt
+from pyscript import display
 
-For more information (and admittedly cooler) examples, take a look at [this page][pyscript-examples].
+# Data generation
+x = np.linspace(0, 1, 100)
+y = x ** 2
 
+# Plotting
+fig, ax = plt.subplots()
+ax.plot(x, y)
+ax.set_title("y = x²")
+ax.set_xlabel("x")
+ax.set_ylabel("y")
 
+# Explicit display call is required
+display(fig)
+</py-script>
 
-[this-code]: https://github.com/JacobHA/JacobHA.github.io/blob/main/_posts/2022-06-08-pyscript-basics.markdown
-[pyscript-examples]: https://github.com/pyscript/pyscript/tree/main/examples
+Check out the [PyScript documentation](https://pyscript.net/) for more details and [examples](https://docs.pyscript.net/2025.8.1/examples/).

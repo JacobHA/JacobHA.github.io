@@ -5,7 +5,7 @@ nodes:
     image: /assets/icons/freeman20.png
     link: https://pubs.acs.org/doi/abs/10.1021/acs.macromol.0c01605
     tldr: We experimentally show that the properties of (biocompatible) microgels can be tuned by changing the synthesis temperature.
-    venue: ACS Macromolecules
+    venue: Other
     bibtex: |
       @article{freeman2020effect,
         title={Effect of synthesis temperature on size, structure, and volume phase transition of polysaccharide microgels},
@@ -149,7 +149,7 @@ nodes:
     image: /assets/icons/gjm.png
     tldr: Inspired by inductive proofs in RL research, new proofs are given for a classical bound in Perron-Frobenius theory.
     link: https://gradmath.org/wp-content/uploads/2024/12/GJM2024-Adamczyk.pdf
-    venue: Graduate Journal of Mathematics
+    venue: Other
     bibtex: |
       @article{adamczyk2024new,
         title={New proofs for a bound on the spectral radius of the Hadamard geometric mean},
@@ -277,7 +277,7 @@ nodes:
     image: /assets/icons/entropy_comparison.png
     tldr: Pending...
     link: Under review
-    venue: Under review
+    venue: Other
     bibtex: |
       @article{adamczyk2025eve,
         title={{EVE}: {E}igen{V}ector-based {E}xploration},
@@ -290,14 +290,14 @@ nodes:
     title: Exploration Behavior of Untrained Policies
     authors: Jacob Adamczyk
     image: /assets/icons/ballistic.png
-    tldr: Pending...
-    link: Under review
-    venue: Under review
+    tldr: Deep deterministic policies give ballistic trajectories. Re-initializing the weights at each step gives diffusive trajectories, which can be modelled with a Fokker-Planck equation.
+    link: https://www.arxiv.org/abs/2506.22566
+    venue: ICML
     bibtex: |
-      @article{adamczyk2025eve,
+      @article{adamczyk2025exploration,
         title={Exploration Behavior of Untrained Policies},
         author={Adamczyk, Jacob},
-        journal={Under review},
+        journal={ICML Workshop on High-dimensional Learning Dynamics},
         year={2025}
       }
 
