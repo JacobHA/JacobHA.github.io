@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const nodes = data.nodes;
   const links = data.links;
 
-  // Venue color map with low alpha for stroke
+  // Venue color map with low alpha for strokes
   const venueColors = {
-    "NeurIPS": "rgba(64, 201, 141, 0.9)",   // purple
+    "NeurIPS": "rgba(47, 238, 53, 0.9)",   // purple
     "ICML": "rgba(239, 75, 108, 0.9)",      // teal
-    "ICLR": "rgba(7, 111, 7, 0.9)",        // green
+    "ICLR": "rgba(25, 108, 48, 0.9)",        // green
     "AAAI": "rgba(0, 0, 255, 0.9)",        // blue
     "UAI": "rgba(255, 165, 0, 0.9)",        // orange
     "RLC": "rgba(32, 219, 252, 0.9)",     // blue
@@ -374,6 +374,7 @@ legend.innerHTML = "<strong>Color Codes</strong><br>";
 
 // Add color circles and labels
 for (const [venue, color] of Object.entries(venueColors)) {
+  if (!nodes.some(n => n.venue === venue)) continue;
   const item = document.createElement("div");
   item.style.display = "flex";
   item.style.alignItems = "center";

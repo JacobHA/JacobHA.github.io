@@ -245,12 +245,12 @@ nodes:
     image: /assets/icons/sech.png
     tldr: A new pulse sequence for estimating the atomic resonance frequency with high precision.
     link: https://arxiv.org/abs/2505.08192
-    venue: arXiv
+    venue: PhysRev
     bibtex: |
       @article{holdsworth2025saturation,
         title={Saturation of the Cram$\backslash$'er-Rao Bound for the Atomic Resonance Frequency with Phased Array of Hyperbolic Secant Pulses},
         author={Holdsworth, Tharon and Adamczyk, Jacob and Agarwal, Girish S},
-        journal={arXiv preprint arXiv:2505.08192},
+        journal={Physical Review A},
         year={2025}
       }
 
@@ -259,17 +259,15 @@ nodes:
     authors: Jacob Adamczyk, Volodymyr Makarenko, Stas Tiomkin, Rahul V. Kulkarni
     image: /assets/icons/asac.png
     tldr: An extension of the Soft Actor-Critic algorithm to the average-reward setting, showing strong performance compared to other methods.
-    link: https://openreview.net/pdf?id=ywygpSXlHG
+    link: https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_34.pdf
     venue: RLC
     bibtex: |
-      @article{adamczyk2025asac,
-        title={Average-Reward Soft Actor-Critic},
-        author={Adamczyk, Jacob and Makarenko, Volodymyr and Tiomkin, Stas and Kulkarni, Rahul V},
-        journal={(To appear in) Reinforcement Learning Journal},
-        volume={X},
-        pages={X},
-        year={2025}
-      } 
+      @article{adamczyk2025average,
+          title={Average-Reward Soft Actor-Critic},
+          author={Adamczyk, Jacob and Makarenko, Volodymyr and Tiomkin, Stas and Kulkarni, Rahul V},
+          journal={Reinforcement Learning Journal},
+          year={2025}
+      }
 
   - id: paper16
     title: "EVE: EigenVector-based Exploration"
