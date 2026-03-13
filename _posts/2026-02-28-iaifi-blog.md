@@ -15,9 +15,9 @@ Reinforcement learning discovers new dosing strategies applicable to cancer and 
 category: [research-highlights]
 -->
 
-[Introduction]
 
 ---
+
 
 ### Why this is exciting
 Consider a typical medical protocol, wherein a patient receives the maximum tolerable dose for chemotherapy. 
@@ -44,7 +44,7 @@ We hope to use AI to discover new dynamic dosing protocols that take into accoun
 The paper studies a non-Markovian population control problem where the dynamics incorporate memory effects through a fractional derivative. The state evolution is governed by the following equation:
 
 $$
-\dot x(t) = \int_0^t \frac{(t-\tau)^{\mu-2}}{|\Gamma(\mu-1)|} f(x(\tau), u(\tau)) d\tau\,
+\dot x(t) = \int_0^t \frac{(t-\tau)^{\mu-2}}{|\Gamma(\mu-1)|} f(x(\tau), u(\tau)) d\tau
 $$
 
 where $\mu\in(0,1)$ is the memory strength parameter, $\Gamma$ is the gamma function, $f$ describes the linear dynamics of switching and growth rates, and $u(t)$ is the drug dosing control input. Note: decreasing values of $\mu$ correspond to stronger memory effects, and $\mu=1$ corresponds to the memoryless case.
