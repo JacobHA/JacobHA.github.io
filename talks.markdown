@@ -94,7 +94,7 @@ permalink: /talks/
 <div class="timeline">
   <details>
     <summary><span style="font-size: 1.2rem; font-weight: bold;">2025</span></summary>
-    <p>📅 APS March Meeting 2025: <strong>Pending...</strong></p>
+    <p>📅 APS March Meeting 2025: <strong><a href="/assets/aps2025.pdf">slides</a></strong></p>
     <p>🎤 Cohere AI Invited Talk: <a href="https://youtu.be/70kVz9G2Z-o?si=B_nFGnr4212GcSNv">YouTube Link</a></p>
     <p>🎤 Inria SCOOL Invited Talk: <strong>Pending...</strong></p>
   </details>
