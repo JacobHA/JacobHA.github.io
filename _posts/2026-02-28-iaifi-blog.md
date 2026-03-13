@@ -6,14 +6,36 @@ tags: reinforcement learning, drug dosing, cellular population dynamics, non-mar
 mathjax: true
 ---
 
-<div class="highlight-box">
-Reinforcement learning discovers new dosing strategies applicable to cancer and bacterial systems.
+<style>
+.box {
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.box--highlight {
+    border-left: 4px solid #ffc107;
+    background: #fffbe6;
+}
+.box--info {
+    border-left: 4px solid #007bff;
+    background: #e9f5ff;
+    padding: 8px 12px;
+    margin-top: 8px;
+}
+</style>
+
+<div class="box box--highlight">
+    <strong>💡 Reinforcement learning discovers new dosing strategies applicable to cancer and bacterial systems.</strong>
+    <!-- <br>
+    <span style="color:#6c757d;">Novel AI-driven protocols adapt to cellular memory and resistance, offering improved treatment outcomes.</span> -->
+    <!-- <br><br> -->
+    <!-- <div class="box box--info" style="margin-top:8px;">
+        <strong>Category:</strong> <span style="color:#007bff;">research-highlights</span>
+    </div> -->
 </div>
 
-
-<!--
-category: [research-highlights]
--->
 
 
 ---
