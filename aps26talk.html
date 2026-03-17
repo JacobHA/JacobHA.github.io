@@ -21,16 +21,34 @@
         }
 
         :root {
-            --bg: #f9e3be;
-            --bg2: #f3d39c;
-            --bg3: #f3c581;
-            --border: rgb(139, 139, 139);
-            --accent: #6ab0d4;
-            --accent2: #c4875a;
-            --accent3: #82c9a8;
-            --text: #0a8dcf;
-            --muted: #7a7872;
-            --dim: #c4b9a3;
+            /* Light, beige paper-like backgrounds */
+            --bg: #f5f0e1;
+            /* Main paper color */
+            --bg2: #ece6d3;
+            /* Slightly darker for contrast */
+            --bg3: #e3dcc4;
+            /* Darkest beige for cards and blocks */
+
+            /* Dark blue 'ink' text and structural colors */
+            --text: #1b2838;
+            /* Very dark slate blue for body readability */
+            --heading: #0b1a38;
+            /* Deep navy blue for headers */
+            --muted: #58697a;
+            /* Muted blue-grey for secondary text */
+            --dim: #c7bea8;
+            /* Dim color for dots, scrollbars */
+            --border: #d4ccb8;
+            /* Soft paper-toned border */
+
+            /* Academic ink accents */
+            --accent: #22578b;
+            /* Primary blue ink */
+            --accent2: #943d24;
+            /* Sepia/rust ink for contrast */
+            --accent3: #2d6650;
+            /* Deep forest green ink */
+
             --mono: 'JetBrains Mono', monospace;
             --serif: 'EB Garamond', serif;
             --display: 'Cormorant Garamond', serif;
@@ -73,7 +91,8 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 2.5rem;
-            background: rgba(9, 9, 14, 0.9);
+            background: rgba(245, 240, 225, 0.95);
+            /* Light transparent beige */
             backdrop-filter: blur(14px);
             border-bottom: 1px solid var(--border);
         }
@@ -166,7 +185,8 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 2.5rem;
-            background: rgba(9, 9, 14, 0.9);
+            background: rgba(245, 240, 225, 0.95);
+            /* Light transparent beige */
             backdrop-filter: blur(14px);
             border-top: 1px solid var(--border);
         }
@@ -212,7 +232,7 @@
 
         .foot-dot.active {
             background: var(--accent);
-            box-shadow: 0 0 6px var(--accent);
+            box-shadow: 0 0 6px rgba(34, 87, 139, 0.4);
             width: 14px;
             border-radius: 3px;
         }
@@ -246,19 +266,19 @@
 
         h1 {
             font-family: var(--display);
-            font-weight: 300;
+            font-weight: 600;
             font-size: clamp(2.4rem, 5vw, 4.5rem);
             line-height: 1.06;
-            color: #010a52;
+            color: var(--heading);
             margin-bottom: 1.2rem;
         }
 
         h2 {
             font-family: var(--display);
-            font-weight: 300;
+            font-weight: 600;
             font-size: clamp(1.8rem, 3.5vw, 3rem);
             line-height: 1.1;
-            color: #000000;
+            color: var(--heading);
             margin-bottom: 1rem;
         }
 
@@ -322,7 +342,7 @@
             border-radius: 6px;
             padding: 1.3rem 1.7rem;
             margin: 1.6rem 0;
-            background: linear-gradient(135deg, rgba(106, 176, 212, 0.05), rgba(130, 201, 168, 0.03));
+            background: linear-gradient(135deg, rgba(34, 87, 139, 0.04), rgba(45, 102, 80, 0.03));
             position: relative;
         }
 
@@ -425,11 +445,12 @@
 
         .dict-table td {
             padding: 0.75rem 1rem;
-            border-bottom: 1px solid rgba(120, 130, 200, 0.07);
+            border-bottom: 1px solid rgba(27, 40, 56, 0.08);
+            /* Dark blue low opacity border */
         }
 
         .dict-table tr:hover td {
-            background: rgba(123, 156, 255, 0.03);
+            background: rgba(34, 87, 139, 0.04);
         }
 
         .rl-term {
@@ -453,7 +474,7 @@
             align-items: baseline;
             gap: 0.7rem;
             padding: 0.42rem 0;
-            border-bottom: 1px solid rgba(120, 130, 200, 0.07);
+            border-bottom: 1px solid rgba(27, 40, 56, 0.08);
             font-size: 0.9rem;
         }
 
@@ -479,207 +500,176 @@
             padding: 2.2rem 2rem;
             margin: 1.6rem 0;
             text-align: center;
-            background: rgba(255, 255, 255, 0.012);
-            transition: border-color 0.2s;
-            position: relative;
-        }
+            background: rgba(27, 40, 56, 0.02);
+            transition: border
 
-        .fig-placeholder:hover {
-            border-color: var(--muted);
-        }
-
-        .fig-icon {
-            font-size: 1.8rem;
-            opacity: 0.25;
-            margin-bottom: 0.5rem;
-        }
-
-        .fig-label {
-            font-family: var(--mono);
-            font-size: 0.6rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            color: var(--muted);
-        }
-
-        .fig-caption {
-            font-size: 0.8rem;
-            font-style: italic;
-            color: var(--dim);
-            margin-top: 0.4rem;
-            line-height: 1.5;
-            max-width: 52ch;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        /* When you drop in a real image, wrap it like:
+            /* When you drop in a real image, wrap it like:
    <div class="fig-placeholder">
      <img src="your-figure.png" alt="description" />
      <div class="fig-caption">Caption text here.</div>
    </div>
    The dashed border and icon will be hidden automatically. */
-        .fig-placeholder img {
-            max-width: 100%;
-            border-radius: 4px;
-            display: block;
-            margin: 0 auto 0.8rem;
-        }
+            .fig-placeholder img {
+                max-width: 100%;
+                border-radius: 4px;
+                display: block;
+                margin: 0 auto 0.8rem;
+            }
 
-        .fig-placeholder img~.fig-icon {
-            display: none;
-        }
-
-        .fig-placeholder img~.fig-label {
-            display: none;
-        }
-
-        /* ─── REFERENCE LIST ─────────────────────────────────────── */
-        /* To add a reference, copy one <li> block and fill in the fields.
-   Set href="#" until you have the real URL.                       */
-        .ref-list {
-            list-style: none;
-            margin: 0.8rem 0;
-        }
-
-        .ref-list li {
-            display: flex;
-            gap: 0.9rem;
-            align-items: flex-start;
-            padding: 0.8rem 0.9rem;
-            border-radius: 5px;
-            border: 1px solid transparent;
-            transition: border-color 0.2s, background 0.2s;
-            margin-bottom: 0.4rem;
-        }
-
-        .ref-list li:hover {
-            border-color: var(--border);
-            background: var(--bg3);
-        }
-
-        .ref-year {
-            font-family: var(--mono);
-            font-size: 0.56rem;
-            color: var(--accent);
-            letter-spacing: 0.06em;
-            flex-shrink: 0;
-            padding-top: 0.2rem;
-            width: 3.2rem;
-        }
-
-        .ref-body {
-            flex: 1;
-        }
-
-        .ref-title {
-            font-style: italic;
-            font-size: 0.88rem;
-            color: var(--text);
-            display: block;
-            margin-bottom: 0.18rem;
-        }
-
-        .ref-authors {
-            font-family: var(--mono);
-            font-size: 0.56rem;
-            color: var(--muted);
-            letter-spacing: 0.04em;
-        }
-
-        .ref-venue {
-            font-family: var(--mono);
-            font-size: 0.56rem;
-            color: var(--accent3);
-            letter-spacing: 0.04em;
-            margin-left: 0.4rem;
-        }
-
-        .ref-link {
-            font-family: var(--mono);
-            font-size: 0.56rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--accent2);
-            text-decoration: none;
-            flex-shrink: 0;
-            padding-top: 0.2rem;
-            opacity: 0.65;
-            transition: opacity 0.2s;
-        }
-
-        .ref-link:hover {
-            opacity: 1;
-        }
-
-        .rule {
-            height: 1px;
-            background: var(--border);
-            margin: 2.2rem 0;
-            border: none;
-        }
-
-        /* ─── FADE-IN ON PANEL ENTRY ─────────────────────────────── */
-        .panel-inner>* {
-            opacity: 0;
-            transform: translateY(14px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
-
-        .panel.entered .panel-inner>* {
-            opacity: 1;
-            transform: none;
-        }
-
-        .panel-inner>*:nth-child(1) {
-            transition-delay: 0.04s;
-        }
-
-        .panel-inner>*:nth-child(2) {
-            transition-delay: 0.10s;
-        }
-
-        .panel-inner>*:nth-child(3) {
-            transition-delay: 0.16s;
-        }
-
-        .panel-inner>*:nth-child(4) {
-            transition-delay: 0.22s;
-        }
-
-        .panel-inner>*:nth-child(5) {
-            transition-delay: 0.27s;
-        }
-
-        .panel-inner>*:nth-child(6) {
-            transition-delay: 0.32s;
-        }
-
-        .panel-inner>*:nth-child(7) {
-            transition-delay: 0.37s;
-        }
-
-        .panel-inner>*:nth-child(n+8) {
-            transition-delay: 0.42s;
-        }
-
-        @media (max-width: 640px) {
-            #section-tabs {
+            .fig-placeholder img~.fig-icon {
                 display: none;
             }
 
-            .panel-inner {
-                padding: 2rem 1.3rem 4rem;
+            .fig-placeholder img~.fig-label {
+                display: none;
             }
 
-            h1 {
-                font-size: 2.1rem;
+            /* ─── REFERENCE LIST ─────────────────────────────────────── */
+            /* To add a reference, copy one <li> block and fill in the fields.
+   Set href="#" until you have the real URL.                       */
+            .ref-list {
+                list-style: none;
+                margin: 0.8rem 0;
             }
 
-            h2 {
-                font-size: 1.65rem;
+            .ref-list li {
+                display: flex;
+                gap: 0.9rem;
+                align-items: flex-start;
+                padding: 0.8rem 0.9rem;
+                border-radius: 5px;
+                border: 1px solid transparent;
+                transition: border-color 0.2s, background 0.2s;
+                margin-bottom: 0.4rem;
             }
-        }
+
+            .ref-list li:hover {
+                border-color: var(--border);
+                background: var(--bg3);
+            }
+
+            .ref-year {
+                font-family: var(--mono);
+                font-size: 0.56rem;
+                color: var(--accent);
+                letter-spacing: 0.06em;
+                flex-shrink: 0;
+                padding-top: 0.2rem;
+                width: 3.2rem;
+            }
+
+            .ref-body {
+                flex: 1;
+            }
+
+            .ref-title {
+                font-style: italic;
+                font-size: 0.88rem;
+                color: var(--text);
+                display: block;
+                margin-bottom: 0.18rem;
+            }
+
+            .ref-authors {
+                font-family: var(--mono);
+                font-size: 0.56rem;
+                color: var(--muted);
+                letter-spacing: 0.04em;
+            }
+
+            .ref-venue {
+                font-family: var(--mono);
+                font-size: 0.56rem;
+                color: var(--accent3);
+                letter-spacing: 0.04em;
+                margin-left: 0.4rem;
+            }
+
+            .ref-link {
+                font-family: var(--mono);
+                font-size: 0.56rem;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: var(--accent2);
+                text-decoration: none;
+                flex-shrink: 0;
+                padding-top: 0.2rem;
+                opacity: 0.65;
+                transition: opacity 0.2s;
+            }
+
+            .ref-link:hover {
+                opacity: 1;
+            }
+
+            .rule {
+                height: 1px;
+                background: var(--border);
+                margin: 2.2rem 0;
+                border: none;
+            }
+
+            /* ─── FADE-IN ON PANEL ENTRY ─────────────────────────────── */
+            .panel-inner>* {
+                opacity: 0;
+                transform: translateY(14px);
+                transition: opacity 0.5s ease, transform 0.5s ease;
+            }
+
+            .panel.entered .panel-inner>* {
+                opacity: 1;
+                transform: none;
+            }
+
+            .panel-inner>*:nth-child(1) {
+                transition-delay: 0.04s;
+            }
+
+            .panel-inner>*:nth-child(2) {
+                transition-delay: 0.10s;
+            }
+
+            .panel-inner>*:nth-child(3) {
+                transition-delay: 0.16s;
+            }
+
+            .panel-inner>*:nth-child(4) {
+                transition-delay: 0.22s;
+            }
+
+            .panel-inner>*:nth-child(5) {
+                transition-delay: 0.27s;
+            }
+
+            .panel-inner>*:nth-child(6) {
+                transition-delay: 0.32s;
+            }
+
+            .panel-inner>*:nth-child(7) {
+                transition-delay: 0.37s;
+            }
+
+            .panel-inner>*:nth-child(n+8) {
+                transition-delay: 0.42s;
+            }
+
+            @media (max-width: 640px) {
+                #section-tabs {
+                    display: none;
+                }
+
+                .panel-inner {
+                    padding: 2rem 1.3rem 4rem;
+                }
+
+                h1 {
+                    font-size: 2.1rem;
+                }
+
+                h2 {
+                    font-size: 1.65rem;
+                }
+            }
     </style>
 </head>
 
