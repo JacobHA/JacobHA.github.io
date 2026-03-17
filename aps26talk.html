@@ -773,10 +773,11 @@
 
                 <p>The key empirical anchor is <strong>dopamine</strong>. Firing patterns of dopaminergic neurons are
                     well-described by temporal difference (TD) errors — the same quantity that drives RL algorithm
-                    updates. Unexpected reward → neurons fire; omitted predicted reward → neurons pause.</p>
+                    updates. Unexpected reward causes neurons to fire, leading to the ability to predict upcoming
+                    rewards based on cues (conditioning).</p>
 
                 <div class="callout">
-                    <h3>TD Error as Dopamine Prediction Error</h3>
+                    <h3>TD Error as Dopamine's Reward Prediction Error (RPE)</h3>
                     <p>δ<sub>t</sub> = r<sub>t+1</sub> + V(s<sub>t+1</sub>) − V(s<sub>t</sub>) appears in both RL
                         updates and as a model of phasic dopamine. One signal drives learning in brains and machines.
                     </p>
@@ -826,13 +827,47 @@
                             target="_blank">↗</a>
                     </li>
                     <li>
-                        <span class="ref-year">2009</span>
+                        <span class="ref-year">2002</span>
                         <div class="ref-body">
-                            <span class="ref-title">Reinforcement learning in the brain</span>
-                            <span class="ref-authors">Niv <span class="ref-venue">J. Math. Psych.</span></span>
+                            <span class="ref-title">Optimal feedback control as a
+                                theory of motor coordination</span>
+                            <span class="ref-authors">Todorov, Jordan <span class="ref-venue">Nature
+                                    Neuroscience</span></span>
                         </div>
-                        <a class="ref-link" href="https://www.sciencedirect.com/science/article/pii/S002224960800054X"
+                        <a class="ref-link" href="http://e.guigon.free.fr/rsc/article/TodorovJordan02.pdf"
                             target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2007</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Cost, Benefit, Tonic, Phasic
+                                What Do Response Rates Tell Us about Dopamine and Motivation?</span>
+                            <span class="ref-authors">Niv<span class="ref-venue">Annals of NY Academy of
+                                    Sciences</span></span>
+                        </div>
+                        <a class="ref-link"
+                            href="https://nyaspubs.onlinelibrary.wiley.com/doi/abs/10.1196/annals.1390.018"
+                            target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2020</span>
+                        <div class="ref-body">
+                            <span class="ref-title"> Basal Ganglia Circuits for Action Specification</span>
+                            <span class="ref-authors">Park et al.<span class="ref-venue"> Annual Review of Neuroscience
+                                </span></span>
+                        </div>
+                        <a class="ref-link"
+                            href="https://www.annualreviews.org/content/journals/10.1146/annurev-neuro-070918-050452"
+                            target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2021</span>
+                        <div class="ref-body">
+                            <span class="ref-title"> Figuring Out How the Mind Works — At The Exciting Intersection of
+                                RL, Psychology, and Neuroscience </span>
+                            <span class="ref-authors">Abhishek Naik<span class="ref-venue">U of A</span></span>
+                        </div>
+                        <a class="ref-link" href="https://www.youtube.com/watch?v=KRVY_mUpoCk" target="_blank">↗</a>
                     </li>
                     <li>
                         <span class="ref-year">2022</span>
@@ -844,6 +879,17 @@
                         <a class="ref-link" href="https://doi.org/10.1038/s41593-022-01211-5" target="_blank">↗</a>
                     </li>
                     <li>
+                        <span class="ref-year">2023</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Mesolimbic dopamine adapts the rate of learning from action</span>
+                            <span class="ref-authors">Coddington et al.<span class="ref-venue">Nature
+                                </span></span>
+                        </div>
+                        <a class="ref-link"
+                            href="https://www.annualreviews.org/content/journals/10.1146/annurev-neuro-070918-050452"
+                            target="_blank">↗</a>
+                    </li>
+                    <li>
                         <span class="ref-year">2024</span>
                         <div class="ref-body">
                             <span class="ref-title">Explaining dopamine through prediction errors and beyond</span>
@@ -853,16 +899,14 @@
                         <a class="ref-link" href="https://doi.org/10.1038/s41593-024-01705-4" target="_blank">↗</a>
                     </li>
                     <li>
-                        <span class="ref-year">2002</span>
+                        <span class="ref-year">2025</span>
                         <div class="ref-body">
-                            <span class="ref-title">Optimal feedback control as a
-                                theory of motor coordination</span>
-                            <span class="ref-authors">Todorov, Jordan <span class="ref-venue">Nature
-                                    Neuroscience</span></span>
+                            <span class="ref-title">The Marriage of Natural & Engineered Reinforcement Learning</span>
+                            <span class="ref-authors">Peter Dayan<span class="ref-venue">RLC 2025</span></span>
                         </div>
-                        <a class="ref-link" href="http://e.guigon.free.fr/rsc/article/TodorovJordan02.pdf"
-                            target="_blank">↗</a>
+                        <a class="ref-link" href="https://www.youtube.com/watch?v=2OOGxkqM2oI" target="_blank">↗</a>
                     </li>
+
 
 
                     <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
@@ -891,7 +935,8 @@
                     depends on
                     our desired level of modeling the system.
                 </p>
-                Through interacting with their surroundings (the "environment"), an agent will generate a trajectory:
+                <p>Through interacting with their surroundings (the "environment"), an agent will generate a trajectory:
+                </p>
                 <div class="eq-block">
                     <div class="eq-label">Trajectory</div>
                     τ = (s_1, a_1, s_2, a_2, ...)
@@ -1042,8 +1087,8 @@
                             <td class="sm-term">Hamiltonian −E</td>
                         </tr>
                         <tr>
-                            <td class="rl-term">Value Function V(s)</td>
-                            <td class="sm-term">Free Energy F</td>
+                            <td class="rl-term">Value Function V(s), Q(s,a)</td>
+                            <td class="sm-term">(Conditional) Free Energy F</td>
                         </tr>
                         <tr>
                             <td class="rl-term">Regularization α</td>
@@ -1054,7 +1099,7 @@
                             <td class="sm-term">Gibbs Distribution</td>
                         </tr>
                         <tr>
-                            <td class="rl-term">Reset Penalty</td>
+                            <td class="rl-term">Reset Penalty, -r_terminal</td>
                             <td class="sm-term">Chemical Potential μ</td>
                         </tr>
                         <tr>
@@ -1082,8 +1127,8 @@
                     <div class="fig-icon">📊</div>
                     <div class="fig-label">Figure — Microcanonical example: goal-avoiding and goal-seeking behavior.
                     </div>
-                    <div class="fig-caption">Gridworld with target return +1 / 6 steps (seeks goal) vs target
-                        0 / 20 steps (avoids goal). These behaviors are encoded in the same partition function! Notice
+                    <div class="fig-caption">Gridworld with target return +1 in 6 steps (seeks goal) vs target
+                        0 in 20 steps (avoids goal). These behaviors are encoded in the same partition function! Notice
                         that the derived policies obey the MaxEnt principle: the policies generate trajectories
                         satisfying the constraints while maximizing their entropy (ensuring the most possible
                         trajectories with these constraints).</div>
@@ -1205,9 +1250,15 @@
                 </div>
 
                 <h3>Boosting via Bounding (Bogoliubov Inspiration)</h3>
-                <p>Bogoliubov's variational principle bounds free energy via a reference Hamiltonian. Analogously, we
-                    derive tight upper/lower bounds on Q* and use them as clipping constraints. Clipping
-                    <em>excludes</em> invalid Q* regions; Bellman updates <em>pull</em> toward Q* — leading to faster,
+                <p>Bogoliubov's variational principle bounds free energy via a reference Hamiltonian. Drawing
+                    inspiration from this technique, we
+                    derive tight upper andlower bounds on the optimal value function (free energy) Q* based on prior
+                    solutions. We show that even when there is no "prior solution", any (finite) estimate can be used to
+                    generate non-trivial bounds. This was the first work to generate state-action dependent bounds in
+                    the general case. The inequalities derived were implemented via clipping constraints. Intuitively,
+                    clipping
+                    <em>excludes</em> invalid Q* regions whereas the standard Bellman updates <em>pull</em> toward Q* —
+                    leading to faster,
                     more stable convergence (RLC 2024).
                 </p>
 
@@ -1223,8 +1274,9 @@
                 <h3>ASAC — Average-Reward Soft Actor Critic</h3>
                 <p>Combining average-reward objective, entropy regularization, and actor-critic architecture yields
                     <strong>ASAC</strong> — currently state-of-the-art across MuJoCo continuous control. The critic
-                    targets the <em>differential value function</em> (free energy relative to ground state); the actor
-                    maximizes entropy at a learned temperature.
+                    targets the <em>differential value function</em> (component of free energy that scales sub-linearly
+                    with trajectory length); the actor is a policy selects actions
+                    minimizes free energy at the given temperature.
                 </p>
 
                 <!-- ── FIGURE SLOT ── -->
@@ -1296,29 +1348,35 @@
                 <div class="fig-placeholder">
                     <div class="fig-icon">📊</div>
                     <div class="fig-label">Figure — Atari reward shaping results</div>
-                    <div class="fig-caption">Suggested: bar chart of relative advantage (%) of self-consistent gauge vs
+                    <div class="fig-caption">Bar chart of relative advantage (%) of proposed approach, "BSRS"
+                        (self-consistent gauge redefinition) vs
                         DQN baseline across Atari-57 games, log-scale y-axis.</div>
+                    <img src="assets/bsrs.png" />
                 </div>
 
                 <h3>Pure Exploration — Maximum Entropy State Coverage</h3>
-                <p>Maximizing entropy of the stationary state-action distribution without extrinsic reward is a stat
-                    mech problem. Our algorithm <strong>EVE</strong> derives a novel TD-style update from this principle
-                    directly, reaching the theoretical entropy ceiling faster and more sample-efficiently than all prior
-                    baselines. (Under review.)</p>
+                <p>Maximizing entropy of the stationary state-action distribution without extrinsic reward is a
+                    fundamental problem in exploration, whose solution can lead to policies that collect diverese data
+                    for efficient downstream training and environment coverage. Our algorithm <strong>EVE</strong>
+                    derives a novel TD-style update from this principle
+                    directly, reaching the theoretical entropy ceiling faster and more efficiently than prior
+                    baselines.</p>
 
                 <!-- ── FIGURE SLOT ── -->
                 <div class="fig-placeholder">
                     <div class="fig-icon">📊</div>
                     <div class="fig-label">Figure — EVE exploration entropy vs iterations</div>
-                    <div class="fig-caption">Suggested: empirical state-action entropy vs iterations on CLIFF
+                    <div class="fig-caption">Empirical state-action entropy vs iterations on CLIFF
                         environment — EVE / Soft-Q (γ = 0.80–0.99) / Differential Soft-Q with theoretical max entropy
                         ceiling marked.</div>
+                    <img src="assets/eve.png" />
                 </div>
 
                 <h3>Non-Equilibrium: Curriculum as Driving Protocol</h3>
                 <p>Curriculum learning maps to a non-equilibrium driving protocol λ(t). The optimal curriculum minimizes
-                    excess work (regret) by following a <em>geodesic</em> in task space under the Fisher-Rao metric,
-                    satisfying a Cramér-Rao-style efficiency bound.</p>
+                    excess work (regret) by following a <em>geodesic</em> in task space under an information-theoretic
+                    metric,
+                    a generalization of the Fisher information metric based on reward correlations.</p>
 
                 <div class="eq-block">
                     <div class="eq-label">Excess Work (Curriculum Regret)</div>
@@ -1331,8 +1389,9 @@
                 <div class="fig-placeholder">
                     <div class="fig-icon">📊</div>
                     <div class="fig-label">Figure — Geodesic vs linear curriculum</div>
-                    <div class="fig-caption">Suggested: regret vs time (linear vs geodesic paths) + task-space (λ₁, λ₂)
+                    <div class="fig-caption">Regret vs time (linear vs geodesic paths) + task-space (λ₁, λ₂)
                         trajectory overlaid on log Tr ζ heatmap.</div>
+                    <img src="assets/mew1.png" />
                 </div>
 
                 <hr class="rule">
@@ -1345,6 +1404,17 @@
                             <span class="ref-authors">Ng, Harada, Russell <span class="ref-venue">ICML</span></span>
                         </div>
                         <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+
+                    <li>
+                        <span class="ref-year">2012</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Thermodynamic metrics and optimal paths</span>
+                            <span class="ref-authors">Sivak, Crooks<span class="ref-venue">Phys Rev
+                                    Letters</span></span>
+                        </div>
+                        <a class="ref-link" href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.108.190602"
+                            target="_blank">↗</a>
                     </li>
                     <li>
                         <span class="ref-year">2025</span>
