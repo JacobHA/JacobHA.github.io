@@ -493,183 +493,174 @@
             color: var(--muted);
         }
 
-        /* ─── FIGURE PLACEHOLDER ─────────────────────────────────── */
-        .fig-placeholder {
-            border: 1px dashed var(--dim);
-            border-radius: 6px;
-            padding: 2.2rem 2rem;
-            margin: 1.6rem 0;
-            text-align: center;
-            background: rgba(27, 40, 56, 0.02);
-            transition: border
 
-            /* When you drop in a real image, wrap it like:
+        /* When you drop in a real image, wrap it like:
    <div class="fig-placeholder">
      <img src="your-figure.png" alt="description" />
      <div class="fig-caption">Caption text here.</div>
    </div>
    The dashed border and icon will be hidden automatically. */
-            .fig-placeholder img {
-                max-width: 100%;
-                border-radius: 4px;
-                display: block;
-                margin: 0 auto 0.8rem;
-            }
+        .fig-placeholder img {
+            max-width: 100%;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto 0.8rem;
+        }
 
-            .fig-placeholder img~.fig-icon {
-                display: none;
-            }
+        .fig-placeholder img~.fig-icon {
+            display: none;
+        }
 
-            .fig-placeholder img~.fig-label {
-                display: none;
-            }
+        .fig-placeholder img~.fig-label {
+            display: none;
+        }
 
-            /* ─── REFERENCE LIST ─────────────────────────────────────── */
-            /* To add a reference, copy one <li> block and fill in the fields.
+        /* ─── REFERENCE LIST ─────────────────────────────────────── */
+        /* To add a reference, copy one <li> block and fill in the fields.
    Set href="#" until you have the real URL.                       */
-            .ref-list {
-                list-style: none;
-                margin: 0.8rem 0;
+        .ref-list {
+            list-style: none;
+            margin: 0.8rem 0;
+        }
+
+        .ref-list li {
+            display: flex;
+            gap: 0.9rem;
+            align-items: flex-start;
+            padding: 0.8rem 0.9rem;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            transition: border-color 0.2s, background 0.2s;
+            margin-bottom: 0.4rem;
+        }
+
+        .ref-list li:hover {
+            border-color: var(--border);
+            background: var(--bg3);
+        }
+
+        .ref-year {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            color: var(--accent);
+            letter-spacing: 0.06em;
+            flex-shrink: 0;
+            padding-top: 0.2rem;
+            width: 3.2rem;
+        }
+
+        .ref-body {
+            flex: 1;
+        }
+
+        .ref-title {
+            font-style: italic;
+            font-size: 0.88rem;
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.18rem;
+        }
+
+        .ref-authors {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            color: var(--muted);
+            letter-spacing: 0.04em;
+        }
+
+        .ref-venue {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            color: var(--accent3);
+            letter-spacing: 0.04em;
+            margin-left: 0.4rem;
+        }
+
+        .ref-link {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent2);
+            text-decoration: none;
+            flex-shrink: 0;
+            padding-top: 0.2rem;
+            opacity: 0.65;
+            transition: opacity 0.2s;
+        }
+
+        .ref-link:hover {
+            opacity: 1;
+        }
+
+        .rule {
+            height: 1px;
+            background: var(--border);
+            margin: 2.2rem 0;
+            border: none;
+        }
+
+        /* ─── FADE-IN ON PANEL ENTRY ─────────────────────────────── */
+        .panel-inner>* {
+            opacity: 0;
+            transform: translateY(14px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .panel.entered .panel-inner>* {
+            opacity: 1;
+            transform: none;
+        }
+
+        .panel-inner>*:nth-child(1) {
+            transition-delay: 0.04s;
+        }
+
+        .panel-inner>*:nth-child(2) {
+            transition-delay: 0.10s;
+        }
+
+        .panel-inner>*:nth-child(3) {
+            transition-delay: 0.16s;
+        }
+
+        .panel-inner>*:nth-child(4) {
+            transition-delay: 0.22s;
+        }
+
+        .panel-inner>*:nth-child(5) {
+            transition-delay: 0.27s;
+        }
+
+        .panel-inner>*:nth-child(6) {
+            transition-delay: 0.32s;
+        }
+
+        .panel-inner>*:nth-child(7) {
+            transition-delay: 0.37s;
+        }
+
+        .panel-inner>*:nth-child(n+8) {
+            transition-delay: 0.42s;
+        }
+
+        @media (max-width: 640px) {
+            #section-tabs {
+                display: none;
             }
 
-            .ref-list li {
-                display: flex;
-                gap: 0.9rem;
-                align-items: flex-start;
-                padding: 0.8rem 0.9rem;
-                border-radius: 5px;
-                border: 1px solid transparent;
-                transition: border-color 0.2s, background 0.2s;
-                margin-bottom: 0.4rem;
+            .panel-inner {
+                padding: 2rem 1.3rem 4rem;
             }
 
-            .ref-list li:hover {
-                border-color: var(--border);
-                background: var(--bg3);
+            h1 {
+                font-size: 2.1rem;
             }
 
-            .ref-year {
-                font-family: var(--mono);
-                font-size: 0.56rem;
-                color: var(--accent);
-                letter-spacing: 0.06em;
-                flex-shrink: 0;
-                padding-top: 0.2rem;
-                width: 3.2rem;
+            h2 {
+                font-size: 1.65rem;
             }
-
-            .ref-body {
-                flex: 1;
-            }
-
-            .ref-title {
-                font-style: italic;
-                font-size: 0.88rem;
-                color: var(--text);
-                display: block;
-                margin-bottom: 0.18rem;
-            }
-
-            .ref-authors {
-                font-family: var(--mono);
-                font-size: 0.56rem;
-                color: var(--muted);
-                letter-spacing: 0.04em;
-            }
-
-            .ref-venue {
-                font-family: var(--mono);
-                font-size: 0.56rem;
-                color: var(--accent3);
-                letter-spacing: 0.04em;
-                margin-left: 0.4rem;
-            }
-
-            .ref-link {
-                font-family: var(--mono);
-                font-size: 0.56rem;
-                letter-spacing: 0.08em;
-                text-transform: uppercase;
-                color: var(--accent2);
-                text-decoration: none;
-                flex-shrink: 0;
-                padding-top: 0.2rem;
-                opacity: 0.65;
-                transition: opacity 0.2s;
-            }
-
-            .ref-link:hover {
-                opacity: 1;
-            }
-
-            .rule {
-                height: 1px;
-                background: var(--border);
-                margin: 2.2rem 0;
-                border: none;
-            }
-
-            /* ─── FADE-IN ON PANEL ENTRY ─────────────────────────────── */
-            .panel-inner>* {
-                opacity: 0;
-                transform: translateY(14px);
-                transition: opacity 0.5s ease, transform 0.5s ease;
-            }
-
-            .panel.entered .panel-inner>* {
-                opacity: 1;
-                transform: none;
-            }
-
-            .panel-inner>*:nth-child(1) {
-                transition-delay: 0.04s;
-            }
-
-            .panel-inner>*:nth-child(2) {
-                transition-delay: 0.10s;
-            }
-
-            .panel-inner>*:nth-child(3) {
-                transition-delay: 0.16s;
-            }
-
-            .panel-inner>*:nth-child(4) {
-                transition-delay: 0.22s;
-            }
-
-            .panel-inner>*:nth-child(5) {
-                transition-delay: 0.27s;
-            }
-
-            .panel-inner>*:nth-child(6) {
-                transition-delay: 0.32s;
-            }
-
-            .panel-inner>*:nth-child(7) {
-                transition-delay: 0.37s;
-            }
-
-            .panel-inner>*:nth-child(n+8) {
-                transition-delay: 0.42s;
-            }
-
-            @media (max-width: 640px) {
-                #section-tabs {
-                    display: none;
-                }
-
-                .panel-inner {
-                    padding: 2rem 1.3rem 4rem;
-                }
-
-                h1 {
-                    font-size: 2.1rem;
-                }
-
-                h2 {
-                    font-size: 1.65rem;
-                }
-            }
+        }
     </style>
 </head>
 
