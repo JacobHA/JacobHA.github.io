@@ -777,7 +777,7 @@
 
                 <div class="callout">
                     <h3>TD Error as Dopamine Prediction Error</h3>
-                    <p>δ<sub>t</sub> = r<sub>t+1</sub> + γV(s<sub>t+1</sub>) − V(s<sub>t</sub>) appears in both RL
+                    <p>δ<sub>t</sub> = r<sub>t+1</sub> + V(s<sub>t+1</sub>) − V(s<sub>t</sub>) appears in both RL
                         updates and as a model of phasic dopamine. One signal drives learning in brains and machines.
                     </p>
                 </div>
@@ -839,7 +839,7 @@
                         <div class="ref-body">
                             <span class="ref-title">Arithmetic value representation for hierarchical behavior
                                 composition</span>
-                            <span class="ref-authors">Makino <span class="ref-venue">Nature Neuroscience</span></span>
+                            <span class="ref-authors">Makino<span class="ref-venue">Nature Neuroscience</span></span>
                         </div>
                         <a class="ref-link" href="https://doi.org/10.1038/s41593-022-01211-5" target="_blank">↗</a>
                     </li>
@@ -852,6 +852,18 @@
                         </div>
                         <a class="ref-link" href="https://doi.org/10.1038/s41593-024-01705-4" target="_blank">↗</a>
                     </li>
+                    <li>
+                        <span class="ref-year">2002</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Optimal feedback control as a
+                                theory of motor coordination</span>
+                            <span class="ref-authors">Todorov, Jordan <span class="ref-venue">Nature
+                                    Neuroscience</span></span>
+                        </div>
+                        <a class="ref-link" href="http://e.guigon.free.fr/rsc/article/TodorovJordan02.pdf"
+                            target="_blank">↗</a>
+                    </li>
+
 
                     <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
                 </ul>
@@ -898,7 +910,7 @@
                 </div>
 
                 It is worth noting that this objective is somewhat contrarian: The popular approach is to use
-                discounting, where an exponential factor decreases the effect of rewards over time.
+                discounting, where an exponential factor (γ) decreases the effect of rewards over time.
                 To maintain time homogeneity (and hence the connection to statistical mechanics), we instead adopt the
                 average-reward approach. Interestingly, recent work suggests that this may be more appropriate for
                 modeling biological learning (again, in dopamine pathways).
@@ -907,9 +919,12 @@
 
                 <div class="callout pink">
                     <h3>Dual Channel Hypothesis</h3>
-                    <p>In average-reward RL, a single RPE update drives both the phasic signal (δ, prediction error) and
-                        the tonic signal (ρ, reward rate) — mapping directly onto the biological phasic/tonic dopamine
-                        distinction.</p>
+                    <p>In average-reward RL, a single "reward prediction error" (RPE) update drives both the phasic
+                        signal (δ, prediction error) and
+                        the tonic signal (ρ, baseline reward rate) — mapping directly onto the biological dual channel
+                        dopamine
+                        hypothesis. This same signal also determines the optimal control protocol through maximization
+                        of the value function (free energy minimization).</p>
                 </div>
 
                 Other ideas from reinforcement learning have found utility in neuroscience. For example:
@@ -918,20 +933,19 @@
                     <div class="card">
                         <div class="card-icon">🎭</div>
                         <div class="card-title">Compositionality</div>
-                        <p>Combine Q-values from subtasks to solve novel tasks without retraining. Theoretical bounds in
-                            Adamczyk et al. 2023.</p>
+                        <p>Combine Q-values from subtasks to solve novel tasks without retraining: <a
+                                href="https://doi.org/10.1038/s41593-022-01211-5" target="_blank">Theoretical bounds</a>
+                            in <a href="https://proceedings.mlr.press/v216/adamczyk23a/adamczyk23a.pdf"
+                                target="_blank">Adamczyk et al. 2023</a>.
+                        </p>
                     </div>
-                    <div class="card">
-                        <div class="card-icon">🎁</div>
-                        <div class="card-title">Reward Shaping</div>
-                        <p>Add potential-based terms to guide learning without changing the optimal policy — a gauge
-                            invariance.</p>
-                    </div>
+
                     <div class="card">
                         <div class="card-icon">📈</div>
                         <div class="card-title">Distributional RL</div>
-                        <p>Model the full return distribution, not just the mean. Connected to distributional stat mech
-                            and dopamine quantile coding.</p>
+                        <p>Model the full return distribution, not just the mean. Connected to dopamine quantile coding:
+                            <a href="https://www.nature.com/articles/s41586-019-1924-6">paper</a>.
+                        </p>
                     </div>
                 </div>
 
@@ -1138,6 +1152,17 @@
                         </div>
                         <a class="ref-link" href="https://arxiv.org/pdf/2106.01345" target="_blank">↗</a>
                     </li>
+                    <li>
+                        <span class="ref-year">2021</span>
+                        <div class="ref-body">
+                            <span class="ref-title">A reinforcement learning approach to rare trajectory sampling</span>
+                            <span class="ref-authors">Rose et al.<span class="ref-venue">New Journal of
+                                    Physics</span></span>
+                        </div>
+                        <a class="ref-link" href="https://iopscience.iop.org/article/10.1088/1367-2630/abd7bd/meta"
+                            target="_blank">↗</a>
+                    </li>
+
                     <li>
                         <span class="ref-year">2023</span>
                         <div class="ref-body">
