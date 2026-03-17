@@ -539,54 +539,82 @@
             background: var(--bg3);
         }
 
+        /* Remove default list styling */
+        .ref-list {
+            list-style: none;
+            padding: 0;
+            margin: 1.4rem 0;
+        }
+
+        /* Add spacing between the blocks */
+        .ref-list li {
+            margin-bottom: 0.8rem;
+        }
+
+        /* Make the entire anchor tag a block-level container */
+        .ref-link {
+            display: flex;
+            /* Aligns year, body, and arrow horizontally */
+            align-items: baseline;
+            /* Keeps text aligned on the same baseline */
+            padding: 1.2rem 1.5rem;
+            /* Put padding INSIDE the link so the whole area is clickable */
+            text-decoration: none;
+            /* Remove default link underline */
+            color: var(--text);
+            /* Inherit body text color */
+            background: var(--bg3);
+            /* Use our dark beige background */
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            transition: transform 0.2s, border-color 0.2s, background-color 0.2s;
+            gap: 1.5rem;
+            /* Space between year, body, and arrow */
+        }
+
+        /* Hover effect so the user knows the whole block is clickable */
+        .ref-link:hover {
+            background: rgba(34, 87, 139, 0.04);
+            /* Very subtle ink wash on hover */
+            border-color: var(--accent);
+            /* Ink blue border */
+            transform: translateY(-2px);
+            /* Slight lift effect */
+        }
+
+        /* --- Internal layout for the reference content --- */
         .ref-year {
             font-family: var(--mono);
-            font-size: 0.56rem;
-            color: var(--accent);
-            letter-spacing: 0.06em;
+            font-size: 0.75rem;
+            color: var(--accent2);
+            /* Sepia ink for the year */
             flex-shrink: 0;
-            padding-top: 0.2rem;
-            width: 3.2rem;
+            /* Prevents the year from squishing */
         }
 
         .ref-body {
-            flex: 1;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            /* Lets the body take up the remaining space */
         }
 
         .ref-title {
-            font-style: italic;
-            font-size: 0.88rem;
-            color: var(--text);
-            display: block;
-            margin-bottom: 0.18rem;
+            font-weight: 600;
+            color: var(--heading);
+            margin-bottom: 0.2rem;
+            line-height: 1.4;
         }
 
         .ref-authors {
-            font-family: var(--mono);
-            font-size: 0.56rem;
+            font-size: 0.85rem;
             color: var(--muted);
-            letter-spacing: 0.04em;
         }
 
         .ref-venue {
-            font-family: var(--mono);
-            font-size: 0.56rem;
-            color: var(--accent3);
-            letter-spacing: 0.04em;
-            margin-left: 0.4rem;
-        }
-
-        .ref-link {
-            font-family: var(--mono);
-            font-size: 0.56rem;
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            color: var(--accent2);
-            text-decoration: none;
-            flex-shrink: 0;
-            padding-top: 0.2rem;
-            opacity: 0.65;
-            transition: opacity 0.2s;
+            font-style: italic;
+            color: var(--accent);
+            margin-left: 0.3rem;
         }
 
         .ref-link:hover {
@@ -744,7 +772,7 @@
            To replace: add <img src="..." /> inside this div.
            The dashed border and placeholder text will hide automatically. -->
                 <div class="fig-placeholder">
-                    <img src="assets/schultz93dop.png" style="max-width: 100%; height: auto;">
+                    <img src="assets/schultz93dop.png" style="max-width: 80%; height: auto;">
                     <div class="fig-icon">📊</div>
                     <div class="fig-label">Figure — Dopamine firing rasters (Schultz 1997)</div>
                     <div class="fig-caption">Dopamine raster plots showing reward prediction error alignment — "no
