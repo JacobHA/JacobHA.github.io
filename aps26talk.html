@@ -1066,16 +1066,23 @@
                 <div class="fig-placeholder">
                     <div class="fig-icon">📊</div>
                     <div class="fig-label">Figure — Canonical ensemble: effect of β on policy</div>
-                    <div class="fig-caption">Suggested: gridworld value/policy heatmaps for β = 2, 20, 40, 200 showing
-                        transition from uniform → greedy behavior.</div>
+                    <div class="fig-caption">Gridworld value heatmaps for β = 2, 20, 40, 200 showing
+                        transition from uniform (high temperature) to greedy (low temperature) behavior.</div>
+                    <img src="assets/canonical_betas.png" alt="Canonical Betas Figure" />
                 </div>
 
                 <!-- ── FIGURE SLOT 2 ── -->
                 <div class="fig-placeholder">
                     <div class="fig-icon">📊</div>
-                    <div class="fig-label">Figure — Microcanonical example: goal-seeking vs goal-avoiding</div>
-                    <div class="fig-caption">Suggested: gridworld with target return +1 / 6 steps (seeks goal) vs target
-                        0 / 20 steps (avoids goal).</div>
+                    <div class="fig-label">Figure — Microcanonical example: goal-avoiding and goal-seeking behavior.
+                    </div>
+                    <div class="fig-caption">Gridworld with target return +1 / 6 steps (seeks goal) vs target
+                        0 / 20 steps (avoids goal). These behaviors are encoded in the same partition function! Notice
+                        that the derived policies obey the MaxEnt principle: the policies generate trajectories
+                        satisfying the constraints while maximizing their entropy (ensuring the most possible
+                        trajectories with these constraints).</div>
+                    <img src="assets/microcanonical_examples.png" alt="Microcanonical Figure" />
+
                 </div>
 
                 <hr class="rule">
