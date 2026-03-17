@@ -1028,6 +1028,19 @@
                     <div class="eq-label">Microcanonical</div>
                     Ω(R, k|s) = ∫ δ( Σᵢ r(sᵢ,aᵢ) − R ) dτₖ
                 </div>
+                <!-- ── FIGURE SLOT 2 ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Microcanonical example: goal-avoiding and goal-seeking behavior.
+                    </div>
+                    <div class="fig-caption">Gridworld with target return +1 / 6 steps (seeks goal) vs target
+                        0 / 20 steps (avoids goal). These behaviors are encoded in the same partition function! Notice
+                        that the derived policies obey the MaxEnt principle: the policies generate trajectories
+                        satisfying the constraints while maximizing their entropy (ensuring the most possible
+                        trajectories with these constraints).</div>
+                    <img src="assets/microcanonical_examples.png" alt="Microcanonical Figure" />
+
+                </div>
 
                 <div class="callout">
                     <strong
@@ -1040,7 +1053,14 @@
                     <div class="eq-label">Canonical</div>
                     Z_p(s, a) = Σ_τ p(τ|s,a) e^(βR(τ))
                 </div>
-
+                <!-- ── FIGURE SLOT 1 ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Canonical ensemble: effect of β on policy</div>
+                    <div class="fig-caption">Gridworld value heatmaps for β = 2, 20, 40, 200 showing
+                        transition from uniform (high temperature) to greedy (low temperature) behavior.</div>
+                    <img src="assets/canonical_betas.png" alt="Canonical Betas Figure" />
+                </div>
                 <div class="callout">
                     <strong
                         style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent3);">Grand
@@ -1062,28 +1082,7 @@
                     <li><span class="ci pending">◯</span> RG flow for hierarchical RL (in progress)</li>
                 </ul>
 
-                <!-- ── FIGURE SLOT 1 ── -->
-                <div class="fig-placeholder">
-                    <div class="fig-icon">📊</div>
-                    <div class="fig-label">Figure — Canonical ensemble: effect of β on policy</div>
-                    <div class="fig-caption">Gridworld value heatmaps for β = 2, 20, 40, 200 showing
-                        transition from uniform (high temperature) to greedy (low temperature) behavior.</div>
-                    <img src="assets/canonical_betas.png" alt="Canonical Betas Figure" />
-                </div>
 
-                <!-- ── FIGURE SLOT 2 ── -->
-                <div class="fig-placeholder">
-                    <div class="fig-icon">📊</div>
-                    <div class="fig-label">Figure — Microcanonical example: goal-avoiding and goal-seeking behavior.
-                    </div>
-                    <div class="fig-caption">Gridworld with target return +1 / 6 steps (seeks goal) vs target
-                        0 / 20 steps (avoids goal). These behaviors are encoded in the same partition function! Notice
-                        that the derived policies obey the MaxEnt principle: the policies generate trajectories
-                        satisfying the constraints while maximizing their entropy (ensuring the most possible
-                        trajectories with these constraints).</div>
-                    <img src="assets/microcanonical_examples.png" alt="Microcanonical Figure" />
-
-                </div>
 
                 <hr class="rule">
                 <h3>References</h3>
@@ -1094,7 +1093,7 @@
                             <span class="ref-title">Reinforcement Learning with Deep Energy-Based Policies</span>
                             <span class="ref-authors">Haarnoja et al. <span class="ref-venue">ICML</span></span>
                         </div>
-                        <a class="ref-link" href="https://arxiv.org/abs/1702.08165" target="_blank">↗</a>
+                        <a class="ref-link" href="https://arxiv.org/pdf/1702.08165" target="_blank">↗</a>
                     </li>
                     <li>
                         <span class="ref-year">2021</span>
@@ -1102,16 +1101,19 @@
                             <span class="ref-title">Decision Transformer: RL via Sequence Modeling</span>
                             <span class="ref-authors">Chen et al. <span class="ref-venue">NeurIPS</span></span>
                         </div>
-                        <a class="ref-link" href="https://arxiv.org/abs/2106.01345" target="_blank">↗</a>
+                        <a class="ref-link" href="https://arxiv.org/pdf/2106.01345" target="_blank">↗</a>
                     </li>
                     <li>
-                        <span class="ref-year">2024</span>
+                        <span class="ref-year">2023</span>
                         <div class="ref-body">
-                            <span class="ref-title">Statistical Mechanics of Reinforcement Learning</span>
-                            <span class="ref-authors">Adamczyk &amp; Kulkarni <span
-                                    class="ref-venue">arXiv</span></span>
+                            <span class="ref-title">Entropy Regularized Reinforcement Learning Using Large Deviation
+                                Theory</span>
+                            <span class="ref-authors">Adamczyk &amp; Kulkarni <span class="ref-venue">Phys Rev
+                                    Research</span></span>
                         </div>
-                        <a class="ref-link" href="#" target="_blank">↗</a>
+                        <a class="ref-link"
+                            href="https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023085"
+                            target="_blank">↗</a>
                     </li>
                     <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
                 </ul>
@@ -1168,8 +1170,9 @@
                 <div class="fig-placeholder">
                     <div class="fig-icon">📊</div>
                     <div class="fig-label">Figure — ASAC MuJoCo benchmark results</div>
-                    <div class="fig-caption">Suggested: average return vs environment steps on Hopper, Walker2d,
-                        HalfCheetah, Ant, Swimmer, Humanoid — comparing APO / ARO-DDPG / ASAC / ATRPO.</div>
+                    <div class="fig-caption">Average return vs environment steps on robotic locomotion tasks (Hopper,
+                        Walker2d, HalfCheetah, Ant, Swimmer, Humanoid), comparing APO / ARO-DDPG / ASAC / ATRPO.</div>
+                    <img src="assets/asac_results.png" alt="ASAC MuJoCo Results" />
                 </div>
 
                 <hr class="rule">
@@ -1180,9 +1183,9 @@
                         <div class="ref-body">
                             <span class="ref-title">Average-Reward RL with Entropy Regularization</span>
                             <span class="ref-authors">Adamczyk, Makarenko, Tiomkin, Kulkarni <span
-                                    class="ref-venue">NeurIPS</span></span>
+                                    class="ref-venue">AAAI</span></span>
                         </div>
-                        <a class="ref-link" href="#" target="_blank">↗</a>
+                        <a class="ref-link" href="https://arxiv.org/pdf/2501.09080v1" target="_blank">↗</a>
                     </li>
                     <li>
                         <span class="ref-year">2024</span>
@@ -1191,7 +1194,8 @@
                             <span class="ref-authors">Adamczyk, Makarenko, Tiomkin, Kulkarni <span
                                     class="ref-venue">RLC</span></span>
                         </div>
-                        <a class="ref-link" href="#" target="_blank">↗</a>
+                        <a class="ref-link" href="https://rlj.cs.umass.edu/2024/papers/RLJ_RLC_2024_345.pdf"
+                            target="_blank">↗</a>
                     </li>
                     <li>
                         <span class="ref-year">2025</span>
@@ -1200,7 +1204,8 @@
                             <span class="ref-authors">Adamczyk, Makarenko, Tiomkin, Kulkarni <span
                                     class="ref-venue">RLC</span></span>
                         </div>
-                        <a class="ref-link" href="#" target="_blank">↗</a>
+                        <a class="ref-link" href="https://rlj.cs.umass.edu/2025/papers/RLJ_RLC_2025_34.pdf"
+                            target="_blank">↗</a>
                     </li>
                     <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
                 </ul>
@@ -1283,27 +1288,27 @@
                     <li>
                         <span class="ref-year">2023</span>
                         <div class="ref-body">
-                            <span class="ref-title">Reward Shaping via Self-Consistent Gauge</span>
+                            <span class="ref-title">Bootstrapped Reward Shaping via Self-Consistent Gauge</span>
                             <span class="ref-authors">Adamczyk, Kulkarni <span class="ref-venue">arXiv</span></span>
                         </div>
                         <a class="ref-link" href="#" target="_blank">↗</a>
                     </li>
                     <li>
-                        <span class="ref-year">2024</span>
+                        <span class="ref-year">2026</span>
                         <div class="ref-body">
                             <span class="ref-title">Thermodynamics of Reinforcement Learning Curricula</span>
                             <span class="ref-authors">Adamczyk, Rojas, Kulkarni <span class="ref-venue">SciForDL @
-                                    NeurIPS</span></span>
+                                    ICLR</span></span>
                         </div>
-                        <a class="ref-link" href="#" target="_blank">↗</a>
+                        <a class="ref-link" href="https://arxiv.org/pdf/2603.12324" target="_blank">↗</a>
                     </li>
                     <li>
-                        <span class="ref-year">Under review</span>
+                        <span class="ref-year">2026</span>
                         <div class="ref-body">
                             <span class="ref-title">Maximum Entropy Exploration Without the Rollouts</span>
                             <span class="ref-authors">Adamczyk, Kamoski, Kulkarni</span>
                         </div>
-                        <a class="ref-link" href="#" target="_blank">↗</a>
+                        <a class="ref-link" href="https://arxiv.org/pdf/2603.12325" target="_blank">↗</a>
                     </li>
                     <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
                 </ul>
