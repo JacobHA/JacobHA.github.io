@@ -689,6 +689,32 @@
                 font-size: 1.65rem;
             }
         }
+
+        /* ─── BUTTONS ────────────────────────────────────────────── */
+        .btn-primary {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--bg);
+            /* Uses your light paper color for the text */
+            font-family: var(--mono);
+            font-size: 0.75rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding: 0.9rem 2rem;
+            border-radius: 4px;
+            border: 1px solid var(--accent);
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 12px rgba(34, 87, 139, 0.15);
+            /* Soft ink drop shadow */
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(34, 87, 139, 0.2);
+        }
     </style>
 </head>
 
@@ -825,6 +851,7 @@
                         </div>
                         <a class="ref-link" href="https://doi.org/10.1038/s41593-024-01705-4" target="_blank">↗</a>
                     </li>
+
                     <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
                 </ul>
             </div>
