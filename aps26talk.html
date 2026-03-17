@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistical Mechanics of Reinforcement Learning · Adamczyk & Kulkarni</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,600;1,300&display=swap"
+        rel="stylesheet" />
+    <style>
+        /* ─── RESET ─────────────────────────────────────────────── */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --bg: #f9e3be;
+            --bg2: #f3d39c;
+            --bg3: #f3c581;
+            --border: rgba(160, 160, 160, 0.13);
+            --accent: #6ab0d4;
+            --accent2: #c4875a;
+            --accent3: #82c9a8;
+            --text: #0a8dcf;
+            --muted: #7a7872;
+            --dim: #3a3834;
+            --mono: 'JetBrains Mono', monospace;
+            --serif: 'EB Garamond', serif;
+            --display: 'Cormorant Garamond', serif;
+            --nav-h: 56px;
+            --foot-h: 46px;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--serif);
+            font-size: 17px;
+            line-height: 1.72;
+        }
+
+        /* ─── BACKGROUND ────────────────────────────────────────── */
+        #bg-canvas {
+            position: fixed;
+            inset: 0;
+            z-index: 0;
+            opacity: 0.28;
+            pointer-events: none;
+        }
+
+        /* ─── TOP NAV ───────────────────────────────────────────── */
+        #top-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--nav-h);
+            z-index: 900;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2.5rem;
+            background: rgba(9, 9, 14, 0.9);
+            backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .nav-brand {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        #section-tabs {
+            display: flex;
+            gap: 0;
+            list-style: none;
+        }
+
+        #section-tabs li button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: var(--mono);
+            font-size: 0.6rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            padding: 0.4rem 1rem;
+            border-bottom: 2px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+            white-space: nowrap;
+        }
+
+        #section-tabs li button:hover {
+            color: var(--accent);
+        }
+
+        #section-tabs li button.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ─── HORIZONTAL TRACK ──────────────────────────────────── */
+        #h-track {
+            position: fixed;
+            top: var(--nav-h);
+            left: 0;
+            height: calc(100vh - var(--nav-h) - var(--foot-h));
+            display: flex;
+            transition: transform 0.72s cubic-bezier(0.77, 0, 0.175, 1);
+            z-index: 1;
+        }
+
+        /* ─── PANELS ─────────────────────────────────────────────── */
+        .panel {
+            width: 100vw;
+            height: 100%;
+            flex-shrink: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: thin;
+            scrollbar-color: var(--dim) transparent;
+        }
+
+        .panel::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        .panel::-webkit-scrollbar-thumb {
+            background: var(--dim);
+            border-radius: 2px;
+        }
+
+        .panel-inner {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 3.2rem 3rem 5rem;
+        }
+
+        /* ─── FOOTER BAR ─────────────────────────────────────────── */
+        #foot-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: var(--foot-h);
+            z-index: 900;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 2.5rem;
+            background: rgba(9, 9, 14, 0.9);
+            backdrop-filter: blur(14px);
+            border-top: 1px solid var(--border);
+        }
+
+        .nav-arrow {
+            background: none;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+            padding: 0.28rem 1rem;
+            transition: all 0.2s;
+            border-radius: 3px;
+        }
+
+        .nav-arrow:hover:not(:disabled) {
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        .nav-arrow:disabled {
+            opacity: 0.2;
+            cursor: default;
+        }
+
+        #foot-dots {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .foot-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--dim);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .foot-dot.active {
+            background: var(--accent);
+            box-shadow: 0 0 6px var(--accent);
+            width: 14px;
+            border-radius: 3px;
+        }
+
+        #foot-counter {
+            font-family: var(--mono);
+            font-size: 0.6rem;
+            color: var(--muted);
+            letter-spacing: 0.1em;
+        }
+
+        /* ─── TYPE ───────────────────────────────────────────────── */
+        .panel-eyebrow {
+            font-family: var(--mono);
+            font-size: 0.58rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .panel-eyebrow::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--border), transparent);
+        }
+
+        h1 {
+            font-family: var(--display);
+            font-weight: 300;
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 1.06;
+            color: #eef0ff;
+            margin-bottom: 1.2rem;
+        }
+
+        h2 {
+            font-family: var(--display);
+            font-weight: 300;
+            font-size: clamp(1.8rem, 3.5vw, 3rem);
+            line-height: 1.1;
+            color: #eef0ff;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-family: var(--mono);
+            font-size: 0.65rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin: 2rem 0 0.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            max-width: 66ch;
+        }
+
+        a {
+            color: var(--accent);
+        }
+
+        /* ─── HERO ───────────────────────────────────────────────── */
+        #panel-hero .panel-inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100%;
+            text-align: center;
+            align-items: center;
+        }
+
+        .hero-divider {
+            width: 48px;
+            height: 1px;
+            margin: 1.6rem auto;
+            background: linear-gradient(90deg, transparent, var(--accent), transparent);
+        }
+
+        .hero-authors {
+            font-family: var(--mono);
+            font-size: 0.7rem;
+            color: var(--muted);
+            letter-spacing: 0.08em;
+            line-height: 2;
+        }
+
+        .hero-abstract {
+            max-width: 56ch;
+            text-align: left;
+            font-size: 0.9rem;
+            color: var(--muted);
+            border-left: 2px solid var(--dim);
+            padding-left: 1.2rem;
+            margin: 2rem auto 0;
+            font-style: italic;
+        }
+
+        /* ─── CALLOUT ────────────────────────────────────────────── */
+        .callout {
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.3rem 1.7rem;
+            margin: 1.6rem 0;
+            background: linear-gradient(135deg, rgba(106, 176, 212, 0.05), rgba(130, 201, 168, 0.03));
+            position: relative;
+        }
+
+        .callout::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 15%;
+            bottom: 15%;
+            width: 2px;
+            background: linear-gradient(var(--accent), var(--accent3));
+            border-radius: 1px;
+        }
+
+        .callout.pink::before {
+            background: linear-gradient(var(--accent2), var(--accent));
+        }
+
+        .eq-block {
+            background: var(--bg3);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent3);
+            border-radius: 4px;
+            padding: 1.1rem 1.5rem;
+            margin: 1.4rem 0;
+            font-family: var(--mono);
+            font-size: 0.8rem;
+            color: var(--accent3);
+            overflow-x: auto;
+            line-height: 1.9;
+        }
+
+        .eq-label {
+            font-size: 0.56rem;
+            color: var(--muted);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ─── CARD GRID ──────────────────────────────────────────── */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.9rem;
+            margin: 1.4rem 0;
+        }
+
+        .card {
+            background: var(--bg3);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1.1rem 1.3rem;
+            transition: border-color 0.2s, transform 0.2s;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .card-icon {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .card-title {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 0.45rem;
+        }
+
+        .card p {
+            font-size: 0.83rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        /* ─── DICTIONARY TABLE ───────────────────────────────────── */
+        .dict-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.4rem 0;
+            font-size: 0.88rem;
+        }
+
+        .dict-table th {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--muted);
+            padding: 0.65rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .dict-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(120, 130, 200, 0.07);
+        }
+
+        .dict-table tr:hover td {
+            background: rgba(123, 156, 255, 0.03);
+        }
+
+        .rl-term {
+            font-style: italic;
+            color: var(--accent2);
+        }
+
+        .sm-term {
+            font-style: italic;
+            color: var(--accent3);
+        }
+
+        /* ─── CHECKLIST ──────────────────────────────────────────── */
+        .check-list {
+            list-style: none;
+            margin: 1.2rem 0;
+        }
+
+        .check-list li {
+            display: flex;
+            align-items: baseline;
+            gap: 0.7rem;
+            padding: 0.42rem 0;
+            border-bottom: 1px solid rgba(120, 130, 200, 0.07);
+            font-size: 0.9rem;
+        }
+
+        .check-list li:last-child {
+            border-bottom: none;
+        }
+
+        .ci {
+            font-family: var(--mono);
+            font-size: 0.6rem;
+            color: var(--accent3);
+            flex-shrink: 0;
+        }
+
+        .ci.pending {
+            color: var(--muted);
+        }
+
+        /* ─── FIGURE PLACEHOLDER ─────────────────────────────────── */
+        .fig-placeholder {
+            border: 1px dashed var(--dim);
+            border-radius: 6px;
+            padding: 2.2rem 2rem;
+            margin: 1.6rem 0;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.012);
+            transition: border-color 0.2s;
+            position: relative;
+        }
+
+        .fig-placeholder:hover {
+            border-color: var(--muted);
+        }
+
+        .fig-icon {
+            font-size: 1.8rem;
+            opacity: 0.25;
+            margin-bottom: 0.5rem;
+        }
+
+        .fig-label {
+            font-family: var(--mono);
+            font-size: 0.6rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .fig-caption {
+            font-size: 0.8rem;
+            font-style: italic;
+            color: var(--dim);
+            margin-top: 0.4rem;
+            line-height: 1.5;
+            max-width: 52ch;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* When you drop in a real image, wrap it like:
+   <div class="fig-placeholder">
+     <img src="your-figure.png" alt="description" />
+     <div class="fig-caption">Caption text here.</div>
+   </div>
+   The dashed border and icon will be hidden automatically. */
+        .fig-placeholder img {
+            max-width: 100%;
+            border-radius: 4px;
+            display: block;
+            margin: 0 auto 0.8rem;
+        }
+
+        .fig-placeholder img~.fig-icon {
+            display: none;
+        }
+
+        .fig-placeholder img~.fig-label {
+            display: none;
+        }
+
+        /* ─── REFERENCE LIST ─────────────────────────────────────── */
+        /* To add a reference, copy one <li> block and fill in the fields.
+   Set href="#" until you have the real URL.                       */
+        .ref-list {
+            list-style: none;
+            margin: 0.8rem 0;
+        }
+
+        .ref-list li {
+            display: flex;
+            gap: 0.9rem;
+            align-items: flex-start;
+            padding: 0.8rem 0.9rem;
+            border-radius: 5px;
+            border: 1px solid transparent;
+            transition: border-color 0.2s, background 0.2s;
+            margin-bottom: 0.4rem;
+        }
+
+        .ref-list li:hover {
+            border-color: var(--border);
+            background: var(--bg3);
+        }
+
+        .ref-year {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            color: var(--accent);
+            letter-spacing: 0.06em;
+            flex-shrink: 0;
+            padding-top: 0.2rem;
+            width: 3.2rem;
+        }
+
+        .ref-body {
+            flex: 1;
+        }
+
+        .ref-title {
+            font-style: italic;
+            font-size: 0.88rem;
+            color: var(--text);
+            display: block;
+            margin-bottom: 0.18rem;
+        }
+
+        .ref-authors {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            color: var(--muted);
+            letter-spacing: 0.04em;
+        }
+
+        .ref-venue {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            color: var(--accent3);
+            letter-spacing: 0.04em;
+            margin-left: 0.4rem;
+        }
+
+        .ref-link {
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--accent2);
+            text-decoration: none;
+            flex-shrink: 0;
+            padding-top: 0.2rem;
+            opacity: 0.65;
+            transition: opacity 0.2s;
+        }
+
+        .ref-link:hover {
+            opacity: 1;
+        }
+
+        .rule {
+            height: 1px;
+            background: var(--border);
+            margin: 2.2rem 0;
+            border: none;
+        }
+
+        /* ─── FADE-IN ON PANEL ENTRY ─────────────────────────────── */
+        .panel-inner>* {
+            opacity: 0;
+            transform: translateY(14px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .panel.entered .panel-inner>* {
+            opacity: 1;
+            transform: none;
+        }
+
+        .panel-inner>*:nth-child(1) {
+            transition-delay: 0.04s;
+        }
+
+        .panel-inner>*:nth-child(2) {
+            transition-delay: 0.10s;
+        }
+
+        .panel-inner>*:nth-child(3) {
+            transition-delay: 0.16s;
+        }
+
+        .panel-inner>*:nth-child(4) {
+            transition-delay: 0.22s;
+        }
+
+        .panel-inner>*:nth-child(5) {
+            transition-delay: 0.27s;
+        }
+
+        .panel-inner>*:nth-child(6) {
+            transition-delay: 0.32s;
+        }
+
+        .panel-inner>*:nth-child(7) {
+            transition-delay: 0.37s;
+        }
+
+        .panel-inner>*:nth-child(n+8) {
+            transition-delay: 0.42s;
+        }
+
+        @media (max-width: 640px) {
+            #section-tabs {
+                display: none;
+            }
+
+            .panel-inner {
+                padding: 2rem 1.3rem 4rem;
+            }
+
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            h2 {
+                font-size: 1.65rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- ── TOP NAV ──────────────────────────────────────────── -->
+    <nav id="top-nav">
+        <span class="nav-brand">Stat Mech of RL · APS 2026</span>
+        <ul id="section-tabs"></ul>
+    </nav>
+
+    <!-- ── HORIZONTAL TRACK ─────────────────────────────────── -->
+    <div id="h-track">
+
+        <!-- ═══ 0 · TITLE ════════════════════════════════════════ -->
+        <section class="panel" id="panel-hero" data-label="Title">
+            <div class="panel-inner">
+                <div class="panel-eyebrow">Invited Talk · APS March Meeting 2026</div>
+                <h1>Statistical Mechanics<br>of Reinforcement<br>Learning</h1>
+                <div class="hero-divider"></div>
+                <div class="hero-authors">
+                    Jacob Adamczyk &nbsp;·&nbsp; Rahul V. Kulkarni<br>
+                    <span style="font-size:0.58rem;color:var(--dim);">University of Massachusetts Boston &nbsp;·&nbsp;
+                        NSF IAIFI</span>
+                </div>
+                <p class="hero-abstract">
+                    We establish a formal mapping between reinforcement learning and statistical mechanics by treating
+                    agent trajectories as microstates. This identification unlocks the full machinery of stat mech —
+                    partition functions, ensembles, free energies, and non-equilibrium protocols — yielding new
+                    algorithms, interpretable hyperparameters, and connections to neuroscience.
+                </p>
+                <p
+                    style="font-family:var(--mono);font-size:0.58rem;color:var(--dim);text-align:center;margin-top:2rem;max-width:none;">
+                    Use arrow keys, swipe, or the buttons below to navigate sections →
+                </p>
+            </div>
+        </section>
+
+        <!-- ═══ 1 · THE BRAIN ════════════════════════════════════ -->
+        <section class="panel" id="panel-brain" data-label="The Brain">
+            <div class="panel-inner">
+                <div class="panel-eyebrow">01 — The Brain</div>
+                <h2>The Brain as a Prediction Engine</h2>
+
+                <p>A core motivation for this work is that the brain continuously predicts the future. Sensory data,
+                    proprioception, and internal state form a <em>representation</em>; the brain selects actions to
+                    maximize an internal reward signal. This loop is mathematically identical to an RL agent.</p>
+
+                <p>The key empirical anchor is <strong>dopamine</strong>. Firing patterns of dopaminergic neurons are
+                    well-described by temporal difference (TD) errors — the same quantity that drives RL algorithm
+                    updates. Unexpected reward → neurons fire; omitted predicted reward → neurons pause.</p>
+
+                <div class="callout">
+                    <h3>TD Error as Dopamine Prediction Error</h3>
+                    <p>δ<sub>t</sub> = r<sub>t+1</sub> + γV(s<sub>t+1</sub>) − V(s<sub>t</sub>) appears in both RL
+                        updates and as a model of phasic dopamine. One signal drives learning in brains and machines.
+                    </p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">⚡</div>
+                        <div class="card-title">Phasic Dopamine</div>
+                        <p>Encodes prediction error δ. Larger surprises → more firing. Matches TD learning.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">〰️</div>
+                        <div class="card-title">Tonic Dopamine</div>
+                        <p>Encodes average reward rate ρ — the baseline. Maps to average-reward RL.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🧩</div>
+                        <div class="card-title">Compositionality</div>
+                        <p>Mouse cortex shows arithmetic Q-value combinations across tasks (Makino, 2022).</p>
+                    </div>
+                </div>
+
+                <!-- ── FIGURE SLOT ─────────────────────────────────────
+           To replace: add <img src="..." /> inside this div.
+           The dashed border and placeholder text will hide automatically. -->
+                <div class="fig-placeholder">
+                    <img src="assets/schultz93dop.png">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Dopamine firing rasters (Schultz 1997)</div>
+                    <div class="fig-caption">Dopamine raster plots showing reward prediction error alignment — "no
+                        prediction / reward occurs" vs "reward predicted / reward occurs".</div>
+                </div>
+
+                <hr class="rule">
+                <h3>References</h3>
+                <!-- ── REF LIST ── copy a <li> block to add more entries ── -->
+                <ul class="ref-list">
+                    <li>
+
+                        <a class="ref-link" href="https://www.science.org/doi/10.1126/science.275.5306.1593"
+                            target="_blank"><span class="ref-year">1997</span>
+                            <div class="ref-body">
+                                <span class="ref-title">A Neural Substrate of Prediction and Reward</span>
+                                <span class="ref-authors">Schultz, Dayan, Montague <span
+                                        class="ref-venue">Science</span></span>
+                            </div>
+                            ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ref-link" href="https://www.sciencedirect.com/science/article/pii/S002224960800054X"
+                            target="_blank"><span class="ref-year">2009</span>
+                            <div class="ref-body">
+                                <span class="ref-title">Reinforcement learning in the brain</span>
+                                <span class="ref-authors">Niv <span class="ref-venue">J. Math. Psych.</span></span>
+                            </div>
+                            ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ref-link" href="https://doi.org/10.1038/s41593-022-01211-5" target="_blank"><span
+                                class="ref-year">2022</span>
+                            <div class="ref-body">
+                                <span class="ref-title">Arithmetic value representation for hierarchical behavior
+                                    composition</span>
+                                <span class="ref-authors">Makino <span class="ref-venue">Nature
+                                        Neuroscience</span></span>
+                            </div>
+                            ↗
+                        </a>
+                    </li>
+                    <li>
+                        <a class="ref-link" href="https://doi.org/10.1038/s41593-024-01705-4" target="_blank">
+                            <span class="ref-year">2024</span>
+                            <div class="ref-body">
+                                <span class="ref-title">Explaining dopamine through prediction errors and beyond</span>
+                                <span class="ref-authors">Gershman et al. <span class="ref-venue">Nature
+                                        Neuroscience</span></span>
+                            </div>
+                            ↗
+                        </a>
+                    </li>
+                    <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══ 2 · REINFORCEMENT LEARNING ══════════════════════ -->
+        <section class="panel" id="panel-rl" data-label="RL">
+            <div class="panel-inner">
+                <div class="panel-eyebrow">02 — Reinforcement Learning</div>
+                <h2>The RL Framework</h2>
+
+                <p>Reinforcement Learning (RL) is a set of tools, algorithms, objectives, and problems encompassing
+                    sequential decision-making.
+                    Rooted in models of behavioral psychology, it has now been subsumed in the machine learning
+                    literature as a core tenet for developing artificial intelligence.
+                    In RL, we typically consider Markov decision processes (MDPs).
+                    An <em>agent</em> observes state
+                    s<sub>t</sub>, takes action a<sub>t</sub>, receives reward r<sub>t</sub>, transitions to
+                    s<sub>t+1</sub> — modeled as a <strong>Markov Decision Process</strong>.</p>
+                <p>
+                    A state can be a high-dimensional image, the temperature in a room, speed of a car, or geographic
+                    location. Examples of actions include joystick control (up, down, left, right), steering angle,
+                    application of drug, or motor torque. These choices are often up to the problem-designer, and
+                    depends on
+                    our desired level of modeling the system.
+                </p>
+                Through interacting with their surroundings (the "environment"), an agent will generate a trajectory:
+                <div class="eq-block">
+                    <div class="eq-label">Trajectory</div>
+                    τ = (s_1, a_1, s_2, a_2, ...)
+                </div>
+                We assume the dynamics are Markovian, so that the next state only depends on the agent's current state
+                and selected action,
+                $p(s'|s,a)$ and not the entire history, or other external variables. Note that the next state is not
+                explicitly chosen by the agent. Instead, the agent uses its <strong>policy</strong> (π) to choose an
+                action
+                when faced with a certain state (and no other information). The goal of the RL agent is to maximize the
+                average reward it observes, which can be formulated as:
+
+                <div class="eq-block">
+                    <div class="eq-label">Average-Reward Objective</div>
+                    ρ* = max<sub>π</sub> lim<sub>T→∞</sub> (1/T) 𝔼<sub>τ∼(π,p)</sub> [ Σ r(sₜ, aₜ) ]
+                </div>
+
+                It is worth noting that this objective is somewhat contrarian: The popular approach is to use
+                discounting, where an exponential factor decreases the effect of rewards over time.
+                To maintain time homogeneity (and hence the connection to statistical mechanics), we instead adopt the
+                average-reward approach. Interestingly, recent work suggests that this may be more appropriate for
+                modeling biological learning (again, in dopamine pathways).
+                <p>The <strong>average-reward</strong> formulation (γ → 1) is natural for continuing tasks. The reward
+                    rate ρ plays the role of an energy density and maps onto tonic dopamine activity.</p>
+
+                <div class="callout pink">
+                    <h3>Dual Channel Hypothesis</h3>
+                    <p>In average-reward RL, a single RPE update drives both the phasic signal (δ, prediction error) and
+                        the tonic signal (ρ, reward rate) — mapping directly onto the biological phasic/tonic dopamine
+                        distinction.</p>
+                </div>
+
+                Other ideas from reinforcement learning have found utility in neuroscience. For example:
+
+                <div class="card-grid">
+                    <div class="card">
+                        <div class="card-icon">🎭</div>
+                        <div class="card-title">Compositionality</div>
+                        <p>Combine Q-values from subtasks to solve novel tasks without retraining. Theoretical bounds in
+                            Adamczyk et al. 2023.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎁</div>
+                        <div class="card-title">Reward Shaping</div>
+                        <p>Add potential-based terms to guide learning without changing the optimal policy — a gauge
+                            invariance.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📈</div>
+                        <div class="card-title">Distributional RL</div>
+                        <p>Model the full return distribution, not just the mean. Connected to distributional stat mech
+                            and dopamine quantile coding.</p>
+                    </div>
+                </div>
+
+                <!-- ── FIGURE SLOT ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — MDP agent-environment loop or compositionality results</div>
+                    <div class="fig-caption">Suggested: standard MDP diagram, or mouse cortex compositional Q-value
+                        results from Makino 2022, or your own compositionality training curves.</div>
+                </div>
+
+                <hr class="rule">
+                <h3>References</h3>
+                <ul class="ref-list">
+                    <li>
+                        <span class="ref-year">2018</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Reinforcement Learning: An Introduction (2nd ed.)</span>
+                            <span class="ref-authors">Sutton &amp; Barto <span class="ref-venue">MIT Press</span></span>
+                        </div>
+                        <a class="ref-link" href="http://incompleteideas.net/book/the-book.html" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">1999</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Policy Invariance Under Reward Transformations</span>
+                            <span class="ref-authors">Ng, Harada, Russell <span class="ref-venue">ICML</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2019</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Composable Deep RL for Robotic Manipulation</span>
+                            <span class="ref-authors">Haarnoja, Pong, Zhou, Dalal, Abbeel, Levine <span
+                                    class="ref-venue">ICRA</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2023</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Bounding the Optimal Value Function in Compositional Reinforcement
+                                Learning</span>
+                            <span class="ref-authors">Adamczyk, Makarenko, Arriojas, Tiomkin, Kulkarni <span
+                                    class="ref-venue">ICML Workshop</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══ 3 · STATISTICAL MECHANICS ═══════════════════════ -->
+        <section class="panel" id="panel-statmech" data-label="Stat Mech">
+            <div class="panel-inner">
+                <div class="panel-eyebrow">03 — Statistical Mechanics</div>
+                <h2>Trajectory Thermodynamics</h2>
+
+                <p>The central insight: treat <strong>trajectories as microstates</strong>. The entire machinery of
+                    statistical mechanics then applies. The RL community tends to be a bit more optimistic, so they
+                    prefer to "maximize rewards" rather than "minimize energy/loss", explaining the extra negative sign.
+                </p>
+
+                <h3>The Dictionary</h3>
+                <table class="dict-table">
+                    <thead>
+                        <tr>
+                            <th>Reinforcement Learning</th>
+                            <th>Statistical Mechanics</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rl-term">Trajectory τ</td>
+                            <td class="sm-term">Microstate</td>
+                        </tr>
+                        <tr>
+                            <td class="rl-term">Reward r(s,a)</td>
+                            <td class="sm-term">Hamiltonian −E</td>
+                        </tr>
+                        <tr>
+                            <td class="rl-term">Value Function V(s)</td>
+                            <td class="sm-term">Free Energy F</td>
+                        </tr>
+                        <tr>
+                            <td class="rl-term">Regularization α</td>
+                            <td class="sm-term">Temperature 1/β</td>
+                        </tr>
+                        <tr>
+                            <td class="rl-term">Optimal Policy π*</td>
+                            <td class="sm-term">Gibbs Distribution</td>
+                        </tr>
+                        <tr>
+                            <td class="rl-term">Reset Penalty</td>
+                            <td class="sm-term">Chemical Potential μ</td>
+                        </tr>
+                        <tr>
+                            <td class="rl-term">Curriculum Learning</td>
+                            <td class="sm-term">Driving Protocol λ(t)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>Three Ensembles</h3>
+
+                <div class="callout">
+                    <strong
+                        style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent3);">Microcanonical</strong>
+                    <span style="font-family:var(--mono);font-size:0.65rem;color:var(--muted);"> — Fix R and k</span>
+                    <p style="margin-top:0.5rem;">Maximum entropy subject to return constraint. Unifies Decision
+                        Transformer, Upside-Down RL, GCRL, and HER from a single partition function.</p>
+                </div>
+                <div class="eq-block">
+                    <div class="eq-label">Microcanonical</div>
+                    Ω(R, k|s) = ∫ δ( Σᵢ r(sᵢ,aᵢ) − R ) dτₖ
+                </div>
+
+                <div class="callout">
+                    <strong
+                        style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent3);">Canonical</strong>
+                    <span style="font-family:var(--mono);font-size:0.65rem;color:var(--muted);"> — Fix β</span>
+                    <p style="margin-top:0.5rem;">log Z = soft value function (free energy). Bellman equation =
+                        eigenvector equation. Recovers MaxEnt RL and soft Q-learning.</p>
+                </div>
+                <div class="eq-block">
+                    <div class="eq-label">Canonical</div>
+                    Z_p(s, a) = Σ_τ p(τ|s,a) e^(βR(τ))
+                </div>
+
+                <div class="callout">
+                    <strong
+                        style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent3);">Grand
+                        Canonical</strong>
+                    <span style="font-family:var(--mono);font-size:0.65rem;color:var(--muted);"> — Fix β, μ</span>
+                    <p style="margin-top:0.5rem;">Reset penalty = chemical potential μ. Varying μ controls average
+                        episode length — giving physical meaning to a previously ad-hoc hyperparameter.</p>
+                </div>
+                <div class="eq-block">
+                    <div class="eq-label">Grand Canonical</div>
+                    Ξ(β, μ) = Σ_τ p₀(τ) e^(β(R(τ) + μT))
+                </div>
+
+                <ul class="check-list">
+                    <li><span class="ci">✓</span> Equivalence of ensembles in the thermodynamic limit</li>
+                    <li><span class="ci">✓</span> Maxwell relations connecting value gradients to policy statistics</li>
+                    <li><span class="ci">✓</span> Minimum excess work / optimal non-equilibrium protocols</li>
+                    <li><span class="ci pending">◯</span> Multi-agent systems + mean-field theory (in progress)</li>
+                    <li><span class="ci pending">◯</span> RG flow for hierarchical RL (in progress)</li>
+                </ul>
+
+                <!-- ── FIGURE SLOT 1 ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Canonical ensemble: effect of β on policy</div>
+                    <div class="fig-caption">Suggested: gridworld value/policy heatmaps for β = 2, 20, 40, 200 showing
+                        transition from uniform → greedy behavior.</div>
+                </div>
+
+                <!-- ── FIGURE SLOT 2 ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Microcanonical example: goal-seeking vs goal-avoiding</div>
+                    <div class="fig-caption">Suggested: gridworld with target return +1 / 6 steps (seeks goal) vs target
+                        0 / 20 steps (avoids goal).</div>
+                </div>
+
+                <hr class="rule">
+                <h3>References</h3>
+                <ul class="ref-list">
+                    <li>
+                        <span class="ref-year">2017</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Reinforcement Learning with Deep Energy-Based Policies</span>
+                            <span class="ref-authors">Haarnoja et al. <span class="ref-venue">ICML</span></span>
+                        </div>
+                        <a class="ref-link" href="https://arxiv.org/abs/1702.08165" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2021</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Decision Transformer: RL via Sequence Modeling</span>
+                            <span class="ref-authors">Chen et al. <span class="ref-venue">NeurIPS</span></span>
+                        </div>
+                        <a class="ref-link" href="https://arxiv.org/abs/2106.01345" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2024</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Statistical Mechanics of Reinforcement Learning</span>
+                            <span class="ref-authors">Adamczyk &amp; Kulkarni <span
+                                    class="ref-venue">arXiv</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══ 4 · ALGORITHMS ════════════════════════════════════ -->
+        <section class="panel" id="panel-algos" data-label="Algorithms">
+            <div class="panel-inner">
+                <div class="panel-eyebrow">04 — Algorithms</div>
+                <h2>Physics-Inspired Algorithms</h2>
+
+                <h3>EVAL + PPI — Eigenvector-Based Learning</h3>
+                <p>The soft-optimal value function satisfies an eigenvector equation for the tilted transfer operator.
+                    <strong>EVAL</strong> learns the left eigenvector
+                    from data, giving the optimal entropy-regularized average-reward policy. <strong>PPI</strong>
+                    (Posterior Policy Iteration) gives a solution to the ground state (rather than thermal) problem, by
+                    iterating the prior with the posterior policy. In principle, this can also be done in
+                    thermodynamics, but there (since there is no decoupling between state and action controllability),
+                    the procedure is equivalent to repeatedly halving the temperature.
+                </p>
+
+                <!-- ── FIGURE SLOT ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — EVAL+PPI learning curves (CartPole, Acrobot, MountainCar)</div>
+                    <div class="fig-caption">Suggested: average evaluation reward vs environment steps, comparing DQN /
+                        SQL / EVAL / EVAL+PPI across the three classic control benchmarks.</div>
+                </div>
+
+                <h3>Boosting via Bounding (Bogoliubov Inspiration)</h3>
+                <p>Bogoliubov's variational principle bounds free energy via a reference Hamiltonian. Analogously, we
+                    derive tight upper/lower bounds on Q* and use them as clipping constraints. Clipping
+                    <em>excludes</em> invalid Q* regions; Bellman updates <em>pull</em> toward Q* — leading to faster,
+                    more stable convergence (RLC 2024).
+                </p>
+
+                <!-- ── FIGURE SLOT ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Bounding / clipping mechanism over iterations</div>
+                    <div class="fig-caption">Suggested: sequential panels of Q<sup>(n)</sup>(s,a) with upper/lower bound
+                        curves narrowing over training iterations.</div>
+                </div>
+
+                <h3>ASAC — Average-Reward Soft Actor Critic</h3>
+                <p>Combining average-reward objective, entropy regularization, and actor-critic architecture yields
+                    <strong>ASAC</strong> — currently state-of-the-art across MuJoCo continuous control. The critic
+                    targets the <em>differential value function</em> (free energy relative to ground state); the actor
+                    maximizes entropy at a learned temperature.
+                </p>
+
+                <!-- ── FIGURE SLOT ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — ASAC MuJoCo benchmark results</div>
+                    <div class="fig-caption">Suggested: average return vs environment steps on Hopper, Walker2d,
+                        HalfCheetah, Ant, Swimmer, Humanoid — comparing APO / ARO-DDPG / ASAC / ATRPO.</div>
+                </div>
+
+                <hr class="rule">
+                <h3>References</h3>
+                <ul class="ref-list">
+                    <li>
+                        <span class="ref-year">2024</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Average-Reward RL with Entropy Regularization</span>
+                            <span class="ref-authors">Adamczyk, Makarenko, Tiomkin, Kulkarni <span
+                                    class="ref-venue">NeurIPS</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2024</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Boosting Soft Q-Learning by Bounding</span>
+                            <span class="ref-authors">Adamczyk, Makarenko, Tiomkin, Kulkarni <span
+                                    class="ref-venue">RLC</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2025</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Average-Reward Soft Actor Critic</span>
+                            <span class="ref-authors">Adamczyk, Makarenko, Tiomkin, Kulkarni <span
+                                    class="ref-venue">RLC</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══ 5 · APPLICATIONS ══════════════════════════════════ -->
+        <section class="panel" id="panel-apps" data-label="Applications">
+            <div class="panel-inner">
+                <div class="panel-eyebrow">05 — Applications</div>
+                <h2>Cashing in On the Framework</h2>
+
+                <h3>Reward Shaping as Gauge Invariance</h3>
+                <p>Adding γΦ(s') − Φ(s) to any reward preserves optimal policies (Ng et al., 1999) — this is gauge
+                    invariance. Our <strong>self-consistent gauge</strong> sets Φ<sup>(n)</sup>(s) = η · max<sub>a</sub>
+                    Q<sup>(n)</sup>(s,a), bootstrapping the current value estimate. This yields substantial gains across
+                    Atari (up to 100× on some games).</p>
+
+                <div class="eq-block">
+                    <div class="eq-label">Gauge Transformation</div>
+                    r̄(s,a,s') = r̃(s,a,s') + γΦ(s') − Φ(s)
+                    <br>
+                    Q̄*(s,a) = Q̃*(s,a) − Φ(s)
+                </div>
+
+                <!-- ── FIGURE SLOT ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Atari reward shaping results</div>
+                    <div class="fig-caption">Suggested: bar chart of relative advantage (%) of self-consistent gauge vs
+                        DQN baseline across Atari-57 games, log-scale y-axis.</div>
+                </div>
+
+                <h3>Pure Exploration — Maximum Entropy State Coverage</h3>
+                <p>Maximizing entropy of the stationary state-action distribution without extrinsic reward is a stat
+                    mech problem. Our algorithm <strong>EVE</strong> derives a novel TD-style update from this principle
+                    directly, reaching the theoretical entropy ceiling faster and more sample-efficiently than all prior
+                    baselines. (Under review.)</p>
+
+                <!-- ── FIGURE SLOT ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — EVE exploration entropy vs iterations</div>
+                    <div class="fig-caption">Suggested: empirical state-action entropy vs iterations on CLIFF
+                        environment — EVE / Soft-Q (γ = 0.80–0.99) / Differential Soft-Q with theoretical max entropy
+                        ceiling marked.</div>
+                </div>
+
+                <h3>Non-Equilibrium: Curriculum as Driving Protocol</h3>
+                <p>Curriculum learning maps to a non-equilibrium driving protocol λ(t). The optimal curriculum minimizes
+                    excess work (regret) by following a <em>geodesic</em> in task space under the Fisher-Rao metric,
+                    satisfying a Cramér-Rao-style efficiency bound.</p>
+
+                <div class="eq-block">
+                    <div class="eq-label">Excess Work (Curriculum Regret)</div>
+                    𝒲_excess = ∫₀^∞ λ̇ᵢ ζᵢⱼ(λ) λ̇ʲ dt
+                    <br>
+                    Geodesic: λ̈ᵏ + Γᵏᵢⱼ(λ) λ̇ⁱ λ̇ʲ = 0
+                </div>
+
+                <!-- ── FIGURE SLOT ── -->
+                <div class="fig-placeholder">
+                    <div class="fig-icon">📊</div>
+                    <div class="fig-label">Figure — Geodesic vs linear curriculum</div>
+                    <div class="fig-caption">Suggested: regret vs time (linear vs geodesic paths) + task-space (λ₁, λ₂)
+                        trajectory overlaid on log Tr ζ heatmap.</div>
+                </div>
+
+                <hr class="rule">
+                <h3>References</h3>
+                <ul class="ref-list">
+                    <li>
+                        <span class="ref-year">1999</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Policy Invariance Under Reward Transformations</span>
+                            <span class="ref-authors">Ng, Harada, Russell <span class="ref-venue">ICML</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2023</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Reward Shaping via Self-Consistent Gauge</span>
+                            <span class="ref-authors">Adamczyk, Kulkarni <span class="ref-venue">arXiv</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">2024</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Thermodynamics of Reinforcement Learning Curricula</span>
+                            <span class="ref-authors">Adamczyk, Rojas, Kulkarni <span class="ref-venue">SciForDL @
+                                    NeurIPS</span></span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <li>
+                        <span class="ref-year">Under review</span>
+                        <div class="ref-body">
+                            <span class="ref-title">Maximum Entropy Exploration Without the Rollouts</span>
+                            <span class="ref-authors">Adamczyk, Kamoski, Kulkarni</span>
+                        </div>
+                        <a class="ref-link" href="#" target="_blank">↗</a>
+                    </li>
+                    <!-- ADD MORE: copy a <li>...</li> block above and paste here -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- ═══ 6 · SUMMARY ══════════════════════════════════════ -->
+        <section class="panel" id="panel-summary" data-label="Summary">
+            <div class="panel-inner">
+                <div class="panel-eyebrow">06 — Summary</div>
+                <h2>Summary &amp; Open Questions</h2>
+
+                <div class="callout">
+                    <h3>The Core Result</h3>
+                    <p>Treating <strong>trajectories as microstates</strong> gives an exact mapping between RL and
+                        statistical mechanics.</p>
+                </div>
+
+                <ul class="check-list">
+                    <li><span class="ci">✓</span> RL models the brain at multiple levels — from macroscopic behavioral
+                        decision-making, microscopic dopamine signals to more abstract
+                        compositional skill reuse and reward shaping.</li>
+                    <li><span class="ci">✓</span> Three ensembles unify many algorithms and give physical meaning to
+                        various
+                        hyperparameters (temperature controls average reward-rate, reset cost controls trajectory
+                        length).</li>
+                    <li><span class="ci">✓</span> EVAL+PPI and ASAC achieve state-of-the-art average-reward RL
+                        performance</li>
+                    <li><span class="ci">✓</span> Reward shaping = gauge invariance · Exploration = max entropy ·
+                        Curriculum = geodesic driving</li>
+                    <li><span class="ci pending">◯</span> Multi-agent: mean-field theory of interacting learning agents
+                    </li>
+                    <li><span class="ci pending">◯</span> Hierarchical RL: renormalization group flow across timescales
+                    </li>
+                    <li><span class="ci pending">◯</span> Distributional RL: full return distribution beyond free energy
+                    </li>
+                    <li><span class="ci pending">◯</span> Phase transitions in learning dynamics</li>
+                </ul>
+
+                <div class="card-grid" style="margin-top:1.8rem;">
+                    <div class="card">
+                        <div class="card-icon">📧</div>
+                        <div class="card-title">Contact</div>
+                        <p>jacob.adamczyk001@umb.edu<br>rahul.kulkarni@umb.edu</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🏛️</div>
+                        <div class="card-title">Affiliations</div>
+                        <p>UMass Boston</p>
+                        <!--  · NSF IAIFI · Sony AI · Texas Tech · San José State -->
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📄</div>
+                        <div class="card-title">Papers</div>
+                        <p>Search <em>Adamczyk Kulkarni RL</em> on arXiv for all preprints and links.</p>
+                    </div>
+                </div>
+
+                <p
+                    style="font-family:var(--mono);font-size:0.56rem;color:var(--dim);letter-spacing:0.1em;margin-top:3rem;text-align:center;max-width:none;">
+                    Supported by NSF IAIFI · PHY-2019786
+                </p>
+            </div>
+        </section>
+
+    </div><!-- /#h-track -->
+
+    <!-- ── FOOTER BAR ────────────────────────────────────────── -->
+    <div id="foot-bar">
+        <button class="nav-arrow" id="btn-prev" onclick="navigate(-1)" disabled>← Prev</button>
+        <div id="foot-dots"></div>
+        <span id="foot-counter">1 / 7</span>
+        <button class="nav-arrow" id="btn-next" onclick="navigate(1)">Next →</button>
+    </div>
+
+    <!-- ── SCRIPTS ───────────────────────────────────────────── -->
+    <script>
+        /* ── Particle Background ───────────────────────────────── */
+        const bgCanvas = document.getElementById('bg-canvas');
+        const bgCtx = bgCanvas.getContext('2d');
+        let bW, bH, pts;
+
+        function resizeBg() {
+            bW = bgCanvas.width = window.innerWidth;
+            bH = bgCanvas.height = window.innerHeight;
+        }
+        function initPts() {
+            pts = Array.from({ length: 55 }, () => ({
+                x: Math.random() * bW, y: Math.random() * bH,
+                vx: (Math.random() - 0.5) * 0.18, vy: (Math.random() - 0.5) * 0.18,
+                r: Math.random() * 1.1 + 0.4
+            }));
+        }
+        function drawBg() {
+            bgCtx.clearRect(0, 0, bW, bH);
+            bgCtx.strokeStyle = 'rgba(100,100,95,0.07)'; bgCtx.lineWidth = 0.5;
+            for (let x = 0; x < bW; x += 70) { bgCtx.beginPath(); bgCtx.moveTo(x, 0); bgCtx.lineTo(x, bH); bgCtx.stroke(); }
+            for (let y = 0; y < bH; y += 70) { bgCtx.beginPath(); bgCtx.moveTo(0, y); bgCtx.lineTo(bW, y); bgCtx.stroke(); }
+            pts.forEach(p => {
+                p.x += p.vx; p.y += p.vy;
+                if (p.x < 0) p.x = bW; if (p.x > bW) p.x = 0;
+                if (p.y < 0) p.y = bH; if (p.y > bH) p.y = 0;
+                bgCtx.beginPath(); bgCtx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+                bgCtx.fillStyle = 'rgba(106,176,212,0.22)'; bgCtx.fill();
+            });
+            bgCtx.lineWidth = 0.32;
+            for (let i = 0; i < pts.length; i++) for (let j = i + 1; j < pts.length; j++) {
+                const dx = pts[i].x - pts[j].x, dy = pts[i].y - pts[j].y, d = Math.hypot(dx, dy);
+                if (d < 110) {
+                    bgCtx.strokeStyle = `rgba(106,176,212,${0.08 * (1 - d / 110)})`;
+                    bgCtx.beginPath(); bgCtx.moveTo(pts[i].x, pts[i].y); bgCtx.lineTo(pts[j].x, pts[j].y); bgCtx.stroke();
+                }
+            }
+            requestAnimationFrame(drawBg);
+        }
+        window.addEventListener('resize', () => { resizeBg(); initPts(); });
+        resizeBg(); initPts(); drawBg();
+
+        /* ── Horizontal Navigation ─────────────────────────────── */
+        const panels = Array.from(document.querySelectorAll('.panel'));
+        const track = document.getElementById('h-track');
+        const tabsEl = document.getElementById('section-tabs');
+        const dotsEl = document.getElementById('foot-dots');
+        const counter = document.getElementById('foot-counter');
+        const btnPrev = document.getElementById('btn-prev');
+        const btnNext = document.getElementById('btn-next');
+
+        let current = 0, isAnimating = false;
+
+        // Build tabs + dots from data-label
+        panels.forEach((p, i) => {
+            const label = p.dataset.label || `${i + 1}`;
+            const li = document.createElement('li');
+            const btn = document.createElement('button');
+            btn.textContent = label;
+            btn.addEventListener('click', () => goTo(i));
+            li.appendChild(btn); tabsEl.appendChild(li);
+
+            const dot = document.createElement('div');
+            dot.className = 'foot-dot';
+            dot.addEventListener('click', () => goTo(i));
+            dotsEl.appendChild(dot);
+        });
+
+        function goTo(idx, instant) {
+            if (isAnimating && !instant) return;
+            isAnimating = true;
+            panels[current].classList.remove('entered');
+            current = Math.max(0, Math.min(panels.length - 1, idx));
+            panels[current].scrollTop = 0;
+            track.style.transition = instant ? 'none' : 'transform 0.72s cubic-bezier(0.77,0,0.175,1)';
+            track.style.transform = `translateX(-${current * 100}vw)`;
+            updateUI();
+            setTimeout(() => {
+                panels[current].classList.add('entered');
+                isAnimating = false;
+            }, instant ? 20 : 700);
+        }
+
+        function navigate(dir) { goTo(current + dir); }
+
+        function updateUI() {
+            tabsEl.querySelectorAll('button').forEach((b, i) => b.classList.toggle('active', i === current));
+            dotsEl.querySelectorAll('.foot-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+            counter.textContent = `${current + 1} / ${panels.length}`;
+            btnPrev.disabled = current === 0;
+            btnNext.disabled = current === panels.length - 1;
+        }
+
+        // Keyboard
+        document.addEventListener('keydown', e => {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowDown') navigate(1);
+            if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') navigate(-1);
+        });
+
+        // Wheel scrolls naturally within the panel — no auto-navigation.
+
+        // Touch swipe
+        let tx = 0, ty = 0;
+        document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; ty = e.touches[0].clientY; }, { passive: true });
+        document.addEventListener('touchend', e => {
+            const dx = tx - e.changedTouches[0].clientX, dy = ty - e.changedTouches[0].clientY;
+            if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 50) navigate(dx > 0 ? 1 : -1);
+        }, { passive: true });
+
+        // Init
+        goTo(0, true);
+    </script>
+</body>
+
+</html>
