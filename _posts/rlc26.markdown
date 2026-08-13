@@ -1,8 +1,10 @@
 ---
-layout: page
-title: A Value-Based Approach to MaxEnt Exploration
-permalink: /rlc26/
+layout: post
+title:  "RLC 2027"
+date:   2026-08-17 16:30:57 -0400
+categories: paper
 ---
+
 <!-- Insert RLC 26 logo -->
 <p align="center">
 <img align = "center" src="../assets/rlc_logo.png" >
