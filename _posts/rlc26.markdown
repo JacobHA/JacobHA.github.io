@@ -1,8 +1,10 @@
 ---
 layout: post
-title:  "RLC 2027"
+title:  "RLC 2026"
 date:   2026-08-17 16:30:57 -0400
 categories: paper
+permalink: /rlc26/
+published: true
 ---
 
 <!-- Insert RLC 26 logo -->
